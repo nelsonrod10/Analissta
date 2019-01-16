@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<fuentesLesion>
+    <tipo id="1">
+        <nombre textAuxiliar="Corresponde a los casos en los cuales la lesión se produjo por impacto entre la persona lesionada y el agente de la lesión.  El movimiento productor del contacto, es primordialmente de la persona y no del agente de la lesión">Golpeado contra</nombre>
+        <fuentes id="1">Objetos fijos</fuentes>
+        <fuentes id="2">Objetos en movimiento</fuentes>
+        <fuentes id="3">Golpeado contra objetos no especificados</fuentes>
+    </tipo>
+    <tipo id="2">
+        <nombre textAuxiliar="Corresponde a los casos en los cuales,  la lesión ha sido producida por un impacto entre la persona lesionada y el agente de la lesión, el movimiento que produce el contacto es primordialmente el del agente de la lesión y no el de la persona">Golpeado por</nombre>
+        <fuentes id="1">Objetos que caen (incluye personas).</fuentes>
+        <fuentes id="2">Objetos que vuelan.</fuentes>
+        <fuentes id="3">Golpeado o lesionado por otra persona.</fuentes>
+        <fuentes id="4">Golpeado por, no especificado en otra parte.</fuentes>
+    </tipo>
+    <tipo id="3">
+        <nombre>Caída de un nivel superior.</nombre>
+        <fuentes id="1">De andamios, de pasillos,  de plataformas, de sillas,  de techos, etc.</fuentes>
+        <fuentes id="2">De escaleras.</fuentes>
+        <fuentes id="3">De materiales apilados.</fuentes>
+        <fuentes id="4">De vehículos.</fuentes>
+        <fuentes id="5">En escaleras propias de edificios.</fuentes>
+        <fuentes id="6" textAuxiliar="Desde el borde de la abertura">Dentro de pozos, excavaciones, aberturas en los pisos, etc.</fuentes>
+        <fuentes id="7">Caída a un nivel inferior,  no especificado en otra parte.</fuentes>
+    </tipo>
+    <tipo id="4">
+        <nombre>Caída a un mismo nivel.</nombre>
+        <fuentes id="1">Caer en el pasillo o en la superficie de trabajo.</fuentes>
+        <fuentes id="2">Caer sobre o contra objetos.</fuentes>
+        <fuentes id="3">Caída a un mismo nivel, no especificada en otra parte.</fuentes>
+    </tipo>
+    <tipo id="5">
+        <nombre>Atrapado en, debajo o entre.</nombre>
+        <fuentes id="1">Engranajes, rodillos..</fuentes>
+        <fuentes id="2">Un objeto movible y uno fijo.</fuentes>
+        <fuentes id="3">Dos o más objetos móviles (que no están engranados).</fuentes>
+        <fuentes id="4" textAuxiliar="deslizamientos de tierra,  derrumbamiento de edificios, etc">Materiales aplastantes que pueden derrumbarse en un momento dado.</fuentes>
+        <fuentes id="5">Dos objetos fijos.</fuentes>
+        <fuentes id="6">Atrapado en, debajo o entre, no especificados en otra parte.</fuentes>
+    </tipo>
+    <tipo id="6">
+        <nombre>Fricción o raspadura.</nombre>
+        <fuentes id="1">Por recostarse, arrodillarse o sentarse en objetos (no vibrantes).</fuentes>
+        <fuentes id="2">Por objetos operados manualmente (no vibrantes).</fuentes>
+        <fuentes id="3">Por objetos vibrantes.</fuentes>
+        <fuentes id="4">Por materias extrañas en los ojos.</fuentes>
+        <fuentes id="5">Por repetición de presión.</fuentes>
+        <fuentes id="6">Fricción o raspadura no especificada en otra parte.</fuentes>
+    </tipo>
+    <tipo id="7">
+        <nombre>Reacción corporal.</nombre>
+        <fuentes id="1">Proveniente de movimientos involuntarios.</fuentes>
+        <fuentes id="2">Proveniente de movimientos voluntarios.</fuentes>
+    </tipo>
+    <tipo id="8">
+        <nombre>Sobreesfuerzo.</nombre>
+        <fuentes id="1">Al levantar objetos.</fuentes>
+        <fuentes id="2">Al halar o empujar objetos.</fuentes>
+        <fuentes id="3">Al manipular o lanzar objetos.</fuentes>
+        <fuentes id="4">Sobre-esfuerzo, no especificado en otra parte.</fuentes>
+    </tipo>
+    <tipo id="9">
+        <nombre>Contacto con corriente eléctrica.</nombre>
+        <fuentes id="1">Contacto con corriente eléctrica.</fuentes>
+    </tipo>
+    <tipo id="10">
+        <nombre>Contacto con temperaturas extremas.</nombre>
+        <fuentes id="1">Altas temperaturas- atmosféricas, o ambientales.</fuentes>
+        <fuentes id="2">Bajas temperaturas- atmosféricas o ambientales.</fuentes>
+        <fuentes id="3">Objetos o sustancias calientes.</fuentes>
+        <fuentes id="4">Objetos o sustancias frías.</fuentes>
+    </tipo>
+    <tipo id="11">
+        <nombre>Contacto con radiaciones, o sustancias cáusticas, tóxicas y nocivas, corrosivas, alcalis, ácidos.</nombre>
+        <fuentes id="1">Por inhalación.</fuentes>
+        <fuentes id="2">Por ingestión.</fuentes>
+        <fuentes id="3">Por absorción.</fuentes>
+        <fuentes id="4">Secreciones líquidas corporales.</fuentes>
+        <fuentes id="5">Líquidos contaminados o líquidos que han estado en contacto con pacientes.</fuentes>
+    </tipo>
+    <tipo id="12">
+        <nombre>Accidentes de transporte público.</nombre>
+        <fuentes id="1">Accidente de aviación.</fuentes>
+        <fuentes id="2">Accidentes de buses.</fuentes>
+        <fuentes id="3">Accidente de barco o botes.</fuentes>
+        <fuentes id="4">Accidente de tranvías o trenes subterráneos.</fuentes>
+        <fuentes id="5">Accidente de taxis.</fuentes>
+        <fuentes id="6">Accidente de trenes.</fuentes>
+        <fuentes id="7">Accidente de vehículos públicos no especificados en otra parte.</fuentes>
+        <fuentes id="8">Accidentes de vehículos no motorizados.</fuentes>
+    </tipo>
+    <tipo id="13">
+        <nombre>Choque o roce lateral con otro vehículo, ambos en movimiento (No codificable).</nombre>
+        <fuentes id="1">Con un vehículo que se mueve en dirección contraria por el mismo camino, calle o carretera.</fuentes>
+        <fuentes id="2">Con un vehículo que se mueve en la misma dirección, en el mismo camino, calle o carretera.</fuentes>
+        <fuentes id="3">Con un vehículo que se mueve en una carretera de intersección o cruce.</fuentes>
+    </tipo>
+    <tipo id="14">
+        <nombre>Choque o roce lateral con un vehículo o un objeto fijo (No codificable).</nombre>
+        <fuentes id="1">Precipitarse contra o rozar lateralmente con un vehículo u objeto parado en la vía.</fuentes>
+        <fuentes id="2">Precipitarse contra o rozar lateralmente con un vehículo u objeto parado a un lado de la vía.</fuentes>
+        <fuentes id="3">Ser golpeado por otro vehículo mientras está parado en la vía.</fuentes>
+        <fuentes id="4">Ser golpeado por otro vehículo mientras se está parado fuera de la vía.</fuentes>
+        <fuentes id="5">Otros accidentes con choques no especificados.</fuentes>
+    </tipo>
+    <tipo id="15">
+        <nombre>Accidentes sin choque.</nombre>
+        <fuentes id="1">Volcarse.</fuentes>
+        <fuentes id="2">Salirse fuera de la vía (sin control).</fuentes>
+        <fuentes id="3" textAuxiliar="Que lance a los ocupantes fuera o contra partes interiores del vehículo o lance el contenido del vehículo contra los ocupantes">Parada o arranque intempestivo.</fuentes>
+        <fuentes id="4">Otros accidentes sin choque.</fuentes>
+    </tipo>
+    <tipo id="16">
+        <nombre>Tipos de accidentes, no especificados en otra parte.</nombre>
+        <fuentes id="1">Tipos de accidentes, no especificados en otra parte.</fuentes>
+    </tipo>
+    <tipo id="17">
+        <nombre>No clasificado, datos insuficientes.</nombre>
+        <fuentes id="1">No clasificado, datos insuficientes.</fuentes>
+    </tipo>
+</fuentesLesion>

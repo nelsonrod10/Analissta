@@ -1,0 +1,694 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nd>
+    <NDestandar>
+        <nivel>
+            <valor>10</valor>
+            <texto>Muy Alto(MA)</texto>
+            <descripcion>Se han detectado peligros que determinan como muy posible la generación de incidentes o consecuencias muy significativas, o la eficacia del conjunto de medidas preventivas existentes respecto al riesgo es nula o no existe, o ambos.</descripcion>
+        </nivel>
+        <nivel>
+            <valor>6</valor>
+            <texto>Alto(A)</texto>
+            <descripcion>Se han detectado algunos peligros que puedan dar lugar a consecuencias significativas, o la eficacia del conjunto de medidas preventivas existentes es baja o ambos.</descripcion>
+        </nivel>
+        <nivel>
+            <valor>2</valor>
+            <texto>Medio(M)</texto>
+            <descripcion>Se han detectado peligros que puedan dar lugar a consecuencias poco significativas de menor importancia, o la eficacia del conjunto de medidas preventivas existentes es moderada o ambos.</descripcion>
+        </nivel>
+        <nivel>
+            <valor>0</valor>
+            <texto>Bajo(B)</texto>
+            <descripcion>No se han detectado  consecuencia alguna, o la eficacia del conjunto de medidas preventivas existentes es alta, o ambos el riesgo esta controlado. Estos peligros se clasifican directamente en el nivel de riesgo y de intervención Tabla 13.</descripcion>
+        </nivel>
+    </NDestandar>
+    
+    <NDhigienico>
+        <clasificacion>
+            <id>1</id>
+            <nombre>Fisico</nombre>
+            <descripcion>
+                <item>
+                    <id>1</id>
+                    <nombre>RUIDO (DE IMPACTO, INTERMITENTE, CONTINUO)</nombre>
+                </item>
+                <nivel>
+                    <valor>10</valor>
+                    <texto>Muy Alto(MA)</texto>
+                    <descNivel>No escuchar una conversación a tono normal o a una distancia menos de 50 cm</descNivel>
+                </nivel>
+                <nivel>
+                    <valor>6</valor>
+                    <texto>Alto(A)</texto>
+                    <descNivel>Escuchar la Conversación a una distancia de 1 m en tono normal</descNivel>
+                </nivel>
+                <nivel>
+                    <valor>2</valor>
+                    <texto>Medio(M)</texto>
+                    <descNivel>Escuchar la conversación a una distancia de 2 m en tono normal</descNivel>
+                </nivel>
+                <nivel>
+                    <valor>0</valor>
+                    <texto>Bajo(M)</texto>
+                    <descNivel>No hay dificultad para escuchar una conversación a tono normal a mas de 2 m</descNivel>
+                </nivel>
+            </descripcion>
+            <descripcion>
+                <item>
+                    <id>2</id>
+                    <nombre>ILUMINACION (LUZ VISIBLE POR EXCESO O DEFICIENCIA)</nombre>
+                </item>
+                <nivel>
+                    <valor>10</valor>
+                    <texto>Muy Alto(MA)</texto>
+                    <descNivel>Ausencia de luz natural o artificial</descNivel>
+                </nivel>
+                <nivel>
+                    <valor>6</valor>
+                    <texto>Alto(A)</texto>
+                    <descNivel>Deficiencia de luz natural con sombras evidentes y dificultad para leer</descNivel>
+                </nivel>
+                <nivel>
+                    <valor>2</valor>
+                    <texto>Medio(M)</texto>
+                    <descNivel>Percepción de algunas sombras al ejecutar una actividad – escribir</descNivel>
+                </nivel>
+                <nivel>
+                    <valor>0</valor>
+                    <texto>Bajo(M)</texto>
+                    <descNivel>Ausencia de sombras</descNivel>
+                </nivel>
+            </descripcion>
+            <descripcion>
+                <item>
+                    <id>3</id>
+                    <nombre>VIBRACIONES - (CUERPO ENTRERO O SEGMENTARIA)</nombre>
+                </item>
+                <nivel>
+                    <valor>10</valor>
+                    <texto>Muy Alto(MA)</texto>
+                    <descNivel>Percibir notoriamente vibraciones en el puesto de trabajo</descNivel>
+                </nivel>
+                <nivel>
+                    <valor>6</valor>
+                    <texto>Alto(A)</texto>
+                    <descNivel>Percibir sensiblemente vibraciones en el puesto de trabajo</descNivel>
+                </nivel>
+                <nivel>
+                    <valor>2</valor>
+                    <texto>Medio(M)</texto>
+                    <descNivel>Percibir moderadamente vibraciones en el puesto de trabajo</descNivel>
+                </nivel>
+                <nivel>
+                    <valor>0</valor>
+                    <texto>Bajo(M)</texto>
+                    <descNivel>Existencia de vibraciones que no son percibidas</descNivel>
+                </nivel>
+            </descripcion>
+            <descripcion>
+                <item>
+                    <id>4</id>
+                    <nombre>TEMPERATURAS EXTREMAS (CALOR - FRIO)</nombre>
+                </item>
+                <nivel>
+                    <valor>10</valor>
+                    <texto>Muy Alto(MA)</texto>
+                    <descNivel>Percepción subjetiva de calor o frio en forma inmediata</descNivel>
+                </nivel>
+                <nivel>
+                    <valor>6</valor>
+                    <texto>Alto(A)</texto>
+                    <descNivel>Percepción subjetiva de calor o frio luego de permanecer 5 min en el sitio</descNivel>
+                </nivel>
+                <nivel>
+                    <valor>2</valor>
+                    <texto>Medio(M)</texto>
+                    <descNivel>Percepción de algún disconfort con la temperatura luego de permanecer 15 min en el área</descNivel>
+                </nivel>
+                <nivel>
+                    <valor>0</valor>
+                    <texto>Bajo(M)</texto>
+                    <descNivel>Sensación de confort térmico</descNivel>
+                </nivel>
+            </descripcion>
+            <descripcion>
+                <item>
+                    <id>5</id>
+                    <nombre>RADIACIONES IONIZANTES</nombre>
+                </item>
+                <nivel>
+                    <valor>10</valor>
+                    <texto>Muy Alto(MA)</texto>
+                    <descNivel>Exposición frecuente (una o más veces por jornada o turno)</descNivel>
+                </nivel>
+                <nivel>
+                    <valor>6</valor>
+                    <texto>Alto(A)</texto>
+                    <descNivel>Exposición regular (una o más veces en la semana)</descNivel>
+                </nivel>
+                <nivel>
+                    <valor>2</valor>
+                    <texto>Medio(M)</texto>
+                    <descNivel>Ocasionalmente y/o vecindad</descNivel>
+                </nivel>
+                <nivel>
+                    <valor>0</valor>
+                    <texto>Bajo(M)</texto>
+                    <descNivel>Rara vez, casi nunca sucede la exposición</descNivel>
+                </nivel>
+            </descripcion>
+            <descripcion>
+                <item>
+                    <id>6</id>
+                    <nombre>RADIACIONES NO IONIZANTES</nombre>
+                </item>
+                <nivel>
+                    <valor>10</valor>
+                    <texto>Muy Alto(MA)</texto>
+                    <descNivel>Ocho horas (8) o más de exposición por jornada de turno</descNivel>
+                </nivel>
+                <nivel>
+                    <valor>6</valor>
+                    <texto>Alto(A)</texto>
+                    <descNivel>Entre seis (6) y ocho (8) horas por jornada o turno</descNivel>
+                </nivel>
+                <nivel>
+                    <valor>2</valor>
+                    <texto>Medio(M)</texto>
+                    <descNivel>Entre dos (2) y seis (6) horas por jornada o turno</descNivel>
+                </nivel>
+                <nivel>
+                    <valor>0</valor>
+                    <texto>Bajo(M)</texto>
+                    <descNivel>Menos de dos (2) horas por jornada o turno</descNivel>
+                </nivel>
+            </descripcion>
+            <descripcion>
+                <item>
+                    <id>7</id>
+                    <nombre>PRESIONES BAROMETRICAS</nombre>
+                </item>
+                <nivel>
+                    <valor>10</valor>
+                    <texto>Muy Alto(MA)</texto>
+                    <descNivel>Se han detectado peligros que determinan como muy posible la generación de incidentes o consecuencias muy significativas, o la eficacia del conjunto de medidas preventivas existentes respecto al riesgo es nula o no existe, o ambos.</descNivel>
+                </nivel>
+                <nivel>
+                    <valor>6</valor>
+                    <texto>Alto(A)</texto>
+                    <descNivel>Se han detectado algunos peligros que puedan dar lugar a consecuencias significativas, o la eficacia del conjunto de medidas preventivas existentes es baja o ambos.</descNivel>
+                </nivel>
+                <nivel>
+                    <valor>2</valor>
+                    <texto>Medio(M)</texto>
+                    <descNivel>Se han detectado peligros que puedan dar lugar a consecuencias poco significativas de menor importancia, o la eficacia del conjunto de medidas preventivas existentes es moderada o ambos.</descNivel>
+                </nivel>
+                <nivel>
+                    <valor>0</valor>
+                    <texto>Bajo(B)</texto>
+                    <descNivel>No se han detectado  consecuencia alguna, o la eficacia del conjunto de medidas preventivas existentes es alta, o ambos el riesgo esta controlado. Estos peligros se clasifican directamente en el nivel de riesgo y de intervención Tabla 13.</descNivel>
+                </nivel>
+            </descripcion>
+        </clasificacion>
+        
+        <clasificacion>
+            <id>2</id>
+            <nombre>Quimico</nombre>
+            <descripcion>
+                <item>
+                    <id>1</id>
+                    <nombre>POLVOS ORGANICOS INORGANICOS</nombre>
+                </item>
+                <item>
+                    <id>3</id>
+                    <nombre>HUMOS METALICOS , NO METALICOS</nombre>
+                </item>
+                <nivel>
+                    <valor>10</valor>
+                    <texto>Muy Alto(MA)</texto>
+                    <descNivel>Evidencia de material particulado depositado sobre una superficie previamente limpia al cabo de 5 min.</descNivel>
+                </nivel>
+                <nivel>
+                    <valor>6</valor>
+                    <texto>Alto(A)</texto>
+                    <descNivel>Evidencia de material particulado depositado sobre una superficie previamente limpia al cabo de más de 5 min.</descNivel>
+                </nivel>
+                <nivel>
+                    <valor>2</valor>
+                    <texto>Medio(M)</texto>
+                    <descNivel>Percepción subjetiva de emisión de polvo sin depósito sobre superficies pero si evidenciadle en luces, ventanas, rayos solares etc.</descNivel>
+                </nivel>
+                <nivel>
+                    <valor>0</valor>
+                    <texto>Bajo(M)</texto>
+                    <descNivel>Presencia de fuentes de emisión de polvos sin la percepción anterior</descNivel>
+                </nivel>
+            </descripcion>
+            <descripcion>
+                <item>
+                    <id>6</id>
+                    <nombre>GASES Y VAPORES</nombre>
+                </item>
+                <nivel>
+                    <valor>10</valor>
+                    <texto>Muy Alto(MA)</texto>
+                    <descNivel>Presencia de gases y/o vapores en espacios cerrados, se requiere protección respiratoria que suministre aire.</descNivel>
+                </nivel>
+                <nivel>
+                    <valor>6</valor>
+                    <texto>Alto(A)</texto>
+                    <descNivel>Presencia de gases y/o vapores fuertes en espacios abiertos, se requiere protección respiratoria que purifique el aire.</descNivel>
+                </nivel>
+                <nivel>
+                    <valor>2</valor>
+                    <texto>Medio(M)</texto>
+                    <descNivel>Presencia de gases y/o vapores suaves en espacios abiertos, se requiere protección respiratoria que purifique el aire.</descNivel>
+                </nivel>
+                <nivel>
+                    <valor>0</valor>
+                    <texto>Bajo(M)</texto>
+                    <descNivel>Percepción de olor suave, no requiere protección respiratoria.</descNivel>
+                </nivel>
+            </descripcion>
+            <descripcion>
+                <item>
+                    <id>2</id>
+                    <nombre>FIBRAS</nombre>
+                </item>
+                <item>
+                    <id>4</id>
+                    <nombre>MATERIAL PARTICULADO</nombre>
+                </item>
+                <item>
+                    <id>5</id>
+                    <nombre>LIQUIDOS</nombre>
+                </item>
+                <nivel>
+                    <valor>10</valor>
+                    <texto>Muy Alto(MA)</texto>
+                    <descNivel>Manipulación permanente (varias veces en la jornada o turno)de productos químicos que contenga como nivel de riesgos a la salud 4 según NFPA 704</descNivel>
+                </nivel>
+                <nivel>
+                    <valor>6</valor>
+                    <texto>Alto(A)</texto>
+                    <descNivel>Manipulación una vez por jornada o turno de productos químicos que contenga como nivel de riesgos a la salud 4 según NFPA 704</descNivel>
+                </nivel>
+                <nivel>
+                    <valor>2</valor>
+                    <texto>Medio(M)</texto>
+                    <descNivel>Manipulación ocasional de productos químicos que contenga como nivel de riesgos a la salud 2 según NFPA 704</descNivel>
+                </nivel>
+                <nivel>
+                    <valor>0</valor>
+                    <texto>Bajo(M)</texto>
+                    <descNivel>Manipulación ocasional de productos químicos que contenga como nivel de riesgos a la salud 1 según NFPA 704</descNivel>
+                </nivel>
+            </descripcion>
+            <descripcion>
+                <item>
+                    <id>7</id>
+                    <nombre>SUSTANCIAS COMBUSTIBLES Y/O EXPLOSIVAS</nombre>
+                </item>
+                <nivel>
+                    <valor>10</valor>
+                    <texto>Muy Alto(MA)</texto>
+                    <descNivel>Se han detectado peligros que determinan como muy posible la generación de incidentes o consecuencias muy significativas, o la eficacia del conjunto de medidas preventivas existentes respecto al riesgo es nula o no existe, o ambos.</descNivel>
+                </nivel>
+                <nivel>
+                    <valor>6</valor>
+                    <texto>Alto(A)</texto>
+                    <descNivel>Se han detectado algunos peligros que puedan dar lugar a consecuencias significativas, o la eficacia del conjunto de medidas preventivas existentes es baja o ambos.</descNivel>
+                </nivel>
+                <nivel>
+                    <valor>2</valor>
+                    <texto>Medio(M)</texto>
+                    <descNivel>Se han detectado peligros que puedan dar lugar a consecuencias poco significativas de menor importancia, o la eficacia del conjunto de medidas preventivas existentes es moderada o ambos.</descNivel>
+                </nivel>
+                <nivel>
+                    <valor>0</valor>
+                    <texto>Bajo(B)</texto>
+                    <descNivel>No se han detectado  consecuencia alguna, o la eficacia del conjunto de medidas preventivas existentes es alta, o ambos el riesgo esta controlado. Estos peligros se clasifican directamente en el nivel de riesgo y de intervención Tabla 13.</descNivel>
+                </nivel>
+            </descripcion>
+        </clasificacion>
+        <clasificacion>
+            <id>3</id>
+            <nombre>Biologico</nombre>
+            <descripcion>
+                <item>
+                    <id>1</id>
+                    <nombre>VIRUS</nombre>
+                </item>
+                <item>
+                    <id>2</id>
+                    <nombre>BACTERIAS</nombre>
+                </item>
+                <item>
+                    <id>3</id>
+                    <nombre>HONGOS</nombre>
+                </item>
+                <item>
+                    <id>4</id>
+                    <nombre>MORDEDURAS</nombre>
+                </item>
+                <item>
+                    <id>5</id>
+                    <nombre>PICADURAS</nombre>
+                </item>
+                <item>
+                    <id>6</id>
+                    <nombre>PARASITOS</nombre>
+                </item>
+                <item>
+                    <id>7</id>
+                    <nombre>FLUIDOS O ESCREMENTOS</nombre>
+                </item>
+                <nivel>
+                    <valor>10</valor>
+                    <texto>Muy Alto(MA)</texto>
+                    <descNivel>Provocan una enfermedad grave y constituye un serio peligro para los trabajadores, su riesgo de propagación es elevado y no se conoce tratamiento eficaz en la actualidad.</descNivel>
+                </nivel>
+                <nivel>
+                    <valor>6</valor>
+                    <texto>Alto(A)</texto>
+                    <descNivel>Pueden provocar una enfermedad grave y constituir un serio peligro para los trabajadores. Su riesgo de propagación es probable y generalmente existe tratamiento eficaz.</descNivel>
+                </nivel>
+                <nivel>
+                    <valor>2</valor>
+                    <texto>Medio(M)</texto>
+                    <descNivel>Pueden causar una enfermedad y constituir un peligro para los trabajadores, su riesgo de propagación es poco probable y generalmente existe tratamiento eficaz.</descNivel>
+                </nivel>
+                <nivel>
+                    <valor>0</valor>
+                    <texto>Bajo(M)</texto>
+                    <descNivel>Poco probable que cause una enfermedad. No hay riesgo de propagación y no se necesita tratamiento.</descNivel>
+                </nivel>
+            </descripcion>
+        </clasificacion>
+        
+        <clasificacion>
+            <id>4</id>
+            <nombre>Psicosocial</nombre>
+            <descripcion>
+                <item>
+                    <id>1</id>
+                    <nombre>INTRALABORAL</nombre>
+                </item>
+                <item>
+                    <id>2</id>
+                    <nombre>HUMANO EXTRALABORAL</nombre>
+                </item>
+                <item>
+                    <id>3</id>
+                    <nombre>HUMANO INDIVIDUAL</nombre>
+                </item>
+                <nivel>
+                    <valor>10</valor>
+                    <texto>Muy Alto(MA)</texto>
+                    <descNivel>Nivel de riesgo con alta probabilidad de asociarse a respuestas muy altas de estrés. Por consiguiente las dimensiones y dominios que se encuentran bajo esta categoria requieren intervención inmediata en el marco de un sistema de vigilancia epidemiologica.</descNivel>
+                </nivel>
+                <nivel>
+                    <valor>6</valor>
+                    <texto>Alto(A)</texto>
+                    <descNivel>Nivel de riesgo que tiene una importante posibilidad de asociación con respuestas de estrés alto y por tanto, las dimensiones y dominios que se encuentran bajo esta categoria requieren intervención en el marco de sistema de vigilancia epidemiologica.</descNivel>
+                </nivel>
+                <nivel>
+                    <valor>2</valor>
+                    <texto>Medio(M)</texto>
+                    <descNivel>Nivel de riesgo en el que se esperaria una respuesta de estrés moderada, las dimensiones y dominio que se encuentren bajo esta categoria ameritan observación y acciones sistematicas de intervención para prevenir efectos perjudiciales en la salud.</descNivel>
+                </nivel>
+                <nivel>
+                    <valor>0</valor>
+                    <texto>Bajo(M)</texto>
+                    <descNivel>No se espera que los factores psicosociales que contengan puntuaciones de este nivel esten relacionadas con sintomas o respuestas de estrés significativas . Las dimensiones y dominios que se encuentran  bajo esta categoria serán objeto de acciones o programas de intervención, con el fin de mantenerlos en los niveles de riesgo más bajos posibles.</descNivel>
+                </nivel>
+            </descripcion>
+        </clasificacion>
+        
+        <clasificacion>
+            <id>5</id>
+            <nombre>Biomecanicos</nombre>
+            <descripcion>
+                <item>
+                    <id>1</id>
+                    <nombre>POSTURA PROLONGADA, MANTENIDA, FORZADA, ANTIGRAVITACIONES</nombre>
+                </item>
+                <nivel>
+                    <valor>10</valor>
+                    <texto>Muy Alto(MA)</texto>
+                    <descNivel>Posturas con un riesgo extremo de lesión musculo esquelética. Deben tomarse medidas correctivas inmediatamente.</descNivel>
+                </nivel>
+                <nivel>
+                    <valor>6</valor>
+                    <texto>Alto(A)</texto>
+                    <descNivel>Posturas de trabajo con riesgo probable de lesión, se deben modificar las condiciones de trabajo como sea posible.</descNivel>
+                </nivel>
+                <nivel>
+                    <valor>2</valor>
+                    <texto>Medio(M)</texto>
+                    <descNivel>Posturas con riesgo moderado de lesión musculoesqueletica sobre las que se precisa una modificación aunque no inmediata.</descNivel>
+                </nivel>
+                <nivel>
+                    <valor>0</valor>
+                    <texto>Bajo(M)</texto>
+                    <descNivel>Posturas que se consideran normales, sin riesgo de lesiones musculo esqueléticas y en las que no es necesario ninguna acción.</descNivel>
+                </nivel>
+            </descripcion>
+            <descripcion>
+                <item>
+                    <id>2</id>
+                    <nombre>ESFUERZO</nombre>
+                </item>
+                <nivel>
+                    <valor>10</valor>
+                    <texto>Muy Alto(MA)</texto>
+                    <descNivel>Actividad intensa en donde el esfuerzo es visible en la expresión facial del trabajador y/o la contracción muscular es visible.</descNivel>
+                </nivel>
+                <nivel>
+                    <valor>6</valor>
+                    <texto>Alto(A)</texto>
+                    <descNivel>Actividad pesada con resistencia</descNivel>
+                </nivel>
+                <nivel>
+                    <valor>2</valor>
+                    <texto>Medio(M)</texto>
+                    <descNivel>Actividad con esfuerzo moderado</descNivel>
+                </nivel>
+                <nivel>
+                    <valor>0</valor>
+                    <texto>Bajo(M)</texto>
+                    <descNivel>No hay esfuerzo aparente, ni resistencia y existe libertad de movimientos.</descNivel>
+                </nivel>
+            </descripcion>
+            <descripcion>
+                <item>
+                    <id>3</id>
+                    <nombre>MOVIMIENTOS REPETITIVOS</nombre>
+                </item>
+                <nivel>
+                    <valor>10</valor>
+                    <texto>Muy Alto(MA)</texto>
+                    <descNivel>Actividad que exige movimientos rápidos y continuos de los miembros superiores, a un ritmo difícil de mantener (ciclos de trabajo menores  a 30 s ó 1 min, o concentración de movimientos que utiliza pocos músculos durante mas del 50%  del tiempo de trabajo.</descNivel>
+                </nivel>
+                <nivel>
+                    <valor>6</valor>
+                    <texto>Alto(A)</texto>
+                    <descNivel>Actividad que exige movimientos rápidos y continuos de los miembros superiores con la posibilidad de realizar pausas ocasionales (ciclos de trabajo menores a 30 seg. ó 1 min, o concentración de movimientos que utiliza pocos músculos mas del 50% del tiempo de trabajo.</descNivel>
+                </nivel>
+                <nivel>
+                    <valor>2</valor>
+                    <texto>Medio(M)</texto>
+                    <descNivel>Actividad que exige movimientos lentos y continuos de los miembros superiores, con la posibilidad de realizar pausas cortas.</descNivel>
+                </nivel>
+                <nivel>
+                    <valor>0</valor>
+                    <texto>Bajo(M)</texto>
+                    <descNivel>Actividad que involucra cualquier segmento corporal con exposición inferior al 50% del tiempo de trabajo, en el cual hay pausas programadas.</descNivel>
+                </nivel>
+            </descripcion>
+            <descripcion>
+                <item>
+                    <id>4</id>
+                    <nombre>MANIPULACIÓN MANUAL DE CARGAS</nombre>
+                </item>
+                <nivel>
+                    <valor>10</valor>
+                    <texto>Muy Alto(MA)</texto>
+                    <descNivel>Manipulación manual de las cargas con un riesgo extremo de lesión musculo esquelética. Deben tomarse las medidas correctivas inmediatamente.</descNivel>
+                </nivel>
+                <nivel>
+                    <valor>6</valor>
+                    <texto>Alto(A)</texto>
+                    <descNivel>Manipulación manual de cargas con riesgo significativo de lesión. Se deben modificar las condiciones del trabajo tan pronto como sea posible.</descNivel>
+                </nivel>
+                <nivel>
+                    <valor>2</valor>
+                    <texto>Medio(M)</texto>
+                    <descNivel>Manipulación manual de cargas con riesgo moderado de lesión musculo esquelética sobre las que se precisa una modificación, aunque no inmediata.</descNivel>
+                </nivel>
+                <nivel>
+                    <valor>0</valor>
+                    <texto>Bajo(M)</texto>
+                    <descNivel>Manipulación manual de cargas con riesgo leve de lesiones musculo esqueléticas, puede ser necesaria alguna acción.</descNivel>
+                </nivel>
+            </descripcion>
+        </clasificacion>
+        
+        <clasificacion>
+            <id>6</id>
+            <nombre>Seguridad</nombre>
+            <descripcion>
+                <item>
+                    <id>1</id>
+                    <nombre>MECANICO</nombre>
+                </item>
+                <item>
+                    <id>2</id>
+                    <nombre>ELECTRICO</nombre>
+                </item>
+                <item>
+                    <id>3</id>
+                    <nombre>TECNOLOGICO</nombre>
+                </item>
+                <item>
+                    <id>4</id>
+                    <nombre>ORDEN PUBLICO</nombre>
+                </item>
+                <item>
+                    <id>5</id>
+                    <nombre>TRANSPORTE</nombre>
+                </item>
+                <item>
+                    <id>6</id>
+                    <nombre>LOCATIVOS</nombre>
+                </item>
+                <item>
+                    <id>7</id>
+                    <nombre>TRABAJO EN ALTURAS</nombre>
+                </item>
+                <item>
+                    <id>8</id>
+                    <nombre>TRABAJO EN ESPACIOS CONFINADOS</nombre>
+                </item>
+                <item>
+                    <id>9</id>
+                    <nombre>TRABAJO EN AGUA</nombre>
+                </item>
+                <item>
+                    <id>10</id>
+                    <nombre>TRABAJO EN PROFUNDIDAD</nombre>
+                </item>
+                <nivel>
+                    <valor>10</valor>
+                    <texto>Muy Alto(MA)</texto>
+                    <descNivel>Se han detectado peligros que determinan como muy posible la generación de incidentes o consecuencias muy significativas, o la eficacia del conjunto de medidas preventivas existentes respecto al riesgo es nula o no existe, o ambos.</descNivel>
+                </nivel>
+                <nivel>
+                    <valor>6</valor>
+                    <texto>Alto(A)</texto>
+                    <descNivel>Se han detectado algunos peligros que puedan dar lugar a consecuencias significativas, o la eficacia del conjunto de medidas preventivas existentes es baja o ambos.</descNivel>
+                </nivel>
+                <nivel>
+                    <valor>2</valor>
+                    <texto>Medio(M)</texto>
+                    <descNivel>Se han detectado peligros que puedan dar lugar a consecuencias poco significativas de menor importancia, o la eficacia del conjunto de medidas preventivas existentes es moderada o ambos.</descNivel>
+                </nivel>
+                <nivel>
+                    <valor>0</valor>
+                    <texto>Bajo(B)</texto>
+                    <descNivel>No se han detectado  consecuencia alguna, o la eficacia del conjunto de medidas preventivas existentes es alta, o ambos el riesgo esta controlado. Estos peligros se clasifican directamente en el nivel de riesgo y de intervención Tabla 13.</descNivel>
+                </nivel>
+            </descripcion>
+        </clasificacion>
+        
+        <clasificacion>
+            <id>7</id>
+            <nombre>Condiciones Naturales</nombre>
+            <descripcion>
+                <item>
+                    <id>1</id>
+                    <nombre>SISMOS-TERREMOTOS</nombre>
+                </item>
+                <item>
+                    <id>2</id>
+                    <nombre>ERUPCION VOLCANICA</nombre>
+                </item>
+                <item>
+                    <id>3</id>
+                    <nombre>MAREMOTOS</nombre>
+                </item>
+                <item>
+                    <id>4</id>
+                    <nombre>INUNDACIONES</nombre>
+                </item>
+                <item>
+                    <id>5</id>
+                    <nombre>LLUVIAS, GRANIZADAS, HELADAS, TORMENTAS, TORMENTAS ELÉCTRICAS</nombre>
+                </item>
+                <item>
+                    <id>6</id>
+                    <nombre>DERRUMBES, DESLIZAMIENTOS</nombre>
+                </item>
+                <item>
+                    <id>7</id>
+                    <nombre>INCENDIOS FORESTALES</nombre>
+                </item>
+                <item>
+                    <id>8</id>
+                    <nombre>VENDAVAL, VIENTOS FUERTES, HURACANES</nombre>
+                </item>
+                <nivel>
+                    <valor>10</valor>
+                    <texto>Muy Alto(MA)</texto>
+                    <descNivel>Se han detectado peligros que determinan como muy posible la generación de incidentes o consecuencias muy significativas, o la eficacia del conjunto de medidas preventivas existentes respecto al riesgo es nula o no existe, o ambos.</descNivel>
+                </nivel>
+                <nivel>
+                    <valor>6</valor>
+                    <texto>Alto(A)</texto>
+                    <descNivel>Se han detectado algunos peligros que puedan dar lugar a consecuencias significativas, o la eficacia del conjunto de medidas preventivas existentes es baja o ambos.</descNivel>
+                </nivel>
+                <nivel>
+                    <valor>2</valor>
+                    <texto>Medio(M)</texto>
+                    <descNivel>Se han detectado peligros que puedan dar lugar a consecuencias poco significativas de menor importancia, o la eficacia del conjunto de medidas preventivas existentes es moderada o ambos.</descNivel>
+                </nivel>
+                <nivel>
+                    <valor>0</valor>
+                    <texto>Bajo(B)</texto>
+                    <descNivel>No se han detectado  consecuencia alguna, o la eficacia del conjunto de medidas preventivas existentes es alta, o ambos el riesgo esta controlado. Estos peligros se clasifican directamente en el nivel de riesgo y de intervención Tabla 13.</descNivel>
+                </nivel>
+            </descripcion>
+        </clasificacion>
+        
+        <clasificacion>
+            <id>8</id>
+            <nombre>Actividades Deportivas</nombre>
+            <descripcion>
+                <item>
+                    <id>1</id>
+                    <nombre>DEPORTES DE CONTACTO</nombre>
+                </item>
+                <nivel>
+                    <valor>10</valor>
+                    <texto>Muy Alto(MA)</texto>
+                    <descNivel>Se han detectado peligros que determinan como muy posible la generación de incidentes o consecuencias muy significativas, o la eficacia del conjunto de medidas preventivas existentes respecto al riesgo es nula o no existe, o ambos.</descNivel>
+                </nivel>
+                <nivel>
+                    <valor>6</valor>
+                    <texto>Alto(A)</texto>
+                    <descNivel>Se han detectado algunos peligros que puedan dar lugar a consecuencias significativas, o la eficacia del conjunto de medidas preventivas existentes es baja o ambos.</descNivel>
+                </nivel>
+                <nivel>
+                    <valor>2</valor>
+                    <texto>Medio(M)</texto>
+                    <descNivel>Se han detectado peligros que puedan dar lugar a consecuencias poco significativas de menor importancia, o la eficacia del conjunto de medidas preventivas existentes es moderada o ambos.</descNivel>
+                </nivel>
+                <nivel>
+                    <valor>0</valor>
+                    <texto>Bajo(B)</texto>
+                    <descNivel>No se han detectado  consecuencia alguna, o la eficacia del conjunto de medidas preventivas existentes es alta, o ambos el riesgo esta controlado. Estos peligros se clasifican directamente en el nivel de riesgo y de intervención Tabla 13.</descNivel>
+                </nivel>
+            </descripcion>
+        </clasificacion>
+    </NDhigienico>
+</nd>

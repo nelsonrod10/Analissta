@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<causasInmediatas>
+    <factor factor="1">
+        <nombre>Actos Inseguros</nombre>
+        <categoria id="1">
+            <nombre>Limpieza, lubricación, ajuste o reparación de equipo móvil, eléctrico o de presión.</nombre>
+            <descripcion>
+                <item><id>1</id><nombre>Limpiar o lubricar equipo en movimiento</nombre></item>
+                <item><id>2</id><nombre>Realizar reparaciones en equipo bajo presión.</nombre></item>
+                <item><id>3</id><nombre>Limpiar, lubricar, ajustar, equipo en movimiento.</nombre></item>
+                <item><id>4</id><nombre>Soldar, reparar, recipientes o equipos, sin eliminar previamente vapores, gases y sustancias químicas peligrosas.</nombre></item>
+                <item><id>5</id><nombre>Trabajar en equipos cargados eléctricamente (motores, generadores, líneas).</nombre></item>
+                <item><id>6</id><nombre>No especificado en otra parte.</nombre></item>
+            </descripcion>
+        </categoria>
+        <categoria id="2">
+            <nombre>Omitir el uso de equipos de protección o ayudas mecánicas y atuendos personales.</nombre>
+            <descripcion>
+                <item><id>1</id><nombre>Omitir el uso del equipo de protección personal disponible</nombre></item>
+                <item><id>2</id><nombre>Omitir el uso de las ayudas mecánicas disponibles</nombre></item>
+                <item><id>3</id><nombre>No informar oportunamente sobre el estado y disponibilidad de los equipos en general.</nombre></item>
+                <item><id>4</id><nombre>Omitir el uso de atuendo personal seguro (usar zapatos de tacón alto, pelo suelto, mangas y ropa suelta, anillos, relojes...)</nombre></item>
+                <item><id>5</id><nombre>Omitir el uso de equipos no especificado.</nombre></item>
+            </descripcion>
+        </categoria>
+        <categoria id="3">
+            <nombre>No asegurar, advertir o coordinar acciones</nombre>
+            <descripcion>
+                <item><id>1</id><nombre>No cerrar, bloquear o asegurar los vehículos, interruptores, válvulas, prensas, herramientas, equipos y máquinas contra movimientos inesperados (flujo de corriente eléctrica, vapor, etc.)</nombre></item>
+                <item><id>2</id><nombre>No cerrar, detener o desconectar el equipo que no esté en uso.</nombre></item>
+                <item><id>3</id><nombre>Omitir la colocación de avisos, señales o tarjetas de prevención.</nombre></item>
+                <item><id>4</id><nombre>Soltar o mover pesos, sin dar el aviso o advertencia adecuado</nombre></item>
+                <item><id>5</id><nombre>Iniciar o parar vehículos, equipos o máquinas sin dar el aviso adecuado.</nombre></item>
+                <item><id>6</id><nombre>No avisar a la supervisión sobre fallas en máquinas, herramientas, procesos, etc.</nombre></item>
+                <item><id>7</id><nombre>Realizar labores o manejar equipos sin estar autorizado.</nombre></item>
+                <item><id>8</id><nombre>Falta de atención a las condiciones del piso o vecindades.</nombre></item>
+                <item><id>9</id><nombre>No especificado en otra parte.</nombre></item>
+            </descripcion>
+        </categoria>
+        <categoria id="4">
+            <nombre>Uso impropio del equipo y bromas o juegos pesados</nombre>
+            <descripcion>
+                <item><id>1</id><nombre>Uso del material o equipo de una manera para la cual no está indicado.</nombre></item>
+                <item><id>2</id><nombre>Recargar de peso (andamios, vehículos,  recipientes...)</nombre></item>
+                <item><id>3</id><nombre>No especificado en otra parte.</nombre></item>
+                <item><id>4</id><nombre>Distraer, reñir, chancearse pesadamente, lanzar materiales, jugar con máquinas o equipos, etc.</nombre></item>
+                <item><id>5</id><nombre>Usar equipo defectuoso o inseguro (no incluye el uso de materiales que de por sí son peligrosos para el propósito deseado, al menos que estén defectuosos)</nombre></item>
+                <item><id>6</id><nombre>Uso impropio no especificado.</nombre></item>
+            </descripcion>
+        </categoria>
+        <categoria id="5"> 
+            <nombre>Uso impropio de las manos o partes del cuerpo</nombre>
+            <descripcion>
+                <item><id>1</id><nombre>Adoptar postura insegura al levantar o descargar objetos</nombre></item>
+                <item><id>2</id><nombre>Agarrar los objetos inseguramente o en forma errada.</nombre></item>
+                <item><id>3</id><nombre>Usar las manos en lugar de las herramientas manuales (para alimentar, retirar los productos, limpiar, reparar...)</nombre></item>
+                <item><id>4</id><nombre>No solicitar ayuda para levantar, movilizar, etc.</nombre></item>
+                <item><id>5</id><nombre>No especificado en otra parte</nombre></item>
+            </descripcion>
+        </categoria>
+        <categoria id="6">
+            <nombre>Hacer inoperantes los dispositivos de seguridad</nombre>
+            <descripcion>
+                <item><id>1</id><nombre>Omitir las normas de seguridad establecidas</nombre></item>
+                <item><id>2</id><nombre>Bloquear, tapar, atar, etc., los dispositivos de seguridad.</nombre></item>
+                <item><id>3</id><nombre>Desconectar o quitar los dispositivos o guardas de seguridad</nombre></item>
+                <item><id>4</id><nombre>Instalar mal los dispositivos de seguridad.</nombre></item>
+                <item><id>5</id><nombre>Reemplazar los dispositivos de seguridad por otros impropios (fusibles con mayor amperaje, válvulas de baja capacidad...)</nombre></item>
+                <item><id>6</id><nombre>No especificado en otra parte.</nombre></item>
+            </descripcion>
+        </categoria>
+        <categoria id="7">
+            <nombre>Operar o trabajar a velocidad insegura</nombre>
+            <descripcion>
+                <item><id>1</id><nombre>Transportar o manipular objetos rápidamente</nombre></item>
+                <item><id>2</id><nombre>Alimentar o suministrar muy rápidamente.</nombre></item>
+                <item><id>3</id><nombre>Operar los vehículos de la planta a velocidad insegura.</nombre></item>
+                <item><id>4</id><nombre>Correr.</nombre></item>
+                <item><id>5</id><nombre>Lanzar material en lugar de cargarlo o pasarlo.</nombre></item>
+                <item><id>6</id><nombre>Precipitud no especificada en otra parte.</nombre></item>
+            </descripcion>
+        </categoria>
+        <categoria id="8">
+            <nombre>Adoptar posiciones o posturas inseguras</nombre>
+            <descripcion>
+                <item><id>1</id><nombre>Entrar en tanques, cajones u otros espacios encerrados sin eliminar previamente vapores, gases sustancias químicas peligrosas, etc.</nombre></item>
+                <item><id>2</id><nombre>Viajar en posición insegura (plataformas, horquillas, montacargas, ganchos de grúas...)</nombre></item>
+                <item><id>3</id><nombre>Exponerse innecesariamente bajo cargas suspendidas u oscilantes.</nombre></item>
+                <item><id>4</id><nombre>Exponerse innecesariamente a materiales o equipos que se mueven.</nombre></item>
+                <item><id>5</id><nombre>No especificado en otra parte.</nombre></item>
+            </descripcion>
+        </categoria>
+        <categoria id="9">
+            <nombre>Errores de conducción</nombre>
+            <descripcion>
+                <item><id>1</id><nombre>Conducir demasiado rápido o demasiado despacio.</nombre></item>
+                <item><id>2</id><nombre>Entrar o salir del vehículo por el lado del tránsito.</nombre></item>
+                <item><id>3</id><nombre>No hacer la señal cuando se para, se voltea o se retrocede.</nombre></item>
+                <item><id>4</id><nombre>No otorgar el derecho a la vía.</nombre></item>
+                <item><id>5</id><nombre>No obedecer las señales o signos de control del tránsito</nombre></item>
+                <item><id>6</id><nombre>No guardar la distancia</nombre></item>
+                <item><id>7</id><nombre>Pasar impropiamente.</nombre></item>
+                <item><id>8</id><nombre>Voltear impropiamente.</nombre></item>
+                <item><id>9</id><nombre>No especificados en otra parte.</nombre></item>
+            </descripcion>
+        </categoria>
+        <categoria id="10">
+            <nombre>Colocar, mezclar, combinar, etc., inseguramente</nombre>
+            <descripcion>
+                <item><id>1</id><nombre>Inyectar, mezclar o combinar una sustancia con otra, de manera que se produzca explosión, fuego u otro riesgo (inyectar agua fría en una caldera caliente, verter agua en ácido...)</nombre></item>
+                <item><id>2</id><nombre>Colocación insegura de vehículos o de equipo para el movimiento de materiales (estacionar o dejar vehículos o aparatos de transporte en posición insegura para cargar o descargar)</nombre></item>
+                <item><id>3</id><nombre>Colocación insegura de materiales, herramientas, desechos, etc.(como para crear riesgos de derrumbe, tropezón, choque, resbalón...)</nombre></item>
+                <item><id>4</id><nombre>No especificado en otra parte.</nombre></item>
+            </descripcion>
+        </categoria>
+    </factor>
+    <factor factor="2">
+        <nombre>Condiciones Subestandar</nombre>
+        <categoria id="1">
+            <nombre>Defectos de los agentes</nombre>
+            <descripcion>
+                <item><id>1</id><nombre>Elaborado con materiales inadecuados</nombre></item>
+                <item><id>2</id><nombre>Romo, embotado, obtuso</nombre></item>
+                <item><id>3</id><nombre>Elaborado, construido, ensamblado inapropiadamente</nombre></item>
+                <item><id>4</id><nombre>Diseñado inapropiadamente</nombre></item>
+                <item><id>5</id><nombre>Áspero, tosco</nombre></item>
+                <item><id>6</id><nombre>Agudo, Cortante</nombre></item>
+                <item><id>7</id><nombre>Resbaloso</nombre></item>
+                <item><id>8</id><nombre>Desgastado, cuarteado, raído, roto, etc.</nombre></item>
+                <item><id>9</id><nombre>Otro defectos no especificados en otra parte</nombre></item>
+            </descripcion>
+        </categoria>
+        <categoria id="2">
+            <nombre>Riesgo de la ropa o vestuario</nombre>
+            <descripcion>
+                <item><id>1</id><nombre>Carencia del equipo de protección personal necesario</nombre></item>
+                <item><id>2</id><nombre>Ropa inadecuada o inapropiada</nombre></item>
+                <item><id>3</id><nombre>Riesgo de la ropa o vestuario no especificados en otra parte</nombre></item>
+            </descripcion>
+        </categoria>
+        <categoria id="3">
+            <nombre>Riesgo ambientales no especificados en otra parte</nombre>
+            <descripcion>
+                <item><id>1</id><nombre>Ruido Excesivo</nombre></item>
+                <item><id>2</id><nombre>Espacio inadecuado de los pasillo, salidas, etc.</nombre></item>
+                <item><id>3</id><nombre>Espacio libre inadecuado para movimientos de personas u objetos</nombre></item>
+                <item><id>4</id><nombre>Control inadecuado del trafico</nombre></item>
+                <item><id>5</id><nombre>Ventilación general inadecuada, no debida a equipo defectuoso</nombre></item>
+                <item><id>6</id><nombre>Insuficiente espacio de trabajo</nombre></item>
+                <item><id>7</id><nombre>Iluminación inadecuada (insuficiente luz para la operación, brillo, etc.)</nombre></item>
+                <item><id>8</id><nombre>Riesgos ambientales no especificados en otra parte</nombre></item>
+            </descripcion>
+        </categoria>
+        <categoria id="4">
+            <nombre>Métodos o procedimientos peligrosos</nombre>
+            <descripcion>
+                <item><id>1</id><nombre>Uso de material o equipo de por sí peligroso (no defectuoso)</nombre></item>
+                <item><id>2</id><nombre>Uso de métodos o procedimiento de por sí peligrosos</nombre></item>
+                <item><id>3</id><nombre>Uso de herramientas y equipo inadecuado o inapropiado (no defectuoso)</nombre></item>
+                <item><id>4</id><nombre>Métodos o procedimientos peligrosos, no especificados en otra parte</nombre></item>
+                <item><id>5</id><nombre>Ayuda inadecuada para levantar cosas pesadas</nombre></item>
+                <item><id>6</id><nombre>Ubicación del personal inapropiada (sin tener en cuenta las limitaciones físicas, habilidades, etc.)</nombre></item>
+            </descripcion>
+        </categoria>
+        <categoria id="5">
+            <nombre>Riesgo de colocación o emplazamiento </nombre>
+            <descripcion>
+                <item><id>1</id><nombre>Materiales, equipos, etc., exceptuando las personas</nombre></item>
+                <item><id>2</id><nombre>Inapropiada apilado</nombre></item>
+                <item><id>3</id><nombre>Colocados o emplazados inadecuadamente</nombre></item>
+                <item><id>4</id><nombre>Inadecuadamente asegurados contra movimientos inconvenientes (exceptuando apilamiento inestable)</nombre></item>
+            </descripcion>
+        </categoria>
+        <categoria id="6">
+            <nombre>Inadecuadamente protegido</nombre>
+            <descripcion>
+                <item><id>1</id><nombre>Sin protección (riesgos mecánicos o físicos exceptuando riesgos eléctricos y radiaciones)</nombre></item>
+                <item><id>2</id><nombre>Inadecuadamente protegido (riesgos mecánicos o físicos exceptuando riesgos eléctricos y radiaciones)</nombre></item>
+                <item><id>3</id><nombre>Carencia de o inadecuado apuntalamiento o entibación de minería, excavaciones, construcciones, etc.</nombre></item>
+                <item><id>4</id><nombre>Sin conexión a tierra (eléctrico)</nombre></item>
+                <item><id>5</id><nombre>Sin aislamiento (eléctrico)</nombre></item>
+                <item><id>6</id><nombre>Conexiones, interruptores, etc., descubiertos (eléctrico)</nombre></item>
+                <item><id>7</id><nombre>Sin protección (radiación)</nombre></item>
+                <item><id>8</id><nombre>Inadecuadamente protegido (radiación)</nombre></item>
+                <item><id>9</id><nombre>Materiales sin rotulo o inapropiadamente rotulados</nombre></item>
+                <item><id>10</id><nombre>Inadecuadamente protegido, no especificado en otra parte</nombre></item>
+            </descripcion>
+        </categoria>
+        <categoria id="7">
+            <nombre>Riesgos ambientales en trabajos exteriores, distintos a los otros riesgos públicos</nombre>
+            <descripcion>
+                <item><id>1</id><nombre>Predios o cosas defectuosas de extraños</nombre></item>
+                <item><id>2</id><nombre>Materiales o equipo defectuoso de extraños</nombre></item>
+                <item><id>3</id><nombre>Otros riesgos asociados con la propiedad u operaciones de extraños</nombre></item>
+                <item><id>4</id><nombre>Riesgos naturales (riesgos de terrenos irregulares e inestables, exposición a elementos, animales salvajes, etc., encontradas en operaciones a campo abierto)</nombre></item>
+            </descripcion>
+        </categoria>
+        <categoria id="8">
+            <nombre>Riesgos públicos</nombre>
+            <descripcion>
+                <item><id>1</id><nombre>Riesgos del transporte publico</nombre></item>
+                <item><id>2</id><nombre>Riesgos del trafico</nombre></item>
+                <item><id>3</id><nombre>Otros riesgos públicos (riesgos de lugares públicos a los cuales también esta expuesto el publico en general)</nombre></item>
+            </descripcion>
+        </categoria>
+        <categoria id="9">
+            <nombre>Condiciones ambientales peligrosas no especificadas en otra parte</nombre>
+            <descripcion>
+                <item><id>1</id><nombre>Indeterminada información insuficiente</nombre></item>
+                <item><id>2</id><nombre>No hay condición ambiental peligrosa</nombre></item>
+            </descripcion>
+        </categoria>
+        <categoria id="10">
+            <nombre>Guardas o barreras inadecuadas</nombre>
+            <descripcion>
+                <item><id>1</id><nombre>Guardas o barreras inadecuadas</nombre></item>
+            </descripcion>
+        </categoria>
+        <categoria id="11">
+            <nombre>Equipo y/o herramienta</nombre>
+            <descripcion>
+                <item><id>1</id><nombre>Defectos mecánicos </nombre></item>
+                <item><id>2</id><nombre>Corrosión</nombre></item>
+                <item><id>3</id><nombre>Defectos eléctricos</nombre></item>
+                <item><id>4</id><nombre>Defectos de Instrumentación</nombre></item>
+                <item><id>5</id><nombre>Defecto No especificado</nombre></item>
+            </descripcion>
+        </categoria>
+        <categoria id="12">
+            <nombre>Sustancia Inadecuada</nombre>
+            <descripcion>
+                <item><id>1</id><nombre>Sustancia Inadecuada</nombre></item>
+            </descripcion>
+        </categoria>
+        <categoria id="13">
+            <nombre>Acceso Restringido</nombre>
+            <descripcion>
+                <item><id>1</id><nombre>Sistema de advertencia deficiente</nombre></item>
+            </descripcion>
+        </categoria>
+        <categoria id="14">
+            <nombre>Peligros de Incendio y explosión</nombre>
+            <descripcion>
+                <item><id>1</id><nombre>Sustancias Reactivas</nombre></item>
+                <item><id>2</id><nombre>Sustancias Tóxicas</nombre></item>
+                <item><id>3</id><nombre>Sustancias Inflamables</nombre></item>
+            </descripcion>
+        </categoria>
+        <categoria id="15">
+            <nombre>Orden y aseo deficientes</nombre>
+            <descripcion>
+                <item><id>1</id><nombre>Orden y aseo deficientes</nombre></item>
+            </descripcion>
+        </categoria>
+        <categoria id="16">
+            <nombre>Superficies Calientes</nombre>
+            <descripcion>
+                <item><id>1</id><nombre>Superficies Calientes</nombre></item>
+            </descripcion>
+        </categoria>
+        <categoria id="17">
+            <nombre>Condición del equipo diferente a la esperada</nombre>
+            <descripcion>
+                <item><id>1</id><nombre>Condición del equipo diferente a la esperada</nombre></item>
+            </descripcion>
+        </categoria>
+    </factor>
+</causasInmediatas>

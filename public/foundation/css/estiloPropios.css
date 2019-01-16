@@ -1,0 +1,146 @@
+.ul-checkActividadEconomica{
+    max-height:180px; min-height:160px;height:auto; overflow:auto;font-size: 12px;
+}
+.ul-addActividadEconomica{
+    max-height:180px; min-height:160px;height:auto;overflow: auto;
+}
+
+.div-listPublicaciones-seccion{max-height:80px;height: 80px}
+.div-listPublicaciones-seccionDesc{
+    border:1px solid lightgrey; width: 95%; max-height: 70px;height: 70px;overflow: hidden; padding: 2px;
+}
+
+.icon{
+    font-size: 50px;
+}
+
+.iframe-preview{
+    border: 1px solid lightslategray;
+}
+
+.color-titulo{
+   //color de fondo top bar color:#558000;
+   color:#264d00;
+}
+.success-2{color:#fff;background: #558000;}
+.success-2:hover{background: #009900;}
+.callout-publicaciones{background: rgba(196, 255, 77,0.3);}
+.notificacion-label{
+    background: #88cc00;
+}
+.subtitulos-pagina{
+    color: #1a3300;
+}
+
+.anchor{
+    color:#2199e8;
+}
+.input-CantProdCart{
+        font-size: 10px;
+        text-align: center;
+        max-height: 25px;
+        max-width: 30px;
+        height: 25px;
+        width: 30px;
+    }
+    .div-nombProd-cart{
+        max-height: 30px;
+        overflow: hidden;
+    }
+    .div-encabezado{
+        background: #558000;//#1585cf;
+        color: white;
+    }
+    .div-principal-cart{
+        font-size: 12px;
+    }
+
+    .a-menuInicio-btnPrincipal{
+        color: white;
+       // 
+    }
+    .a-menuInicio-btnPrincipal:hover{
+        color: lightgray;
+    }
+    .a-menuInicio-subMenu{
+        color: white;
+    }
+    .a-menuInicio-subMenu:hover{
+        color: lightgray;
+    }
+    
+    @media all and (max-width:670px){
+        .barraBusquedaInicio{
+                margin-top: -150px;
+        }
+        #submenu-resumenExistente{
+            margin-left:5%;
+        }
+        .foto-contacto{max-height: 50px; min-height: 50px; min-width: 40px;max-width: 40px;}
+        .div-info-contacto{display: none;}
+        .select-hora-infoAdTecnico{width: 40%;}
+        .select-ampm-infoAdTecnico{width: 25%;}
+    }
+    
+    @media all and (min-width:670px){
+        .barraBusquedaInicio{
+            margin-top: -220px;
+        }
+        #submenu-resumenExistente{
+            margin-left:30%;
+        }
+        .foto-contacto{max-height: 100px; min-height: 100px; min-width: 100px;max-width: 100px;}
+        .select-hora-infoAdTecnico{width: 12%;}
+        .select-ampm-infoAdTecnico{width: 10%;}
+    }
+    
+    
+    #table-resultados-barraBusqueda{
+        text-align: justify;
+        position: absolute;
+        z-index: 3;
+        background: white; 
+        width: 60%;
+    }
+    
+    .fi-menuEditar{
+        font-size:22px; 
+        cursor:pointer;
+        color:#0a0a0a;
+    }
+    .fi-menuEditar:hover{
+        color:#2199e8;
+    }
+    .fi-menuEditar-alert{
+        color:#ec5840;
+    }
+    
+    .fi-notificacion{font-size: 24px; color:#2199e8;}
+    .fi-notificacion-nueva{font-size: 48px; color:#ff0000;}
+    .fi-notificacion-vista{font-size: 36px; color:#264d00;}
+    .fi-notificacion-nueva-listado{font-size: 24px; color:#ff0000;}
+    .fi-notificacion-vista-listado{font-size: 24px; color:#264d00;}
+    
+    .fi-menuEditarItem{
+        font-size:18px; 
+        cursor:pointer;
+        color:#0a0a0a;
+    }
+    .fi-menuEditarItem:hover{
+        color:#2199e8;
+    }
+    
+    .fi-redesSociales{
+        color:#0a0a0a;
+        font-size: 32px;
+        padding-right: 10px;
+    }
+    
+    .fotoAsesorConsulta{
+        max-width: 50px;
+        max-height: 50px;
+        width: 50px;
+        height: 50px;
+    }
+    
+    

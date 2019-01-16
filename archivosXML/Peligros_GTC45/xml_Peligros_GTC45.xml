@@ -1,0 +1,656 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<peligros>
+    <clasificacion>
+        <id>1</id>
+        <nombre>Fisico</nombre>
+        <listDescripciones>
+            <descripcion>
+                <id>1</id>
+                <nombre>RUIDO (DE IMPACTO, INTERMITENTE, CONTINUO)</nombre>
+                <fuentes>
+                    <item><id>1</id><nombre>PLANTAS GENERADORAS</nombre></item>
+                    <item><id>2</id><nombre>PLANTAS ELECTRICAS</nombre></item>
+                    <item><id>3</id><nombre>MEDIO DE TRANSPORTE</nombre></item>
+                    <item><id>4</id><nombre>MAQUINARIA , EQUIPOS Y HERRAMIENTAS</nombre></item>
+                    <item><id>5</id><nombre>OTROS EQUIPOS</nombre></item>
+                </fuentes>
+            </descripcion>
+            <descripcion>
+                <id>2</id>
+                <nombre>ILUMINACION (LUZ VISIBLE POR EXCESO O DEFICIENCIA)</nombre>
+                <fuentes>
+                    <item><id>1</id><nombre>EXCESO O DEFICIENCIA DE LUZ VISIBLE</nombre></item>
+                </fuentes>
+            </descripcion>
+            <descripcion>
+                <id>3</id>
+                <nombre>VIBRACIONES - (CUERPO ENTRERO O SEGMENTARIA)</nombre>
+                <fuentes>
+                    <item><id>1</id><nombre>PRENSA</nombre></item>
+                    <item><id>2</id><nombre>MARTILLOS NEUMATICOS</nombre></item>
+                    <item><id>3</id><nombre>ALTERNADORES</nombre></item>
+                    <item><id>4</id><nombre>FALLAS EN MAQUINARIA</nombre></item>
+                    <item><id>5</id><nombre>FALTA DE UN BUEN ANCLAJE</nombre></item>
+                </fuentes>
+            </descripcion>
+            <descripcion>
+                <id>4</id>
+                <nombre>TEMPERATURAS EXTREMAS (CALOR - FRIO)</nombre>
+                <fuentes>
+                    <item><id>1</id><nombre>HORNOS</nombre></item>
+                    <item><id>2</id><nombre>REFRIGERADORES</nombre></item>
+                    <item><id>3</id><nombre>CONGELADORES</nombre></item>
+                    <item><id>4</id><nombre>AMBIENTE</nombre></item>
+                    <item><id>5</id><nombre>CALDERAS</nombre></item>
+                </fuentes>
+            </descripcion>
+            <descripcion>
+                <id>5</id>
+                <nombre>RADIACIONES IONIZANTES</nombre>
+                <fuentes>
+                    <item><id>1</id><nombre>RAYOS X</nombre></item>
+                    <item><id>2</id><nombre>RAYOS GAMA</nombre></item>
+                    <item><id>3</id><nombre>RAYOS BETA</nombre></item>
+                    <item><id>4</id><nombre>RAYOS ALFA</nombre></item>
+                </fuentes>
+            </descripcion>
+            <descripcion>
+                <id>6</id>
+                <nombre>RADIACIONES NO IONIZANTES</nombre>
+                <subDescripcion>
+                    <id>1</id>
+                    <nombre>ULTRAVIOLETA</nombre>
+                    <fuentes>
+                        <item><id>1</id><nombre>SOL</nombre></item>
+                        <item><id>2</id><nombre>LAMPARAS DE HIDROGENO</nombre></item>
+                        <item><id>3</id><nombre>LAMPARAS DE VAPOR DE MERCURIO</nombre></item>
+                        <item><id>4</id><nombre>ARCOS DE SOLDADURA</nombre></item>
+                        <item><id>5</id><nombre>LAMPARAS DE TUNGSTENO Y HALOGENO</nombre></item>
+                        <item><id>6</id><nombre>LAMPARAS FLUORESCENTES</nombre></item>
+                    </fuentes>
+                </subDescripcion>
+                <subDescripcion>
+                    <id>2</id>
+                    <nombre>VISIBLE</nombre>
+                    <fuentes>
+                        <item><id>1</id><nombre>SOL</nombre></item>
+                        <item><id>2</id><nombre>MAPARAS INCANDESCENTES</nombre></item>
+                        <item><id>3</id><nombre>ARCOS DE SOLDADURA</nombre></item>
+                        <item><id>4</id><nombre>TUBOS DE NEON</nombre></item>
+                    </fuentes>
+                </subDescripcion>
+                <subDescripcion>
+                    <id>3</id>
+                    <nombre>INFRAROJA</nombre>
+                    <fuentes>
+                        <item><id>1</id><nombre>SOL</nombre></item>
+                        <item><id>2</id><nombre>SUPERFICIES MUY CALIENTES</nombre></item>
+                        <item><id>2</id><nombre>LLAMAS</nombre></item>
+                    </fuentes>
+                </subDescripcion>
+                <subDescripcion>
+                    <id>4</id>
+                    <nombre>MICROONDAS Y RADIO FRECUENCIA</nombre>
+                    <fuentes>
+                        <item><id>1</id><nombre>SISTEMA DE RADIO COMUNICACIONES</nombre></item>
+                        <item><id>2</id><nombre>INTALACIONES DE RADAR</nombre></item>
+                        <item><id>3</id><nombre>ESTACIONES DE RADIO Y TV</nombre></item>
+                    </fuentes>
+                </subDescripcion>
+            </descripcion>
+<!--Falta incluir esta descripcion en las tablas ND-->            
+            <descripcion>
+                <id>7</id>
+                <nombre>PRESIONES BAROMETRICAS</nombre>
+                <subDescripcion>
+                    <id>1</id>
+                    <nombre>BAJAS, AREAS EN ALTURAS &gt; 3000 MSNM</nombre>
+                    <fuentes>
+                        <item><id>1</id><nombre>TRABAJOS EN AGUA</nombre></item>
+                    </fuentes>
+                </subDescripcion>
+                <subDescripcion>
+                    <id>2</id>
+                    <nombre>ALTAS, AREAS EN ALTURAS &lt; 3000 MSNM</nombre>
+                    <fuentes>
+                        <item><id>1</id><nombre>TRABAJOS EN AGUA</nombre></item>
+                    </fuentes>
+                </subDescripcion>
+                
+            </descripcion>    
+        </listDescripciones>
+    </clasificacion>
+    
+    <clasificacion>
+        <id>2</id>
+        <nombre>Quimico</nombre>
+        <listDescripciones>
+            <descripcion>
+                <id>1</id>
+                <nombre>POLVOS ORGANICOS INORGANICOS</nombre>
+                <fuentes>
+                    <item><id>1</id><nombre>SOLDADURA, MINERIA, CERAMICA, CEMENTO, MADERA, HARINAS.</nombre></item>
+                </fuentes>
+            </descripcion>
+            <descripcion>
+                <id>2</id>
+                <nombre>FIBRAS</nombre>
+                <fuentes>
+                    <item><id>1</id><nombre>SOLDADURA, MINERIA, CERAMICA, CEMENTO, MADERA, HARINAS.</nombre></item>
+                </fuentes>
+            </descripcion>
+            <descripcion>
+                <id>3</id>
+                <nombre>HUMOS METALICOS , NO METALICOS</nombre>
+                <fuentes>
+                    <item><id>1</id><nombre>SOLDADURA, MINERIA, CERAMICA, CEMENTO, MADERA, HARINAS.</nombre></item>
+                </fuentes>
+            </descripcion>
+            <descripcion>
+                <id>4</id>
+                <nombre>MATERIAL PARTICULADO</nombre>
+                <fuentes>
+                    <item><id>1</id><nombre>SOLDADURA, MINERIA, CERAMICA, CEMENTO, MADERA, HARINAS.</nombre></item>
+                </fuentes>
+            </descripcion>
+            <descripcion>
+                <id>5</id>
+                <nombre>LIQUIDOS</nombre>
+                <subDescripcion>
+                    <id>1</id>
+                    <nombre>NIEBLAS</nombre>
+                    <fuentes>
+                        <item><id>1</id><nombre>EBULLICION, LIMPIEZA CON VAPOR DE AGUA</nombre></item>
+                    </fuentes>
+                </subDescripcion>
+                <subDescripcion>
+                    <id>2</id>
+                    <nombre>ROCIOS</nombre>
+                    <fuentes>
+                        <item><id>1</id><nombre>PINTURA</nombre></item>
+                    </fuentes>
+                </subDescripcion>
+            </descripcion>
+            <descripcion>
+                <id>6</id>
+                <nombre>GASES Y VAPORES</nombre>
+                <fuentes>
+                    <item><id>1</id><nombre>MONOXIDOS DE CARBONO</nombre></item>
+                    <item><id>2</id><nombre>DIOXIDO DE AZUFRE</nombre></item>
+                    <item><id>3</id><nombre>OXIDOS DE NITROGENO</nombre></item>
+                    <item><id>4</id><nombre>CLORO Y SUS DERIVADOS</nombre></item>
+                    <item><id>5</id><nombre>AMONIACO</nombre></item>
+                    <item><id>6</id><nombre>CIANUROS</nombre></item>
+                    <item><id>7</id><nombre>PLOMO</nombre></item>
+                    <item><id>8</id><nombre>MERCURIO</nombre></item>
+                    <item><id>9</id><nombre>PINTURA</nombre></item>
+                </fuentes>
+            </descripcion>
+            <!-- falta incluir esta descripcion en las tablas ND-->
+            <descripcion>
+                <id>7</id>
+                <nombre>SUSTANCIAS COMBUSTIBLES Y/O EXPLOSIVAS</nombre>
+                <fuentes>
+                    <item><id>1</id><nombre>HIDROCARBUROS, SOLVENTES, ETC</nombre></item>
+                </fuentes>
+            </descripcion>
+        </listDescripciones>
+    </clasificacion>
+    <clasificacion>
+        <id>3</id>
+        <nombre>Biologico</nombre>
+        <listDescripciones>
+            <descripcion>
+                <id>1</id>
+                <nombre>VIRUS</nombre>
+                <fuentes>
+                    <item><id>1</id><nombre>USO DE BAÑOS.</nombre></item>
+                    <item><id>2</id><nombre>SUMINISTRO DE ALIMENTACIÓN.</nombre></item>
+                    <item><id>3</id><nombre>PRESENCIA DE ANIMALES.</nombre></item>
+                    <item><id>4</id><nombre>TRABAJOS EN AGUA.</nombre></item>
+                    <item><id>5</id><nombre>DERIVADOS DE ORIGEN ANIMAL (pieles, pelo, estiércol, desechos, etc.)</nombre></item>
+                    <item><id>6</id><nombre>DERIVADOS DE ORIGEN VEGETAL</nombre></item>
+                    <item><id>7</id><nombre>MACRO ORGANISMOS (mordeduras, golpes, pisadas de animales, picadura de insectos, etc.)</nombre></item>
+                </fuentes>
+            </descripcion>
+            <descripcion>
+                <id>2</id>
+                <nombre>BACTERIAS</nombre>
+                <fuentes>
+                    <item><id>1</id><nombre>USO DE BAÑOS.</nombre></item>
+                    <item><id>2</id><nombre>SUMINISTRO DE ALIMENTACIÓN.</nombre></item>
+                    <item><id>3</id><nombre>PRESENCIA DE ANIMALES.</nombre></item>
+                    <item><id>4</id><nombre>TRABAJOS EN AGUA.</nombre></item>
+                    <item><id>5</id><nombre>DERIVADOS DE ORIGEN ANIMAL (pieles, pelo, estiércol, desechos, etc.)</nombre></item>
+                    <item><id>6</id><nombre>DERIVADOS DE ORIGEN VEGETAL</nombre></item>
+                    <item><id>7</id><nombre>MACRO ORGANISMOS (mordeduras, golpes, pisadas de animales, picadura de insectos, etc.)</nombre></item>
+                </fuentes>
+            </descripcion>    
+            <descripcion>
+                <id>3</id>
+                <nombre>HONGOS</nombre>
+                <fuentes>
+                    <item><id>1</id><nombre>USO DE BAÑOS.</nombre></item>
+                    <item><id>2</id><nombre>SUMINISTRO DE ALIMENTACIÓN.</nombre></item>
+                    <item><id>3</id><nombre>PRESENCIA DE ANIMALES.</nombre></item>
+                    <item><id>4</id><nombre>TRABAJOS EN AGUA.</nombre></item>
+                    <item><id>5</id><nombre>DERIVADOS DE ORIGEN ANIMAL (pieles, pelo, estiércol, desechos, etc.)</nombre></item>
+                    <item><id>6</id><nombre>DERIVADOS DE ORIGEN VEGETAL</nombre></item>
+                    <item><id>7</id><nombre>MACRO ORGANISMOS (mordeduras, golpes, pisadas de animales, picadura de insectos, etc.)</nombre></item>
+                </fuentes>
+            </descripcion>
+            <descripcion>
+                <id>4</id>
+                <nombre>MORDEDURAS</nombre>
+                <fuentes>
+                    <item><id>1</id><nombre>USO DE BAÑOS.</nombre></item>
+                    <item><id>2</id><nombre>SUMINISTRO DE ALIMENTACIÓN.</nombre></item>
+                    <item><id>3</id><nombre>PRESENCIA DE ANIMALES.</nombre></item>
+                    <item><id>4</id><nombre>TRABAJOS EN AGUA.</nombre></item>
+                    <item><id>5</id><nombre>DERIVADOS DE ORIGEN ANIMAL (pieles, pelo, estiércol, desechos, etc.)</nombre></item>
+                    <item><id>6</id><nombre>DERIVADOS DE ORIGEN VEGETAL</nombre></item>
+                    <item><id>7</id><nombre>MACRO ORGANISMOS (mordeduras, golpes, pisadas de animales, picadura de insectos, etc.)</nombre></item>
+                </fuentes>
+            </descripcion>
+            <descripcion>
+                <id>5</id>
+                <nombre>PICADURAS</nombre>
+                <fuentes>
+                    <item><id>1</id><nombre>USO DE BAÑOS.</nombre></item>
+                    <item><id>2</id><nombre>SUMINISTRO DE ALIMENTACIÓN.</nombre></item>
+                    <item><id>3</id><nombre>PRESENCIA DE ANIMALES.</nombre></item>
+                    <item><id>4</id><nombre>TRABAJOS EN AGUA.</nombre></item>
+                    <item><id>5</id><nombre>DERIVADOS DE ORIGEN ANIMAL (pieles, pelo, estiércol, desechos, etc.)</nombre></item>
+                    <item><id>6</id><nombre>DERIVADOS DE ORIGEN VEGETAL</nombre></item>
+                    <item><id>7</id><nombre>MACRO ORGANISMOS (mordeduras, golpes, pisadas de animales, picadura de insectos, etc.)</nombre></item>
+                </fuentes>
+            </descripcion>
+            <descripcion>
+                <id>6</id>
+                <nombre>PARASITOS</nombre>
+                <fuentes>
+                    <item><id>1</id><nombre>USO DE BAÑOS.</nombre></item>
+                    <item><id>2</id><nombre>SUMINISTRO DE ALIMENTACIÓN.</nombre></item>
+                    <item><id>3</id><nombre>PRESENCIA DE ANIMALES.</nombre></item>
+                    <item><id>4</id><nombre>TRABAJOS EN AGUA.</nombre></item>
+                    <item><id>5</id><nombre>DERIVADOS DE ORIGEN ANIMAL (pieles, pelo, estiércol, desechos, etc.)</nombre></item>
+                    <item><id>6</id><nombre>DERIVADOS DE ORIGEN VEGETAL</nombre></item>
+                    <item><id>7</id><nombre>MACRO ORGANISMOS (mordeduras, golpes, pisadas de animales, picadura de insectos, etc.)</nombre></item>
+                </fuentes>
+            </descripcion>
+            <descripcion>
+                <id>7</id>
+                <nombre>FLUIDOS O ESCREMENTOS</nombre>
+                <fuentes>
+                    <item><id>1</id><nombre>USO DE BAÑOS.</nombre></item>
+                    <item><id>2</id><nombre>SUMINISTRO DE ALIMENTACIÓN.</nombre></item>
+                    <item><id>3</id><nombre>PRESENCIA DE ANIMALES.</nombre></item>
+                    <item><id>4</id><nombre>TRABAJOS EN AGUA.</nombre></item>
+                    <item><id>5</id><nombre>DERIVADOS DE ORIGEN ANIMAL (pieles, pelo, estiércol, desechos, etc.)</nombre></item>
+                    <item><id>6</id><nombre>DERIVADOS DE ORIGEN VEGETAL</nombre></item>
+                    <item><id>7</id><nombre>MACRO ORGANISMOS (mordeduras, golpes, pisadas de animales, picadura de insectos, etc.)</nombre></item>
+                </fuentes>
+            </descripcion>
+        </listDescripciones>    
+    </clasificacion>
+    
+    <clasificacion>
+        <id>4</id>
+        <nombre>Psicosocial</nombre>
+        <listDescripciones>
+            <descripcion>
+                <id>1</id>
+                <nombre>INTRALABORAL</nombre>
+                <subDescripcion>
+                    <id>1</id>
+                    <nombre>GESTIÓN ORGANIZACIONAL</nombre>
+                    <fuentes>
+                        <item><id>1</id><nombre>ESTILO DE MANDO: AUTORITARIO Y PARTICIPATIVO </nombre></item>
+                        <item><id>2</id><nombre>MODALIDADES DE PAGO Y CONTRATACIÓN</nombre></item>
+                        <item><id>3</id><nombre>PARTICIPACIÓN INDUCCIÓN, CAPACITACIÓN Y ENTRENAMIENTO</nombre></item>
+                        <item><id>4</id><nombre>EVALUACIÓN DEL DESEMPEÑO</nombre></item>
+                        <item><id>5</id><nombre>BIENESTAR SOCIAL</nombre></item>
+                        <item><id>6</id><nombre>MANEJO DE CAMBIOS</nombre></item>
+                    </fuentes>
+                </subDescripcion>
+                <subDescripcion>
+                    <id>2</id>
+                    <nombre>CARACTERISTICAS DE LA ORGANIZACIÓN DEL TRABAJO</nombre>
+                    <fuentes>
+                        <item><id>1</id><nombre>COMUNICACIÓN</nombre></item>
+                        <item><id>2</id><nombre>TECNOLOGIA</nombre></item>
+                        <item><id>3</id><nombre>ORGANIZACIÓN DEL TRABAJO</nombre></item>
+                        <item><id>4</id><nombre>DEMANDAS CUALITATIVAS Y CUANTITATIVAS DE LA LABOR</nombre></item>
+                    </fuentes>
+                </subDescripcion>
+                <subDescripcion>
+                    <id>3</id>
+                    <nombre>CARACTERISTICAS DEL GRUPO SOCIAL DE TRABAJO</nombre>
+                    <fuentes>
+                        <item><id>1</id><nombre>RELACIONES</nombre></item>
+                        <item><id>2</id><nombre>COHESIÓN</nombre></item>
+                        <item><id>3</id><nombre>CALIDAD DE INTERACCIONES</nombre></item>
+                        <item><id>4</id><nombre>TRABAJO EN EQUIPO</nombre></item>
+                    </fuentes>
+                </subDescripcion>
+                <subDescripcion>
+                    <id>4</id>
+                    <nombre>CONDICIONES DE LA TAREA</nombre>
+                    <fuentes>
+                        <item><id>1</id><nombre>DEMANDAS DE CARGA MENTAL</nombre></item>
+                        <item><id>2</id><nombre>CONTENIDO DE LA TAREA</nombre></item>
+                        <item><id>3</id><nombre>DEMANDAS EMOSIONALES</nombre></item>
+                        <item><id>4</id><nombre>NIVEL DE RESPONSABILIDAD</nombre></item>
+                    </fuentes>
+                </subDescripcion>
+                <subDescripcion>
+                    <id>5</id>
+                    <nombre>INTERFASE PERSONA TAREA</nombre>
+                    <fuentes>
+                        <item><id>1</id><nombre>CONOCIMIENTOS, HABILIDADES CON RELACIÓN A LA DEMANDA DE LA TAREA</nombre></item>
+                        <item><id>2</id><nombre>INICIATIVA</nombre></item>
+                        <item><id>3</id><nombre>AUTONOMIA Y RECONOCIMIENTO</nombre></item>
+                        <item><id>4</id><nombre>IDENTIFICACIÓN DE LA PERSONA CON LA TAREA Y LA ORGANIZACIÓN</nombre></item>
+                    </fuentes>
+                </subDescripcion>
+                <subDescripcion>
+                    <id>6</id>
+                    <nombre>JORNADA DE TRABAJO</nombre>
+                    <fuentes>
+                        <item><id>1</id><nombre>PAUSAS</nombre></item>
+                        <item><id>2</id><nombre>TRABAJO NOCTURNO</nombre></item>
+                        <item><id>3</id><nombre>ROTACIÓN</nombre></item>
+                        <item><id>4</id><nombre>HORAS EXTRAS</nombre></item>
+                        <item><id>5</id><nombre>DESCANSO</nombre></item>
+                    </fuentes>
+                </subDescripcion>
+            </descripcion>
+            
+            <descripcion>
+                <id>2</id>
+                <nombre>HUMANO EXTRALABORAL</nombre>
+                <subDescripcion>
+                    <id>1</id>
+                    <nombre>UTILIZACIÓN DEL TIEMPO LIBRE</nombre>
+                    <fuentes>
+                        <item><id>1</id><nombre>RECREACIÓN, OFICIOS DOMÉSTICOS, DEPORTE, EDUCACIÓN</nombre></item>
+                    </fuentes>
+                </subDescripcion>
+                <subDescripcion>
+                    <id>2</id>
+                    <nombre>DESPLAZAMIENTO</nombre>
+                    <fuentes>
+                        <item><id>1</id><nombre>EMPLEADOS QUE DEBEN TRANSPORTARSE POR MAS DE 2 HORAS DE LA CASA AL TRABAJO</nombre></item>
+                    </fuentes>
+                </subDescripcion>
+            </descripcion>
+            
+            <descripcion>
+                <id>3</id>
+                <nombre>HUMANO INDIVIDUAL</nombre>
+                <subDescripcion>
+                    <id>1</id>
+                    <nombre>CARACTERISTICAS DE PERSONALIDAD Y ESTILOS DE AFRONTAMIENTO</nombre>
+                    <fuentes>
+                        <item><id>1</id><nombre>PERSONAS ANTISOCIALES, RUDAS, ETC</nombre></item>
+                    </fuentes>
+                </subDescripcion>
+            </descripcion>
+        </listDescripciones>
+    </clasificacion>
+    
+    <clasificacion>
+        <id>5</id>
+        <nombre>Biomecanicos</nombre>
+        <listDescripciones>
+            <descripcion>
+                <id>1</id>
+                <nombre>POSTURA PROLONGADA, MANTENIDA, FORZADA, ANTIGRAVITACIONES</nombre>
+                <fuentes>
+                    <item><id>1</id><nombre>DE PIE</nombre></item>
+                    <item><id>2</id><nombre>SENTADO</nombre></item>
+                    <item><id>3</id><nombre>OTRAS POSTURAS ((hiperextensión, cuclillas, posiciones incómodas, etc.)</nombre></item>
+                    <item><id>4</id><nombre>OTROS</nombre></item>
+                </fuentes>
+            </descripcion>
+            <descripcion>
+                <id>2</id>
+                <nombre>ESFUERZO</nombre>
+                <fuentes>
+                    <item><id>1</id><nombre>DISEÑO PUESTO DE TRABAJO</nombre></item>
+                    <item><id>2</id><nombre>ALTURA DE PLANOS DE TRABAJO</nombre></item>
+                    <item><id>3</id><nombre>UBICACIÓN DE CONTROLES</nombre></item>
+                    <item><id>4</id><nombre>SILLAS</nombre></item>
+                    <item><id>5</id><nombre>ASPECTOS ESPACIALES</nombre></item>
+                    <item><id>6</id><nombre>EQUIPOS</nombre></item>
+                    <item><id>7</id><nombre>ORGANIZACIÓN SECUENCIA PRODUCTIVA</nombre></item>
+                    <item><id>8</id><nombre>ORGANIZACIÓN DEL TIEMPO DE TRABAJO</nombre></item>
+                    <item><id>9</id><nombre>PESO Y TAMANO DE OBJETOS</nombre></item>
+                </fuentes>
+            </descripcion>
+            <descripcion>
+                <id>3</id>
+                <nombre>MOVIMIENTOS REPETITIVOS</nombre>
+                <fuentes>
+                    <item><id>1</id><nombre>DISEÑO PUESTO DE TRABAJO</nombre></item>
+                    <item><id>2</id><nombre>ALTURA DE PLANOS DE TRABAJO</nombre></item>
+                    <item><id>3</id><nombre>UBICACIÓN DE CONTROLES</nombre></item>
+                    <item><id>4</id><nombre>SILLAS</nombre></item>
+                    <item><id>5</id><nombre>ASPECTOS ESPACIALES</nombre></item>
+                    <item><id>6</id><nombre>EQUIPOS</nombre></item>
+                    <item><id>7</id><nombre>ORGANIZACIÓN SECUENCIA PRODUCTIVA</nombre></item>
+                    <item><id>8</id><nombre>ORGANIZACIÓN DEL TIEMPO DE TRABAJO</nombre></item>
+                    <item><id>9</id><nombre>PESO Y TAMANO DE OBJETOS</nombre></item>
+                </fuentes>
+            </descripcion>
+            <descripcion>
+                <id>4</id>
+                <nombre>MANIPULACIÓN MANUAL DE CARGAS</nombre>
+                <fuentes>
+                    <item><id>1</id><nombre>DISEÑO PUESTO DE TRABAJO</nombre></item>
+                    <item><id>2</id><nombre>ALTURA DE PLANOS DE TRABAJO</nombre></item>
+                    <item><id>3</id><nombre>UBICACIÓN DE CONTROLES</nombre></item>
+                    <item><id>4</id><nombre>SILLAS</nombre></item>
+                    <item><id>5</id><nombre>ASPECTOS ESPACIALES</nombre></item>
+                    <item><id>6</id><nombre>EQUIPOS</nombre></item>
+                    <item><id>7</id><nombre>ORGANIZACIÓN SECUENCIA PRODUCTIVA</nombre></item>
+                    <item><id>8</id><nombre>ORGANIZACIÓN DEL TIEMPO DE TRABAJO</nombre></item>
+                    <item><id>9</id><nombre>PESO Y TAMANO DE OBJETOS</nombre></item>
+                </fuentes>
+            </descripcion>
+        </listDescripciones>    
+    </clasificacion>
+<!-- falta incluir TODAS las descripciones en las tablas ND-->    
+    <clasificacion>
+        <id>6</id>
+        <nombre>Seguridad</nombre>
+        <listDescripciones>
+            <descripcion>
+                <id>1</id>
+                <nombre>MECANICO</nombre>
+                <fuentes>
+                    <item><id>1</id><nombre>HERRAMIENTAS MANULAES</nombre></item>
+                    <item><id>2</id><nombre>EQUIPO Y ELEMENTOS A PRESION</nombre></item>
+                    <item><id>3</id><nombre>PUNTOS DE OPERACIÓN</nombre></item>
+                    <item><id>4</id><nombre>MANIPULACION DE MATERIALES</nombre></item>
+                    <item><id>5</id><nombre>MATERIALES PROYECTADOS SOLIDOS O FLUIDOS</nombre></item>
+                    <item><id>6</id><nombre>MECANISMOS EN MOVIMIENTO, SISTEMAS DE TRANSMISION</nombre></item>
+                    <item><id>7</id><nombre>SUPERFICIES O HERRAMIENTAS CORTOPUNZANTES</nombre></item>
+                    <item><id>8</id><nombre>SUPERFICIES CALIENTES</nombre></item>
+                    <item><id>9</id><nombre>CAIDA DE OBJETOS (RUEDAN, DESLIZAN)</nombre></item>
+                    <item><id>10</id><nombre>IZAJE DE CARGAS</nombre></item>
+                </fuentes>
+            </descripcion>
+            <descripcion>
+                <id>2</id>
+                <nombre>ELECTRICO</nombre>
+                <fuentes>
+                    <item><id>1</id><nombre>ENERGÍA ELÉCTRICA EXTRA ALTA TENSIÓN (EAT) (MAYOR DE 230 KV)</nombre></item>
+                    <item><id>2</id><nombre>ENERGÍA ELÉCTRICA ALTA TENSIÓN (AT) (MAYOR O IGUAL 57.5 KV Y MENOR O IGUAL DE 230 KV)</nombre></item>
+                    <item><id>3</id><nombre>ENERGÍA ELÉCTRICA MEDIA TENSIÓN ( MT) (MAS 1000 V Y MENOR DE 57.5 KV)</nombre></item>
+                    <item><id>4</id><nombre>ENERGÍA ELÉCTRICA BAJA TENSIÓN (BT)</nombre></item>
+                    <item><id>5</id><nombre>ENERGIA ESTATICA</nombre></item>
+                    <item><id>6</id><nombre>CONEXIONES ELECTRICAS</nombre></item>
+                    <item><id>7</id><nombre>TABLEROS DE CONTROL</nombre></item>
+                    <item><id>8</id><nombre>TRANSMISORES DE ENERGIA</nombre></item>
+                </fuentes>
+            </descripcion>
+            <descripcion>
+                <id>3</id>
+                <nombre>TECNOLOGICO</nombre>
+                <fuentes>
+                    <item><id>1</id><nombre>INCENDIO DE PRODUCTOS QUIMICOS (VERTIMIENTOS)</nombre></item>
+                    <item><id>2</id><nombre>EXPLOSIÓN DE PRODUCTOS QUIMICOS (VERTIMIENTOS)</nombre></item>
+                    <item><id>3</id><nombre>FUGA DE PRODUCTOS QUIMICOS (VERTIMIENTOS)</nombre></item>
+                    <item><id>4</id><nombre>DERRAME DE PRODUCTOS QUIMICOS (VERTIMIENTOS)</nombre></item>
+                </fuentes>
+            </descripcion>
+            <descripcion>
+                <id>4</id>
+                <nombre>ORDEN PUBLICO</nombre>
+                <fuentes>
+                    <item><id>1</id><nombre>ROBOS ATRACOS</nombre></item>
+                    <item><id>2</id><nombre>PORTE DE ARMAS</nombre></item>
+                    <item><id>3</id><nombre>ACTOS MALINTENCIONADOS</nombre></item>
+                    <item><id>4</id><nombre>HUELGAS, MOTINES, ASONADAS</nombre></item>
+                    <item><id>5</id><nombre>ATENTADOS</nombre></item>
+                    <item><id>6</id><nombre>INCURSION ARMADA</nombre></item>
+                    <item><id>7</id><nombre>TERRORISMO</nombre></item>
+                    <item><id>8</id><nombre>OTRAS SITUACIONES DE VIOLENCIA</nombre></item>
+                </fuentes>
+            </descripcion>
+            <descripcion>
+                <id>5</id>
+                <nombre>TRANSPORTE</nombre>
+                <fuentes>
+                    <item><id>1</id><nombre>USO DE VEHICULOS</nombre></item>
+                    <item><id>2</id><nombre>TRANSPORTE DE PERSONAS</nombre></item>
+                    <item><id>3</id><nombre>MOVILIZACION PEATONAL</nombre></item>
+                    <item><id>4</id><nombre>TRANSPORTE DE MERCANCIAS</nombre></item>
+                </fuentes>
+            </descripcion>
+            <descripcion>
+                <id>6</id>
+                <nombre>LOCATIVOS</nombre>
+                <fuentes>
+                    <item><id>1</id><nombre>SISTEMAS Y MEDIOS DE ALMACENAMIENTO</nombre></item>
+                    <item><id>2</id><nombre>SUPERFICIES DE TRABAJO - IRREGULARES, DESLISANTES, CON DIFERENCIA DE NIVEL</nombre></item>
+                    <item><id>3</id><nombre>DISTRIBUCION DE LAS AREAS DE TRABAJO</nombre></item>
+                    <item><id>4</id><nombre>CONDICIONES DE ORDEN Y ASEO</nombre></item>
+                    <item><id>5</id><nombre>CAIDAS DE OBJETOS</nombre></item>
+                    <item><id>6</id><nombre>ESTRUCTURA E INSTALACIONES</nombre></item>
+                    <item><id>7</id><nombre>DEFICIENCIAS EN ESCALERAS, PASAMANOS, BARANDAS</nombre></item>
+                    <item><id>8</id><nombre>DEFICIENCIAS EN CIELORASOS</nombre></item>
+                    <item><id>9</id><nombre>DEFICIENCIAS EN ESTRUCTURAS (PAREDES, PISOS, PUERTAS RAMPAS, TUNELES, CLARABOYAS, VENTANAS, VIAS, )</nombre></item>
+                </fuentes>
+            </descripcion>
+            <descripcion>
+                <id>7</id>
+                <nombre>TRABAJO EN ALTURAS</nombre>
+                <fuentes>
+                    <item><id>1</id><nombre>ACTIVIDADES ESPECIFICAS A REALIZAR CON ALTURAS MAYORES A 1,50 METROS</nombre></item>
+                </fuentes>
+            </descripcion>
+            <descripcion>
+                <id>8</id>
+                <nombre>TRABAJO EN ESPACIOS CONFINADOS</nombre>
+                <fuentes>
+                    <item><id>1</id><nombre>ENTRADAS O SALIDAS RESTRINGIDAS Y NO ESTA DESIGNADO PARA OCUPACIÓN CONTINUA DE LOS EMPLEADO</nombre></item>
+                </fuentes>
+            </descripcion>
+            <descripcion>
+                <id>9</id>
+                <nombre>TRABAJO EN AGUA</nombre>
+                <fuentes>
+                    <item><id>1</id><nombre>ACTIVIDADES EN CUERPOS DE AGUA (PISCINAS, LAGOS, MAR, TANQUES DE ALMACENAMIENTO, ETC)</nombre></item>
+                </fuentes>
+            </descripcion>
+            <descripcion>
+                <id>10</id>
+                <nombre>TRABAJO EN PROFUNDIDAD</nombre>
+                <fuentes>
+                    <item><id>1</id><nombre>EXCAVACIONES O BRECHAS</nombre></item>
+                </fuentes>
+            </descripcion>
+        </listDescripciones>
+    </clasificacion>
+    
+<!-- falta incluir TODAS las descripciones en las tablas ND-->        
+    <clasificacion>
+        <id>7</id>
+        <nombre>Condiciones Naturales</nombre>
+        <listDescripciones>
+            <descripcion>
+                <id>1</id>
+                <nombre>SISMOS-TERREMOTOS</nombre>
+                <fuentes>
+                    <item><id>1</id><nombre>SISMOS - TERREMOTOS</nombre></item>
+                </fuentes>
+            </descripcion>
+            <descripcion>
+                <id>2</id>
+                <nombre>ERUPCION VOLCANICA</nombre>
+                <fuentes>
+                    <item><id>1</id><nombre>ERUPCION VOLCANICA</nombre></item>
+                </fuentes>
+            </descripcion>
+            <descripcion>
+                <id>3</id>
+                <nombre>MAREMOTOS</nombre>
+                <fuentes>
+                    <item><id>1</id><nombre>MAREMOTOS</nombre></item>
+                </fuentes>
+            </descripcion>
+            <descripcion>
+                <id>4</id>
+                <nombre>INUNDACIONES</nombre>
+                <fuentes>
+                    <item><id>1</id><nombre>INUNDACIONES</nombre></item>
+                </fuentes>
+            </descripcion>
+            <descripcion>
+                <id>5</id>
+                <nombre>LLUVIAS, GRANIZADAS, HELADAS, TORMENTAS, TORMENTAS ELÉCTRICAS</nombre>
+                <fuentes>
+                    <item><id>1</id><nombre>LLUVIAS, GRANIZADAS, HELADAS, TORMENTAS, TORMENTAS ELÉCTRICAS</nombre></item>
+                </fuentes>
+            </descripcion>
+            <descripcion>
+                <id>6</id>
+                <nombre>DERRUMBES, DESLIZAMIENTOS</nombre>
+                <fuentes>
+                    <item><id>1</id><nombre>DERRUMBES, DESLIZAMIENTOS</nombre></item>
+                </fuentes>
+            </descripcion>
+            <descripcion>
+                <id>7</id>
+                <nombre>INCENDIOS FORESTALES</nombre>
+                <fuentes>
+                    <item><id>1</id><nombre>INCENDIOS FORESTALES</nombre></item>
+                </fuentes>
+            </descripcion>
+            <descripcion>
+                <id>8</id>
+                <nombre>VENDAVAL, VIENTOS FUERTES, HURACANES</nombre>
+                <fuentes>
+                    <item><id>1</id><nombre>VENDAVAL, VIENTOS FUERTES, HURACANES</nombre></item>
+                </fuentes>
+            </descripcion>
+        </listDescripciones>
+    </clasificacion>
+    
+<!-- falta incluir TODAS las descripciones en las tablas ND-->        
+    <clasificacion>
+        <id>8</id>
+        <nombre>Actividades Deportivas</nombre>
+        <listDescripciones>
+            <descripcion>
+                <id>1</id>
+                <nombre>DEPORTES DE CONTACTO</nombre>
+                <fuentes>
+                    <item><id>1</id><nombre>DEPORTES DE CONTACTO</nombre></item>
+                </fuentes>
+            </descripcion>
+        </listDescripciones>
+    </clasificacion>
+</peligros>

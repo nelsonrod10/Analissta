@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<causasBasicas>
+    <factor factor="1">
+        <nombre>Factores Personales</nombre>
+        <categoria id="1">
+            <nombre>Competencia</nombre>
+            <descripcion>
+                <item><id>1</id><nombre>Falta de educación</nombre></item>
+                <item><id>2</id><nombre>Falta de experiencia</nombre></item>
+                <item><id>3</id><nombre>Falta de entrenamiento</nombre></item>
+                <item><id>4</id><nombre>Falta de orientación</nombre></item>
+            </descripcion>
+        </categoria>
+        <categoria id="2">
+            <nombre>Habilidad</nombre>
+            <descripcion>
+                <item><id>1</id><nombre>Falta de orientación práctica</nombre></item>
+                <item><id>2</id><nombre>Falta de práctica</nombre></item>
+            </descripcion>
+        </categoria>
+        <categoria id="3">
+            <nombre>Estres</nombre>
+            <descripcion>
+                <item><id>1</id><nombre>Cansancio/falta de concentración</nombre></item>
+                <item><id>2</id><nombre>Ambiente de trabajo inapropiado</nombre></item>
+                <item><id>3</id><nombre>Exigencias de trabajo, conflictiva/excesiva</nombre></item>
+            </descripcion>
+        </categoria>
+        <categoria id="4">
+            <nombre>Motivacion</nombre>
+            <descripcion>
+                <item><id>1</id><nombre>Intento de ahorrar tiempo</nombre></item>
+                <item><id>2</id><nombre>Ejemplo inapropiado de supervision</nombre></item>
+                <item><id>3</id><nombre>Aceptar desempeño inadecuado</nombre></item>
+            </descripcion>
+        </categoria>
+        <categoria id="5"> 
+            <nombre>Capacidad física / fisiológica inadecuada</nombre>
+            <descripcion>
+                <item><id>1</id><nombre>Altura, peso, tamaño, resistencia, alcance, etc. Inadecuados.</nombre></item>
+                <item><id>2</id><nombre>Capacidad de movimiento corporal limitada</nombre></item>
+                <item><id>3</id><nombre>Capacidad limitada para mantenerse en determinadas posiciones corporales</nombre></item>
+                <item><id>4</id><nombre>Sensibilidad a ciertas sustancias o alergias</nombre></item>
+                <item><id>5</id><nombre>Sensibilidad a determinados extremos sensoriales (temperatura, | ruido, etc.)</nombre></item>
+                <item><id>6</id><nombre>Visión defectuosa</nombre></item>
+                <item><id>7</id><nombre>Audición defectuosa</nombre></item>
+                <item><id>8</id><nombre>Otras deficiencias sensoriales (tacto, gusto, olfato, equilibrio)</nombre></item>
+                <item><id>9</id><nombre>Incapacidad respiratoria</nombre></item>
+                <item><id>10</id><nombre>Otras incapacidades físicas permanentes</nombre></item>
+                <item><id>11</id><nombre>Incapacidades temporales</nombre></item>
+            </descripcion>
+        </categoria>
+        <categoria id="6">
+            <nombre>Capacidad mental / psicológica inadecuada</nombre>
+            <descripcion>
+                <item><id>1</id><nombre>Temores y fobias</nombre></item>
+                <item><id>2</id><nombre>Problemas emocionales</nombre></item>
+                <item><id>3</id><nombre>Enfermedad mental</nombre></item>
+                <item><id>4</id><nombre>Nivel de inteligencia</nombre></item>
+                <item><id>5</id><nombre>Incapacidad de comprensión</nombre></item>
+                <item><id>6</id><nombre>Falta de juicio</nombre></item>
+                <item><id>7</id><nombre>Escasa coordinación</nombre></item>
+                <item><id>8</id><nombre>Bajo tiempo de reacción</nombre></item>
+                <item><id>9</id><nombre>Aptitud mecánica deficiente</nombre></item>
+                <item><id>10</id><nombre>Baja aptitud de aprendizaje</nombre></item>
+                <item><id>11</id><nombre>Problemas de memoria</nombre></item>
+            </descripcion>
+        </categoria>
+        <categoria id="7">
+            <nombre>Tensión física o fisiológica</nombre>
+            <descripcion>
+                <item><id>1</id><nombre>Lesiones o enfermedades</nombre></item>
+                <item><id>2</id><nombre>Fatiga debido a la carga o duración de las tareas</nombre></item>
+                <item><id>3</id><nombre>Fatiga por falta de descanso</nombre></item>
+                <item><id>4</id><nombre>Fatiga debido a la sobrecarga sensorial</nombre></item>
+                <item><id>5</id><nombre>Exposición a riesgos para la salud</nombre></item>
+                <item><id>6</id><nombre>Exposición a temperaturas extremas</nombre></item>
+                <item><id>7</id><nombre>Insuficiencia de oxigeno</nombre></item>
+                <item><id>8</id><nombre>Variaciones en la presión atmosférica</nombre></item>
+                <item><id>9</id><nombre>Restricción de movimiento</nombre></item>
+                <item><id>10</id><nombre>Insuficiencia de azúcar en la sangre</nombre></item>
+                <item><id>11</id><nombre>Ingestión de drogas</nombre></item>
+            </descripcion>
+        </categoria>
+        <categoria id="8">
+            <nombre>Tensión mental o psicológica</nombre>
+            <descripcion>
+                <item><id>1</id><nombre>Sobrecarga emocional</nombre></item>
+                <item><id>2</id><nombre>Fatiga debida a la carga o las imitaciones de tiempo de la tarea mental</nombre></item>
+                <item><id>3</id><nombre>Obligaciones que exigen un juicio o toma de decisiones extremas</nombre></item>
+                <item><id>4</id><nombre>Rutina, monotonía, exigencias para un cargo sin trascendencia</nombre></item>
+                <item><id>5</id><nombre>Exigencias de una concentración / percepción profunda</nombre></item>
+                <item><id>6</id><nombre>Actividades insignificantes o degradantes</nombre></item>
+                <item><id>7</id><nombre>Ordenes confusas</nombre></item>
+                <item><id>8</id><nombre>Solicitudes conflictivas</nombre></item>
+                <item><id>9</id><nombre>Preocupación debido a problemas</nombre></item>
+                <item><id>10</id><nombre>Frustraciones</nombre></item>
+            </descripcion>
+        </categoria>
+    </factor>
+    <factor factor="2">
+        <nombre>Ambiente de Trabajo</nombre>
+        <categoria id="1">
+            <nombre>Supervisión</nombre>
+            <descripcion>
+                <item><id>1</id><nombre>Planeación inadecuada</nombre></item>
+                <item><id>2</id><nombre>Instrucción inadecuada</nombre></item>
+                <item><id>3</id><nombre>Supervisión inadecuada</nombre></item>
+            </descripcion>
+        </categoria>
+        <categoria id="2">
+            <nombre>Diseño/Ingeniería</nombre>
+            <descripcion>
+                <item><id>1</id><nombre>Criterio inadecuado de diseño</nombre></item>
+                <item><id>2</id><nombre>Normas inadecuadas</nombre></item>
+                <item><id>3</id><nombre>Inspección inadecuada</nombre></item>
+            </descripcion>
+        </categoria>
+        <categoria id="3">
+            <nombre>Mantenimiento de instalaciones</nombre>
+            <descripcion>
+                <item><id>1</id><nombre>Mantenimiento correctivo externo</nombre></item>
+                <item><id>2</id><nombre>Mantenimiento de rutina inadecuada</nombre></item>
+                <item><id>3</id><nombre>Mantenimiento de rutina no realizado</nombre></item>
+            </descripcion>
+        </categoria>
+        <categoria id="4">
+            <nombre>Adquisición</nombre>
+            <descripcion>
+                <item><id>1</id><nombre>Especificación inadecuada</nombre></item>
+                <item><id>2</id><nombre>Inspección de recibo/aceptación deficiente</nombre></item>
+                <item><id>3</id><nombre>Transporte inadecuado</nombre></item>
+            </descripcion>
+        </categoria>
+        <categoria id="5">
+            <nombre>Herramientas y equipo</nombre>
+            <descripcion>
+                <item><id>1</id><nombre>No disponible o faltante</nombre></item>
+                <item><id>2</id><nombre>Uso del equipo incorrecto</nombre></item>
+                <item><id>3</id><nombre>Mantenimiento inadecuado</nombre></item>
+            </descripcion>
+        </categoria>
+        <categoria id="6">
+            <nombre>Procedimientos y Guías de actividades</nombre>
+            <descripcion>
+                <item><id>1</id><nombre>Ningun procedimiento / Inadecuado/incompleto</nombre></item>
+                <item><id>2</id><nombre>Procedimiento No disponible</nombre></item>
+            </descripcion>
+        </categoria>
+        <categoria id="7">
+            <nombre>Uso y desgaste</nombre>
+            <descripcion>
+                <item><id>1</id><nombre>Planificación inadecuada del uso</nombre></item>
+                <item><id>2</id><nombre>Prolongación excesiva de la vida útil del elemento</nombre></item>
+                <item><id>3</id><nombre>Inspección o control deficientes</nombre></item>
+                <item><id>4</id><nombre>Sobrecarga o proporción de uso excesivo</nombre></item>
+                <item><id>5</id><nombre>Mantenimiento deficiente</nombre></item>
+                <item><id>6</id><nombre>Empleo del elemento por personas no calificadas o sin preparación</nombre></item>
+                <item><id>7</id><nombre>Empleo inadecuado para otros propósitos</nombre></item>
+            </descripcion>
+        </categoria>
+        <categoria id="8">
+            <nombre>Abuso o maltrato</nombre>
+            <descripcion>
+                <item><id>1</id><nombre>Abuso o maltrato Permitidos por la supervisión intencionalmente</nombre></item>
+                <item><id>2</id><nombre>Abuso o maltrato Permitidos por la supervisión no intencionalmente</nombre></item>
+                <item><id>3</id><nombre>Abuso o maltrato No permitidos por la supervisión intencionalmente</nombre></item>
+                <item><id>4</id><nombre>Abuso o maltrato No permitidos por la supervisión no intencionalmente</nombre></item>
+            </descripcion>
+        </categoria>
+    </factor>
+    <factor factor="3">
+        <nombre>Elementos de Gestión</nombre>
+        <categoria id="1">
+            <nombre>Evaluación y manejo de Riesgos</nombre>
+            <descripcion>
+                <item><id>1</id><nombre>Reconocimiento de Riesgos deficiente</nombre></item>
+                <item><id>2</id><nombre>Evaluación de Riesgos deficiente</nombre></item>
+                <item><id>3</id><nombre>Tratamiento de riesgos deficiente</nombre></item>
+                <item><id>4</id><nombre>Medidas de control (admin/correctivo) deficientes</nombre></item>
+            </descripcion>
+        </categoria>
+        <categoria id="2">
+            <nombre>Diseño y construcción</nombre>
+            <descripcion>
+                <item><id>1</id><nombre>Criterios de diseño inadecuados</nombre></item>
+                <item><id>2</id><nombre>Consideración de riesgos deficiente</nombre></item>
+                <item><id>3</id><nombre>Normas/procedimientos inadecuados</nombre></item>
+                <item><id>4</id><nombre>Control de calidad e inspección deficiente</nombre></item>
+                <item><id>5</id><nombre>Documentación de revisiones pre-inicio deficientes</nombre></item>
+                <item><id>6</id><nombre>Procedimientos de modificación / desviación (deficientes o inexistentes)</nombre></item>
+            </descripcion>
+        </categoria>
+        <categoria id="3">
+            <nombre>Operaciones y Mantenimiento (OyM)</nombre>
+            <descripcion>
+                <item><id>1</id><nombre>Responsabilidades de OyM (deficientes o inexistentes)</nombre></item>
+                <item><id>2</id><nombre>Procedimientos de OyM (deficientes o inexistentes)</nombre></item>
+                <item><id>3</id><nombre>Procedimientos de reemplazo/modificación (deficientes o inexistentes)</nombre></item>
+                <item><id>4</id><nombre>Sistema de permisos de trabajo (deficientes o inexistentes)</nombre></item>
+                <item><id>5</id><nombre>Sistemas de protección (deficientes o inexistentes)</nombre></item>
+                <item><id>6</id><nombre>Identificación de operaciones simultáneas (deficientes o inexistentes)</nombre></item>
+                <item><id>7</id><nombre>Procedimiento para manejo de materiales/sustancias (deficientes o inexistentes)</nombre></item>
+            </descripcion>
+        </categoria>
+        <categoria id="4">
+            <nombre>Manejo del Cambio</nombre>
+            <descripcion>
+                <item><id>1</id><nombre>Evaluación de cambios (deficientes o inexistentes)</nombre></item>
+                <item><id>2</id><nombre>Evaluación de cambios en legislación (deficientes o inexistentes)</nombre></item>
+                <item><id>3</id><nombre>Evaluación de cambios organizacionales (deficientes o inexistentes)</nombre></item>
+            </descripcion>
+        </categoria>
+        <categoria id="5">
+            <nombre>Información y documentación</nombre>
+            <descripcion>
+                <item><id>1</id><nombre>Documentación de planos/instalaciones/operaciones (deficientes o inexistentes)</nombre></item>
+                <item><id>2</id><nombre>Documentación de riesgos críticos (deficientes o inexistentes)</nombre></item>
+                <item><id>3</id><nombre>Documentación de leyes/normas/políticas (deficientes o inexistentes)</nombre></item>
+            </descripcion>
+        </categoria>
+        <categoria id="6">
+            <nombre>Personal y entrenamiento</nombre>
+            <descripcion>
+                <item><id>1</id><nombre>Selección y contratación deficiente</nombre></item>
+                <item><id>2</id><nombre>Entrenamiento inicial / continuo (deficiente o inexistente)</nombre></item>
+            </descripcion>
+        </categoria>
+        <categoria id="7">
+            <nombre>Servicios - contratistas</nombre>
+            <descripcion>
+                <item><id>1</id><nombre>Evaluación / selección (deficiente o inexistente)</nombre></item>
+                <item><id>2</id><nombre>Supervisión / evaluación (deficiente o inexistente)</nombre></item>
+                <item><id>3</id><nombre>Interfaces entre organizaciones (deficiente o inexistente)</nombre></item>
+            </descripcion>
+        </categoria>
+        <categoria id="8">
+            <nombre>Preparación para Emergencias</nombre>
+            <descripcion>
+                <item><id>1</id><nombre>Planes de emergencia (deficiente o inexistente)</nombre></item>
+                <item><id>2</id><nombre>Equipos para emergencia (deficiente o inexistente)</nombre></item>
+                <item><id>3</id><nombre>Comunicación a empleados/contratistas (deficiente o inexistente)</nombre></item>
+            </descripcion>
+        </categoria>
+        <categoria id="9">
+            <nombre>Evaluación y Mejoramiento</nombre>
+            <descripcion>
+                <item><id>1</id><nombre>Metas de desempeño (deficiente o inexistente)</nombre></item>
+                <item><id>2</id><nombre>Proceso de autoevaluación (deficiente o inexistente)</nombre></item>
+                <item><id>3</id><nombre>Auditorias (deficiente o inexistente)</nombre></item>
+                <item><id>4</id><nombre>Acciones recomendadas (deficiente o inexistente)</nombre></item>
+            </descripcion>
+        </categoria>
+        <categoria id="10">
+            <nombre>Investigación y Análisis de Incidentes</nombre>
+            <descripcion>
+                <item><id>1</id><nombre>Reporte de incidentes (deficiente o inexistente)</nombre></item>
+                <item><id>2</id><nombre>Análisis de causas (deficiente o inexistente)</nombre></item>
+                <item><id>3</id><nombre>Acciones recomendadas (deficiente o inexistente)</nombre></item>
+                <item><id>4</id><nombre>Seguimiento (deficiente o inexistente)</nombre></item>
+            </descripcion>
+        </categoria>
+        <categoria id="11">
+            <nombre>Fallas de Gestión</nombre>
+            <descripcion>
+                <item><id>1</id><nombre>No existe una norma</nombre></item>
+                <item><id>2</id><nombre>No se cumple la norma</nombre></item>
+                <item><id>3</id><nombre>La norma es inadecuada</nombre></item>
+            </descripcion>
+        </categoria>
+    </factor>
+</causasBasicas>

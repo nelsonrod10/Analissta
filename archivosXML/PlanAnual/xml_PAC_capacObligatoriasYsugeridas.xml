@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<listadoCapacitaciones>
+    <medida cumplimiento="obligatorio">
+        <nombre>CapacitacionesObligatorias</nombre>
+        <capacitaciones>
+            <item PAC="true" Editado="false" Datos_Generales="false" Programacion="false" Presupuesto="false"><id>1</id><nombre>Inducción HSEQ</nombre></item>
+            <item PAC="true" Editado="false" Datos_Generales="false" Programacion="false" Presupuesto="false"><id>2</id><nombre>COPASST</nombre></item>
+            <item PAC="true" Editado="false" Datos_Generales="false" Programacion="false" Presupuesto="false"><id>3</id><nombre>Comité Convivencia Laboral</nombre></item>
+        </capacitaciones>
+    </medida>
+    <medida cumplimiento="sugerencia">
+        <nombre>CapacitacionesSugeridas</nombre>
+        <capacitaciones>
+            <item PAC="true" Editado="false" Datos_Generales="false" Programacion="false" Presupuesto="false"><id>1</id><nombre>Investigación de Incidentes</nombre></item>
+            <item PAC="true" Editado="false" Datos_Generales="false" Programacion="false" Presupuesto="false"><id>2</id><nombre>Primeros auxilios</nombre></item>
+            <item PAC="true" Editado="false" Datos_Generales="false" Programacion="false" Presupuesto="false"><id>3</id><nombre>Comité Seguridad Vial</nombre></item>
+        </capacitaciones>
+    </medida>
+</listadoCapacitaciones>

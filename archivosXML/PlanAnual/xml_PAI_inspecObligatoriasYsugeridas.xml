@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<listadoInspecciones>
+    <medida cumplimiento="obligatorio"><nombre>InspeccionesObligatorias</nombre><inspecciones>
+            <item PAI="true" Editado="true" Datos_Generales="false" Programacion="false" Presupuesto="false"><id>1</id><nombre>Inspección Gerencial</nombre><programar><cargo>Gerencias</cargo><responsable/><evidencias/><observaciones></observaciones><mes/><semana/><ejecucion>0</ejecucion></programar></item>
+        </inspecciones>
+    </medida>
+    <medida cumplimiento="sugerencia"><nombre>InspeccionesSugeridas</nombre><inspecciones>
+            <item PAI="true" Editado="true" Datos_Generales="false" Programacion="false" Presupuesto="false"><id>1</id><nombre>Inspección EPP</nombre><programar><cargo>HSE</cargo><responsable></responsable><evidencias></evidencias><observaciones/><mes></mes><semana></semana><ejecucion>0</ejecucion></programar></item>
+            <item PAI="true" Editado="true" Datos_Generales="false" Programacion="false" Presupuesto="false"><id>2</id><nombre>Inspección de Oficinas</nombre><programar><cargo/><responsable/><evidencias/><observaciones/><mes/><semana/><ejecucion>0</ejecucion></programar></item>
+            <item PAI="true" Editado="true" Datos_Generales="false" Programacion="false" Presupuesto="false"><id>3</id><nombre>Inspección de Vehículos (Livianos y pesados)</nombre><programar><cargo/><responsable/><evidencias/><observaciones/><mes/><semana/><ejecucion>0</ejecucion></programar></item>
+            <item PAI="true" Editado="true" Datos_Generales="false" Programacion="false" Presupuesto="false"><id>4</id><nombre>Inspección de Herramientas</nombre><programar><cargo/><responsable/><evidencias/><observaciones/><mes/><semana/><ejecucion>0</ejecucion></programar></item>
+            <item PAI="true" Editado="true" Datos_Generales="false" Programacion="false" Presupuesto="false"><id>5</id><nombre>Inspección Extintores y Equipos de Emergencia</nombre><programar><cargo/><responsable/><evidencias/><observaciones/><mes/><semana/><ejecucion>0</ejecucion></programar></item>
+            <item PAI="true" Editado="true" Datos_Generales="false" Programacion="false" Presupuesto="false"><id>6</id><nombre>Inspección de Botiquin</nombre><programar><cargo/><responsable/><evidencias/><observaciones/><mes/><semana/><ejecucion>0</ejecucion></programar></item>
+        </inspecciones>
+    </medida>
+</listadoInspecciones>
+
+

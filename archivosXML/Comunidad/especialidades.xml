@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<comunidad>
+    <categoria id="1">
+        <nombre>Planeación Estratégica</nombre>
+        <especialidades>
+            <item id="1">Planeación Estratégica</item>
+        </especialidades>
+    </categoria>
+    <categoria id="2">
+        <nombre>Diseño de Objetivos, metas e indicadores</nombre>
+        <especialidades>
+            <item id="1">Monitoreo</item>
+            <item id="2">Registro</item>
+            <item id="3">Seguimiento</item>
+        </especialidades>
+    </categoria>
+    <categoria id="3">
+        <nombre>Identificación de Peligros, valoración y Control de Riesgos</nombre>
+        <especialidades>
+            <item id="1">Identificación de Peligros, valoración y Control de Riesgos</item>
+        </especialidades>
+    </categoria>
+    <categoria id="4">
+        <nombre>Riesgos Físcos</nombre>
+        <especialidades>
+            <item id="1">RUIDO (DE IMPACTO, INTERMITENTE, CONTINUO)</item>
+            <item id="2">ILUMINACION (LUZ VISIBLE POR EXCESO O DEFICIENCIA)</item>
+            <item id="3">VIBRACIONES - (CUERPO ENTRERO O SEGMENTARIA)</item>
+            <item id="4">TEMPERATURAS EXTREMAS (CALOR - FRIO)</item>
+            <item id="5">RADIACIONES IONIZANTES</item>
+            <item id="6">RADIACIONES NO IONIZANTES (ULTRAVIOLETA, VISIBLE, INFRAROJA etc)</item>
+            <item id="7">PRESIONES BAROMETRICAS (BAJAS O ALTAS)</item>
+        </especialidades>
+    </categoria>
+    <categoria id="5">
+        <nombre>Riesgos Químicos</nombre>
+        <especialidades>
+            <item id="1">POLVOS ORGANICOS INORGANICOS</item>
+            <item id="2">FIBRAS</item>
+            <item id="3">HUMOS METALICOS , NO METALICOS</item>
+            <item id="4">MATERIAL PARTICULADO</item>
+            <item id="5">LIQUIDOS (Nieblas y Rocios)</item>
+            <item id="6">GASES Y VAPORES</item>
+            <item id="7">SUSTANCIAS COMBUSTIBLES Y/O EXPLOSIVAS</item>
+        </especialidades>
+    </categoria>
+    <categoria id="6">
+        <nombre>Riesgos Biológicos</nombre>
+        <especialidades>
+            <item id="1">VIRUS</item>
+            <item id="2">BACTERIAS</item>
+            <item id="3">HONGOS</item>
+            <item id="4">MORDEDURAS</item>
+            <item id="5">PICADURAS</item>
+            <item id="6">PARASITOS</item>
+            <item id="7">FLUIDOS O ESCREMENTOS</item>
+        </especialidades>
+    </categoria>
+    <categoria id="7">
+        <nombre>Riesgo Psicosocial</nombre>
+        <especialidades>
+            <item id="1">INTRALABORAL</item>
+            <item id="2">HUMANO - PSICOSOCIAL EXTRALABORAL</item>
+            <item id="3">HUMANO - PSICOSOCIAL INDIVIDUAL</item>
+        </especialidades>
+    </categoria>
+    <categoria id="8">
+        <nombre>Riesgos Biomecánicos</nombre>
+        <especialidades>
+            <item id="1">POSTURA PROLONGADA, MANTENIDA, FORZADA, ANTIGRAVITACIONES</item>
+            <item id="2">ESFUERZO </item>
+            <item id="3">MOVIMIENTOS REPETITIVOS</item>
+            <item id="4">MANIPULACIÓN MANUAL DE CARGAS</item>
+        </especialidades>
+    </categoria>
+    <categoria id="9">
+        <nombre>Riesgos Mecánicos</nombre>
+        <especialidades>
+            <item id="1">Riesgos Mecánicos</item>
+        </especialidades>
+    </categoria>
+    <categoria id="10">
+        <nombre>Riesgos Eléctricos</nombre>
+        <especialidades>
+            <item id="1">Riesgos Eléctricos</item>
+        </especialidades>
+    </categoria>
+    <categoria id="11">
+        <nombre>Riesgos Tecnológicos</nombre>
+        <especialidades>
+            <item id="1">Riesgos Tecnológicos</item>
+        </especialidades>
+    </categoria>
+    <categoria id="12">
+        <nombre>Transporte Víal</nombre>
+        <especialidades>
+            <item id="1">Transporte Víal</item>
+        </especialidades>
+    </categoria>
+    <categoria id="13">
+        <nombre>Riesgos Locativos</nombre>
+        <especialidades>
+            <item id="1">Riesgos Locativos</item>
+        </especialidades>
+    </categoria>
+    <categoria id="14">
+        <nombre>Trabajos en superficies (Agua, Profundidad, Alturas...)</nombre>
+        <especialidades>
+            <item id="1">Trabajos en Agua</item>
+            <item id="2">Trabajos en Profundidad</item>
+            <item id="3">Trabajos en Alturas</item>
+            <item id="4">Trabajos en Espacios Confinados</item>
+        </especialidades>
+    </categoria>
+    <categoria id="15">
+        <nombre>Planes de Emergencia</nombre>
+        <especialidades>
+            <item id="1">Identificación de Amenazas</item>
+            <item id="2">Análisis de Vulnerabilidad</item>
+            <item id="3">Planes de emergencia</item>
+            <item id="4">Planes de ayuda mutua</item>
+            <item id="5">Rescate en Alturas</item>
+            <item id="6">Rescate en Estructuras colapsadas</item>
+        </especialidades>
+    </categoria>
+    <categoria id="16">
+        <nombre>Actividades Deportivas</nombre>
+        <especialidades>
+            <item id="1">Actividades Deportivas</item>
+        </especialidades>
+    </categoria>
+    <categoria id="17">
+        <nombre>Auditorías</nombre>
+        <especialidades>
+            <item id="1">ISO 9000</item>
+            <item id="2">ISO 14000</item>
+            <item id="3">ISO 45000</item>
+            <item id="4">RUC</item>
+            <item id="5">NORSOK</item>
+            <item id="6">Decreto 1072</item>
+            <item id="7">Resolución 1111</item>
+        </especialidades>
+    </categoria>
+    <categoria id="18">
+        <nombre>Investigación de Accidentes</nombre>
+        <especialidades>
+            <item id="1">Investigación de Accidentes</item>
+        </especialidades>
+    </categoria>
+    <categoria id="19">
+        <nombre>Investigación de Enfermedades Laborales</nombre>
+        <especialidades>
+            <item id="1">Investigación de Enfermedades Laborales</item>
+        </especialidades>
+    </categoria>
+    <categoria id="20">
+        <nombre>Medicina y Salud</nombre>
+        <especialidades>
+            <item id="1">Exámenes Ocupacionales</item>
+            <item id="2">Medicina preventiva - Estilos de vida saludable</item>
+        </especialidades>
+    </categoria>
+    <categoria id="21">
+        <nombre>Venta y Suministro</nombre>
+        <especialidades>
+            <item id="1">Venta de equipos de emergencia</item>
+            <item id="2">Venta de dotación y EPP</item>
+            <item id="3">Venta de equipos para trabajo en alturas</item>
+        </especialidades>
+    </categoria>
+    <categoria id="22">
+        <nombre>Coaching Empresarial</nombre>
+        <especialidades>
+            <item id="1">Coaching Empresarial</item>
+        </especialidades>
+    </categoria>
+    <categoria id="23">
+        <nombre>Derecho Laboral</nombre>
+        <especialidades>
+            <item id="1">Derecho Laboral</item>
+        </especialidades>
+    </categoria>
+</comunidad>

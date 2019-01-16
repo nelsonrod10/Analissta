@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<agentes>
+    <tipo id="1">
+        <nombre>Personas</nombre>
+        <agente id="1">Personas</agente>
+    </tipo>
+    <tipo id="2">
+        <nombre>Presion atmosferica</nombre>
+        <agente id="1" textAuxiliar="como trabajo en un cajón neumático,  zambullida profunda, etc.">Alta presión </agente>
+        <agente id="2" textAuxiliar="aire enrarecido como en alturas extremas">Baja presión </agente>
+    </tipo>
+    <tipo id="3">
+        <nombre>Animales, pájaros, insectos, reptiles, (vivos)</nombre>
+        <agente id="1">Pájaros.</agente>
+        <agente id="2">Insectos.</agente>
+        <agente id="3">Reptiles.</agente>
+        <agente id="4">Otros Animales.</agente>
+    </tipo>
+    <tipo id="4">
+        <nombre textAuxiliar="excluyendo alimentos">Productos animales </nombre>
+        <agente id="1">Huesos.</agente>
+        <agente id="2">Secreciones.</agente>
+        <agente id="3">Plumas.</agente>
+        <agente id="4" textAuxiliar="en estado bruto">Pieles, cerdas, lana, etc.</agente>
+        <agente id="5">Cueros y pieles curtidas.</agente>
+        <agente id="6">Productos animales no especificados.</agente>
+    </tipo>
+    <tipo id="5">
+        <nombre>Calderas,recipientes a presión</nombre>
+        <agente id="1">Calderas</agente>
+        <agente id="2">Autoclave.</agente>
+        <agente id="3" textAuxiliar="para gases o líquidos">Recipientes presurizados, compresor.</agente>
+        <agente id="4">Cilindros de oxígeno y acetileno.</agente>
+        <agente id="5" textAuxiliar="mangueras o tubos - para líquidos presurizados, gases o vapores">Líneas de presión.</agente>
+        <agente id="6">Recipientes a presión, no especificados en otra parte.</agente>
+    </tipo>
+    <tipo id="6">
+        <nombre textAuxiliar="vacíos o llenos">Cajas, barriles, envases, paquetes</nombre>
+        <agente id="1">Barriles,  toneles pequeños, tambores,  canecas, baldes.</agente>
+        <agente id="2">Bultos, paquetes.</agente>
+        <agente id="3">Cajas, huacales, cartones, canastas.</agente>
+        <agente id="4">Botellas, cántaros, frascos, etc.</agente>
+        <agente id="5">Ampollas.</agente>
+        <agente id="6">Capilares.</agente>
+        <agente id="7">Vasos.</agente>
+        <agente id="8">Tubos de ensayo, tubos de vidrio.</agente>
+        <agente id="9" textAuxiliar="No presurizados">Tanques,  arcones, tolvas, silos, etc.</agente>
+        <agente id="10">Recipientes no especificados en otra parte.</agente>
+    </tipo>
+    <tipo id="7">
+        <nombre textAuxiliar="excluyendo pisos, superficies de trabajo o pasillos. - Véase superficies de trabajo">Edificios y estructuras </nombre>
+        <agente id="1">Edificios de oficinas, de planta, residenciales, paredes, etc.</agente>
+        <agente id="2">Puertas de edificios.</agente>
+        <agente id="3">Ascensor.</agente>
+        <agente id="4">Ventana.</agente>
+        <agente id="5">Puentes.</agente>
+        <agente id="6">Represas, esclusas, compuertas, etc.</agente>
+        <agente id="7">Tribunas, graderias, estadios. etc.</agente>
+        <agente id="8">Andamios, tablados, tarimas,  plataformas, etc.</agente>
+        <agente id="9">Torres, postes, etc.</agente>
+        <agente id="10">Muelles, dársenas, desembarcaderos, etc.</agente>
+        <agente id="11">Edificios y estructuras, no especificados en otra parte.</agente>
+    </tipo>
+    <tipo id="8">
+        <nombre textAuxiliar="No especificados en otra parte">Artículos de cerámica.</nombre>
+        <agente id="1">Ladrillo.</agente>
+        <agente id="2">Porcelana, loza.</agente>
+        <agente id="3">Tubos de desagüe,  tubos de alcantarilla, revestimiento de chimeneas, etc.</agente>
+        <agente id="4" textAuxiliar="decorativos, no para soportar carga;  mosaicos, etc.">Azulejos.</agente>
+        <agente id="5">Alfareria.</agente>
+        <agente id="6" textAuxiliar="vidriados, comunes o mate">Mosaicos estructurales.</agente>
+        <agente id="7">Artículos de cerámica no especificados en otra parte.</agente>
+    </tipo>
+    <tipo id="9">
+        <nombre textAuxiliar="sólidos, líquidos, gaseosos">Sustancias químicas, compuestos químicos.</nombre>
+        <agente id="1">Acidos.</agente>
+        <agente id="2">Alcoholes.</agente>
+        <agente id="3">Álcalis, soda cáustica, cementos, amoníaco, cal, silicato de sodio, etc.</agente>
+        <agente id="4" textAuxiliar="benceno, tolueno, xileno, anilina, etc">Compuestos aromáticos.</agente>
+        <agente id="5">Compuestos de Arsénico.</agente>
+        <agente id="6">Bisulfuro de carbono.</agente>
+        <agente id="7">Bióxido de carbono.</agente>
+        <agente id="8">Monóxido de carbono.</agente>
+        <agente id="9">Cianuro o compuestos cianógenos.</agente>
+        <agente id="10" textAuxiliar="Tricloroetileno, percloroetileno, cloruro de metilo, refrigerantes, flúor, bromo y  yodo">Compuestos halogenados, no especificados en otra parte.</agente>
+        <agente id="11" textAuxiliar="Plomo, mercurio, zinc,  bronce, cadmio, cromo, sulfato de aluminio y ferroso.">Compuestos metálicos, no especificados en otra parte.</agente>
+        <agente id="12" textAuxiliar="Humos nitrosos">Óxidos de nitrógeno.</agente>
+        <agente id="13">Formol.</agente>
+        <agente id="14">Cidex.</agente>
+        <agente id="15">Hipocloritos.</agente>
+        <agente id="16">Sustancias químicas y compuestos químicos no especificados en otras partes.</agente>
+    </tipo>
+    <tipo id="10">
+        <nombre>Vestuario, trajes, calzado.</nombre>
+        <agente id="1">Botas, zapatos.</agente>
+        <agente id="2">Polainas.</agente>
+        <agente id="3">Guantes.</agente>
+        <agente id="4">Casco, Sombreros, elementos para cubrir la cabeza.</agente>
+        <agente id="5">Sacos, impermeables.</agente>
+        <agente id="6">Camisas, blusas, suéteres chaquetas.</agente>
+        <agente id="7">Pantalones, vestidos, overoles.</agente>
+        <agente id="8">Medias.</agente>
+        <agente id="9">Ropa interior.</agente>
+        <agente id="10">Vestuario no especificado en otra parte.</agente>
+    </tipo>
+    <tipo id="11">
+        <nombre>Carbón, petróleo y sus derivados.</nombre>
+        <agente id="1">Carbón.</agente>
+        <agente id="2">Coque.</agente>
+        <agente id="3">A.C.P.M.</agente>
+        <agente id="4" textAuxiliar="parafinas, olefinas, etc.">Gasolina, compuestos líquidos de hidrocarburos.</agente>
+        <agente id="5" textAuxiliar=" metano, etano, etileno, propano, butano, isobutano, butileno, isobutileno, gas licuado del petróleo, GLP, etc.">Hidrocarburos gaseosos.</agente>
+        <agente id="6">Querosene o petróleo de uso doméstico.</agente>
+        <agente id="7">Aceites lubricantes y refrigerantes, grasas.</agente>
+        <agente id="8">Aceite de cocina.</agente>
+        <agente id="9">Gases manufacturados.</agente>
+        <agente id="10" textAuxiliar="éter de petróleo, extractos minerales, limpiadores de nafta, solventes de caucho, solventes stoddard, solventes aromáticos, etc">Solventes de nafta</agente>
+        <agente id="11">Asfaltos y aceites de petróleo para caminos.</agente>
+        <agente id="12">Derivados del petróleo y del carbón, no especificados en otra parte.</agente>
+    </tipo>
+    <tipo id="12">
+        <nombre textAuxiliar="atmosférico, ambiental">Frío.</nombre>
+        <agente id="1" textAuxiliar="atmosférico, ambiental">Frío.</agente>
+    </tipo>
+    <tipo id="13">
+        <nombre>Transportadores.</nombre>
+        <agente id="1">Transportadores por gravedad.</agente>
+        <agente id="2">Transportadores de fuerza mecánica.</agente>
+    </tipo>
+    <tipo id="14">
+        <nombre>Drogas y medicinas.</nombre>
+        <agente id="1" textAuxiliar="sueros, toxinas, antitoxinas, vacunas, plasma, etc.">Productos biológicos.</agente>
+        <agente id="2">Otras medicinas.</agente>
+    </tipo>
+    <tipo id="15">
+        <nombre>Aparatos eléctricos.</nombre>
+        <agente id="1">Motores.</agente>
+        <agente id="2">Generadores.</agente>
+        <agente id="3">Transformadores, convertidores.</agente>
+        <agente id="4">Conductores.</agente>
+        <agente id="5">Tableros de distribución, barras colectoras, interruptores, fusibles, cortadores de circuitos, cajas de distribución, etc.</agente>
+        <agente id="6">Reóstato, aparatos de arranque y control, condensadores, rectificadores, acumuladores.</agente>
+        <agente id="7">Aparatos magnéticos y electrolíticos.</agente>
+        <agente id="8">Artefactos para calefacción.</agente>
+        <agente id="9">Ventiladores.</agente>
+        <agente id="10">Aparatos eléctricos, no especificados en otra parte.</agente>
+        <agente id="11">Estufa.</agente>
+    </tipo>
+    <tipo id="16">
+        <nombre>Llamas, fuego, humo.</nombre>
+        <agente id="1">Llamas, fuego, humo.</agente>
+    </tipo>
+    <tipo id="17">
+        <nombre textAuxiliar=" incluyendo alimentos de origen animal">Productos alimenticios.</nombre>
+        <agente id="1">Frutas y sus derivados.</agente>
+        <agente id="2">Granos y sus derivados.</agente>
+        <agente id="3">Carnes y sus derivados.</agente>
+        <agente id="4">Leche y sus derivados.</agente>
+        <agente id="5">Vegetales y sus derivados.</agente>
+        <agente id="6">Productos alimenticios, no especificados en otra parte.</agente>
+    </tipo>
+    <tipo id="18">
+        <nombre textAuxiliar="Excluyendo las partes fijas de edificios o estructuras">Mobiliario, muebles o adornos fijos, accesorios.</nombre>
+        <agente id="1">Gabinetes, archivadores, bibliotecas, etc..</agente>
+        <agente id="2">Portahistorias.</agente>
+        <agente id="3">Incubadora.</agente>
+        <agente id="4">Sillas, bancos.</agente>
+        <agente id="5">Mostradores, bancos de trabajo, etc.</agente>
+        <agente id="6">Coberturas para pisos, carpetas, alfombras, esteras, etc.</agente>
+        <agente id="7">Equipo para alumbrado, lámparas, bombillas, etc.</agente>
+        <agente id="8">Veladoras.</agente>
+        <agente id="9">Mesas.</agente>
+        <agente id="10">Camas, camillas.</agente>
+        <agente id="11">Carrotermo.</agente>
+        <agente id="12">Mobiliario, muebles, adornos fijos, accesorios, no especificados en otra parte.</agente>
+        <agente id="13" textAuxiliar="Cristalería, fibras de vidrio, láminas, etc. - Excluyendo botellas, jarros, frascos o revestimientos de vidrio">Artículos de vidrio, no especificados en otra parte..</agente>
+        <agente id="14">Vidrios.</agente>
+    </tipo>
+    <tipo id="19">
+        <nombre>Herramientas manuales, no mecanizadas.</nombre>
+        <agente id="1">Hachas.</agente>
+        <agente id="2">Jeringa.</agente>
+        <agente id="3">Sopletes.</agente>
+        <agente id="4">Cinceles.</agente>
+        <agente id="5">Palancas de hierro, barras.</agente>
+        <agente id="6">Limas.</agente>
+        <agente id="7">Horquillas.</agente>
+        <agente id="8">Martillo, macho, mandarina, mazo.</agente>
+        <agente id="9">Recogedores.</agente>
+        <agente id="10">Azadones.</agente>
+        <agente id="11">Cuchillos, machete, bisturi.</agente>
+        <agente id="12">Picos.</agente>
+        <agente id="13">Cepillos, alicates, tenazas, pinzas.</agente>
+        <agente id="14">Brocas.</agente>
+        <agente id="15">Taladro manual.</agente>
+        <agente id="16">Punzones.</agente>
+        <agente id="17">Sogas, cadenas.</agente>
+        <agente id="18">Microscopio.</agente>
+        <agente id="19">Serruchos, seguetas, cortavidrios.</agente>
+        <agente id="20">Cizallas.</agente>
+        <agente id="21">Lapiceros.</agente>
+        <agente id="22">Destornilladores.</agente>
+        <agente id="23">Palas.</agente>
+        <agente id="24">Traperos.</agente>
+        <agente id="25">Llave para tuerca y para tubo.</agente>
+        <agente id="26">Cuchillas de afeitar.</agente>
+        <agente id="27">Herramientas manuales, no mecanizadas, no especificadas en otra parte.</agente>
+    </tipo>
+    <tipo id="20">
+        <nombre textAuxiliar="Las accionadas por motores, fluidos, comprimidos, etc. y en general cuando este remplazada la energía humana por fuerza motriz.">Herramientas manuales, mecanizadas </nombre>
+        <agente id="1">Esmeriles portátiles y otros con piedras abrasivas.</agente>
+        <agente id="2" textAuxiliar="sin piedra abrasiva">Pulidoras, gratas, brilladoras, enceradoras.</agente>
+        <agente id="3">Cinceles.</agente>
+        <agente id="4">Taladros.</agente>
+        <agente id="5">Maquina cortadora de tela.</agente>
+        <agente id="6">Martillos, pisones.</agente>
+        <agente id="7">Planchadoras.</agente>
+        <agente id="8">Herramientas accionadas con pólvora (Ramset). Armas de fuego.</agente>
+        <agente id="9">Picadua de alimentos.</agente>
+        <agente id="10">Punzonadoras.</agente>
+        <agente id="11">Remachadoras.</agente>
+        <agente id="12">Sopladoras.</agente>
+        <agente id="13">Sierras.</agente>
+        <agente id="14">Destornilladores.</agente>
+        <agente id="15">Herramienta para soldar.</agente>
+        <agente id="16">Herramientas manuales, mecanizadas, no especificadas en otra parte.</agente>
+    </tipo>
+    <tipo id="21">
+        <nombre textAuxiliar="Excluyendo objetos y sustancias calientes.">Calor atmosférico, ambiental </nombre>
+        <agente id="1" textAuxiliar="Hornos, retortas, calentadores de ambiente, estufas, cocinas, etc., que no sean eléctricos">Equipos de calefacción, no especificados en otra parte.</agente>
+        <agente id="2">Greca.</agente>
+    </tipo>
+    <tipo id="22">
+        <nombre>Aparatos de izar.</nombre>
+        <agente id="1">Grúas, cabrias.</agente>
+        <agente id="2">Elevadores, montacargas, ascensores.</agente>
+        <agente id="3">Pala draga.</agente>
+    </tipo>
+    <tipo id="23">
+        <nombre>Otros Aparatos de izar.</nombre>
+        <agente id="1">Elevadores neumáticos.</agente>
+        <agente id="2">Elevadores de cadena, diferencial de cadena.</agente>
+        <agente id="3">Pescante de malacate, malacate de poste o de pértiga.</agente>
+        <agente id="4" textAuxiliar="mecánicos, hidráulicos, neumáticos, etc.">Gatos.</agente>
+        <agente id="5" textAuxiliar="para transporte de trozas de madera">Ganchos.</agente>
+        <agente id="6">Cubos o cucharones de minería, cangilones.</agente>
+        <agente id="7">Aparatos de izar, no especificados en otra parte.</agente>
+    </tipo>
+    <tipo id="24">
+        <nombre>Agentes infecciosos y parasitarios.</nombre>
+        <agente id="1" textAuxiliar="bacterias, hongos, parásitos, virus, etc. - excluyendo productos químicos, drogas, preparados medicinales o alimentos contaminados.">Agentes infecciosos y parasitarios, no especificados en otra parte.</agente>
+    </tipo>
+    <tipo id="25">
+        <nombre textAuxiliar="Fijas o portátiles">Escaleras.</nombre>
+        <agente id="1">Escaleras fijas.</agente>
+    </tipo>
+    <tipo id="26">
+        <nombre>Escaleras movibles.</nombre>
+        <agente id="1">Escaleras de extension.</agente>
+        <agente id="2">Escaleras de de paso ancho.</agente>
+        <agente id="3">Escaleras de mano rectas, sencillas.</agente>
+        <agente id="4">Escaleras no especificadas en otra parte.</agente>
+    </tipo>
+    <tipo id="27">
+        <nombre>Líquidos, no especificados en otra parte.</nombre>
+        <agente id="1">Agua caliente.</agente>
+        <agente id="2">Corporales.</agente>
+        <agente id="3">Otros liquidos no especificadas en otra parte.</agente>
+    </tipo>
+    <tipo id="28">
+        <nombre>Máquinas.</nombre>
+        <agente id="1">Agitadores, mezcladoras, volteadores o revolvedoras, etc.</agente>
+        <agente id="2">Máquinas agrícolas, no especificadas en otra parte, corta césped.</agente>
+        <agente id="3">Bruñidoras, pulidoras, lijadoras, esmeriladoras.</agente>
+        <agente id="4">Máquinas para fundir, forjar y máquinas fijas automáticas para soldar metales.</agente>
+        <agente id="5">Inyectoras, extrusoras, sopladoras de plásticos.</agente>
+        <agente id="6">Máquinas trituradoras, pulverizadoras, molinos, etc.</agente>
+        <agente id="7">Rajadora de carnes.</agente>
+        <agente id="8" textAuxiliar="roscadora, fresadora y cepilladora para metales, limadora, molinos, rectificadoras">Máquinas para taladrar, barrenar, tornear.</agente>
+        <agente id="9">Máquinas para movimiento de tierra y construcción de carreteras. No especificadas en otra parte.</agente>
+        <agente id="10">Máquinas para minería y túneles, no especificados en otra parte.</agente>
+        <agente id="11">Máquinas de oficina.</agente>
+        <agente id="12">Máquinas empacadoras y envolvedoras, encelofanadoras, etiqueteadoras, abridoras, selladoras.</agente>
+        <agente id="13">Máquinas recogedoras, peinadoras y cardadoras.</agente>
+        <agente id="14" textAuxiliar="canteadora, barrenadora para madera.">Cepilladoras, planeadoras, molduradoras, trompos.</agente>
+        <agente id="15" textAuxiliar="excluyendo máquinas de imprenta">Prensas, troqueladoras, estampadoras, elaboradoras de puntillas, tapadoras, cadenas, etc.</agente>
+        <agente id="16">Máquinas de imprenta.</agente>
+        <agente id="17">Laminadoras, trefiladoras.</agente>
+        <agente id="18">Sierras, máquinas sinfín, circular.</agente>
+        <agente id="19">Máquinas tamizadoras y separadoras.</agente>
+        <agente id="20" textAuxiliar="Cortadoras de disco">Cizallas, cortadoras, rebanadoras, guillotinas.</agente>
+        <agente id="21">Máquinas de coser, hilvanar.</agente>
+        <agente id="22">Máquinas de tejer, hacer punto o hilar, selfatina, continuas, bobinado.</agente>
+        <agente id="23">Máquinas, no especificadas en otra parte, básculas.</agente>
+    </tipo>
+    <tipo id="29">
+        <nombre>Aparatos de transmisión de fuerza mecánica.</nombre>
+        <agente id="1">Correas.</agente>
+        <agente id="2">Cadenas, sogas, cables.</agente>
+        <agente id="3">Bobinas, poleas, garruchas o roldanas.</agente>
+        <agente id="4">Embragues de fricción.</agente>
+        <agente id="5">Engranajes.</agente>
+        <agente id="6">Aparatos de transmisión de fuerza mecánica, no especificados en otra parte.</agente>
+    </tipo>
+    <tipo id="30">
+        <nombre>Artículos de metal, no especificados en otra parte.</nombre>
+        <agente id="1">Estribos.</agente>
+        <agente id="2">Metal caliente.</agente>
+        <agente id="3">Cubetas odontologicas.</agente>
+        <agente id="4">Agujas.</agente>
+        <agente id="5">Remaches, tapas, pesas, latas.</agente>
+        <agente id="6">Platinas, varillas, alambres, tuercas, pernos, tornillos, puntillas, etc. Incluye metal fundido, lingotes, chatarra fundida, clavos, pero no minerales u otras materias primas en bruto.</agente>
+    </tipo>
+    <tipo id="31">
+        <nombre>Productos minerales, metálicos, no especificados en otra parte.</nombre>
+        <agente id="1">Productos de minería, en bruto o semi- procesados, tales como minerales en bruto y concentrados de minerales.</agente>
+    </tipo>
+    <tipo id="32">
+        <nombre>Productos minerales, NO metálicos, no especificados en otra parte.</nombre>
+        <agente id="1" textAuxiliar="Tales como. lodo, tierra, arcilla, arena, cascajo, piedra, etc.">Productos de minería, excavaciones, canteras, etc.</agente>
+    </tipo>
+    <tipo id="33">
+        <nombre>Ruido.</nombre>
+        <agente id="1">Ruido.</agente>
+    </tipo>
+    <tipo id="34">
+        <nombre>Papel y artículos de pulpa, no especificados  en otra parte.</nombre>
+        <agente id="1">Papel y artículos de pulpa, no especificados  en otra parte.</agente>
+    </tipo>
+    <tipo id="35">
+        <nombre>Partículas (no identificadas).</nombre>
+        <agente id="1">Partículas (no identificadas).</agente>
+    </tipo>
+    <tipo id="36">
+        <nombre textAuxiliar="en condiciones naturales o sin procesar, no incluye granos trillados, frutas, cosechas, troncos con ramas, etc.">Plantas, árboles, vegetación</nombre>
+        <agente id="1">Plantas, árboles, vegetación (en condiciones naturales o sin procesar, no incluye granos trillados, frutas, cosechas, troncos con ramas, etc.).</agente>
+    </tipo>
+    <tipo id="37">
+        <nombre textAuxiliar="polvos, láminas, varillas, modelados, etc., pero no las sustancias químicas puras o componentes usados en la fabricación de plásticos, caucho.">Artículos plásticos, no especificados en otra parte </nombre>
+        <agente id="1">Artículos plásticos, no especificados en otra parte</agente>
+    </tipo>
+    <tipo id="38">
+        <nombre>Artículos de caucho.</nombre>
+        <agente id="1">Artículos de caucho.</agente>
+    </tipo>
+    <tipo id="39">
+        <nombre>Placa radiográfica.</nombre>
+        <agente id="1">Placa radiográfica.</agente>
+    </tipo>
+    <tipo id="40">
+        <nombre>Bombas y generadores de energía.</nombre>
+        <agente id="1">Motores (vapor, combustión interna, etc.).</agente>
+        <agente id="2">Bombas. (Compresores de aire incluidos).</agente>
+        <agente id="3">Turbinas (hidráulicas, neumáticas, etc.).</agente>
+        <agente id="4">Bombas y generadores de energía, no especificados en otra parte.</agente>
+    </tipo>
+    <tipo id="41">
+        <nombre textAuxiliar="usar este item solo en caso de lesiones por radiaciones.">Sustancias y equipos radioactivos</nombre>
+        <agente id="1">Isótopos y sustancias radioactivas para uso industrial o médico.</agente>
+        <agente id="2">Radio.</agente>
+        <agente id="3">Cesio.</agente>
+        <agente id="4">Combustible para reactor atómico, en bruto o procesado.</agente>
+        <agente id="5">Desperdicios o desechos radioactivos de reactores atómicos.</agente>
+        <agente id="6">Radiaciones solares.</agente>
+        <agente id="7">Equipos de rayos ultravioleta.</agente>
+        <agente id="8">Equipos de soldadura autógena y eléctrica, arco eléctrico.</agente>
+        <agente id="9">Equipos de rayos x y fluoroscopia.</agente>
+        <agente id="10">Sustancias o equipos radioactivos, no especificados en otra parte.</agente>
+    </tipo>
+    <tipo id="42">
+        <nombre textAuxiliar="No especificados en otra parte.">Jabones, detergentes, compuestos para limpieza</nombre>
+        <agente id="1">Jabones, detergentes, compuestos para limpieza, no especificados en otra parte.</agente>
+    </tipo>
+    <tipo id="43">
+        <nombre>Sílice.</nombre>
+        <agente id="1">Sílice.</agente>
+    </tipo>
+    <tipo id="44">
+        <nombre textAuxiliar="Escombros, materiales de desperdicios, no especificados en otra parte.">Desechos industriales</nombre>
+        <agente id="1">Desechos industriales, escombros, materiales de desperdicios, no especificados en otra parte.</agente>
+    </tipo>
+    <tipo id="45">
+        <nombre>Vapor de agua.</nombre>
+        <agente id="1">Vapor de agua.</agente>
+    </tipo>
+    <tipo id="46">
+        <nombre textAuxiliar=" no especificados en otra parte, Incluye fibras animales después de la primera limpieza o lavado, fibras vegetales y sintéticas- excepto las de vidrio, hilazas, hilos, mercancías en depósito, fieltros y otros productos textiles.">Productos textiles,</nombre>
+        <agente id="1">Productos textiles, no especificados en otra parte</agente>
+    </tipo>
+    <tipo id="47">
+        <nombre textAuxiliar="respecto a lesiones sufridas mientras se ocupa un vehículo.">Vehículos. </nombre>
+        <agente id="1">De tracción animal.</agente>
+        <agente id="2">Aéreos.</agente>
+        <agente id="3">Vehículos motorizados para carreteras.</agente>
+        <agente id="4">Bicicletas y otros vehículos no motorizados para carretera.</agente>
+    </tipo>
+    <tipo id="48">
+        <nombre>Vehículos para plantas o industrias.</nombre>
+        <agente id="1">Carritos de mano, plataformas con rodillos y otros vehículos no motorizados.</agente>
+        <agente id="2">Levantadores de horquilla, montacargas, apiladores, cargadores de madera y otros vehículos cargadores motorizados.</agente>
+        <agente id="3">Tractores y otros vehículos de remolque motorizados.</agente>
+        <agente id="4">Vehículos sobre rieles.</agente>
+        <agente id="5">Trineos y otros vehículos para transporte sobre nieve y hielo.</agente>
+        <agente id="6">Vehículos acuáticos.</agente>
+        <agente id="7">Vehículos, no especificados en otra parte.</agente>
+    </tipo>
+    <tipo id="49">
+        <nombre textAuxiliar="No especificados en otra parte Troncos, madera aserrada, tablas, postes, vigas, astillas y otros productos de madera.">Productos de madera</nombre>
+        <agente id="1">Productos de madera, no especificados en otra parte.</agente>
+    </tipo>
+    <tipo id="50">
+        <nombre textAuxiliar="Superficies usadas para apoyo de las personas.">Superficies de trabajo</nombre>
+        <agente id="1" textAuxiliar="de un edificio, una mina, un vehículo, un andamio, etc.">Piso.</agente>
+        <agente id="2" textAuxiliar="al aire libre">Terrenos .</agente>
+        <agente id="3">Rampas.</agente>
+        <agente id="4">Techos.</agente>
+        <agente id="5" textAuxiliar="Al aire libre">Aceras, senderos, pasillos.</agente>
+        <agente id="6" textAuxiliar="Que sean parte integral de la edificación">Escaleras, escalones.</agente>
+        <agente id="7">Calles, caminos, carreteras.</agente>
+        <agente id="8">Superficies de trabajo, no especificadas en otra parte.</agente>
+    </tipo>
+    <tipo id="51">
+        <nombre>Misceláneos, no especificados en otra parte.</nombre>
+        <agente id="1">Misceláneos, no especificados en otra parte.</agente>
+    </tipo>
+    <tipo id="52">
+        <nombre>Equipos de sueros, sondas.</nombre>
+        <agente id="1">Equipos de sueros, sondas.</agente>
+    </tipo>
+    <tipo id="53">
+        <nombre textAuxiliar="distintos a partículas">Desconocidos, sin identificar.</nombre>
+        <agente id="1">Desconocidos, sin identificar.</agente>
+    </tipo>
+    <tipo id="54">
+        <nombre>Ningún agente del accidente.</nombre>
+        <agente id="1">Ningún agente del accidente.</agente>
+    </tipo>
+</agentes>

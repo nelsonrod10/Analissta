@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<origenes>
+    <origen id="1" modulo="hallazgos" analisis_detallado="false" short-name="Condiciones Subestandar">
+        <nombre>Actos y condiciones inseguras.</nombre>
+    </origen>
+    <origen id="2" modulo="inspecciones" analisis_detallado="true" short-name="Inspecciones">
+        <nombre>Resultado de Inspecciones.</nombre>
+    </origen>
+    <origen id="3" modulo="accidentalidad" analisis_detallado="false" short-name="Accidentes">
+        <nombre>Resultado de Incidentes / Accidentes.</nombre>
+    </origen>
+    <origen id="4" modulo="hallazgos" analisis_detallado="false" short-name="Revisión General">
+        <nombre>Revisión General al sistema.</nombre>
+    </origen>
+    <origen id="5" modulo="automatico" analisis_detallado="false" short-name="Actividades y Capacitaciones">
+        <nombre>Evaluación de Capacitación y Entrenamiento.</nombre>
+    </origen>
+    <origen id="6" modulo="hallazgos" analisis_detallado="false" short-name="Evaluaciones Higienicas">
+        <nombre>Evaluaciones higiénicas ocupacionales (ruido, iluminación u otras).</nombre>
+    </origen>
+    <origen id="7" modulo="hallazgos" analisis_detallado="false" short-name="Diagnóstico Salud">
+        <nombre>Informe Diagnóstico de salud.</nombre>
+    </origen>
+    <origen id="8" modulo="hallazgos" analisis_detallado="false" short-name="Simulacros/Emergencias">
+        <nombre>Informe de simulacros y/o emergencias.</nombre>
+    </origen>
+    <origen id="9" modulo="hallazgos" analisis_detallado="false" short-name="Copasst">
+        <nombre>Reuniones COPASST.</nombre>
+    </origen>
+    <origen id="10" modulo="hallazgos" analisis_detallado="true" short-name="Auditorias Internas">
+        <nombre>Auditorias internas.</nombre>
+    </origen>
+    <origen id="11" modulo="hallazgos" analisis_detallado="true" short-name="Auditorias Externas">
+        <nombre>Auditorias Externas.</nombre>
+    </origen>
+    <origen id="12" modulo="hallazgos" analisis_detallado="true" short-name="Requisitos Legales">
+        <nombre>Incumplimiento a requisitos legales.</nombre>
+    </origen>
+    <origen id="13" modulo="automatico" analisis_detallado="true" short-name="Indicadores">
+        <nombre>Incumplimiento a la meta de un indicador.</nombre>
+    </origen>
+    <origen id="14" modulo="hallazgos" analisis_detallado="true" short-name="Quejas/Reclamos">
+        <nombre>Quejas y reclamos de partes interesadas.</nombre>
+    </origen>
+    <origen id="15" modulo="hallazgos" analisis_detallado="false" short-name="Procedimientos/Instructivos">
+        <nombre>Incumplimiento de procedimientos e instructivos.</nombre>
+    </origen>
+    <origen id="16" modulo="hallazgos" analisis_detallado="false" short-name="Control Operacional">
+        <nombre>Incumplimiento de controles operacionales.</nombre>
+    </origen>
+    <origen id="17" modulo="hallazgos" analisis_detallado="false" short-name="Reuniones HSE">
+        <nombre>Reuniones HSE.</nombre>
+    </origen>
+    <origen id="18" modulo="hallazgos" analisis_detallado="false" short-name="SGI HSEQ">
+        <nombre>Oportunidades de mejora SGI HSEQ.</nombre>
+    </origen>
+    <origen id="19" modulo="hallazgos" analisis_detallado="false" short-name="Inspeccion NO Programada">
+        <nombre>Inspección no programada.</nombre>
+    </origen>
+</origenes>

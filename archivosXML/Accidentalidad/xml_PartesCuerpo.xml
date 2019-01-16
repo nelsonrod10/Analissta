@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<partesCuerpo>
+    <tipo id="1">
+        <nombre>Cabeza</nombre>
+        <parte id="1">Cerebro</parte>
+    </tipo>
+    <tipo id="2">
+        <nombre>Oído(s).</nombre>
+        <parte id="1">Oído (s)  externo</parte>
+        <parte id="2" textAuxiliar="incluyendo la audición">Oído (s)  interno</parte>
+    </tipo>
+    <tipo id="3">
+        <nombre>Ojo(s).</nombre>
+        <parte id="1" textAuxiliar="incluye nervios ópticos y visión">Ojo (s) </parte>
+        <parte id="2">Párpado</parte>
+    </tipo>
+    <tipo id="4">
+        <nombre>Cara.</nombre>
+        <parte id="1" textAuxiliar="incluyendo el mentón">Mandíbula </parte>
+        <parte id="2" textAuxiliar="incluye labios, diente, lengua, garganta y sentido del gusto">Boca</parte>
+        <parte id="3">Mejilla</parte>
+        <parte id="4" textAuxiliar="incluye fosas nasales, senos y sentido del olfato">Nariz</parte>
+        <parte id="5">Ceja</parte>
+        <parte id="6" textAuxiliar="cualquier combinación de las partes arriba citadas">Cara, partes múltiples</parte>
+        <parte id="7">Cara, no identificada en otra parte</parte>
+    </tipo>
+    <tipo id="5">
+        <nombre>Cuero Cabelludo.</nombre>
+        <parte id="1">Cuero Cabelludo</parte>
+    </tipo>
+    <tipo id="6">
+        <nombre >Cráneo</nombre>
+        <parte id="1" textAuxiliar="incluye solamente lesiones óseas de la bóveda y la base craneal SIN compromiso cerebral.">Cráneo</parte>
+    </tipo>
+    <tipo id="7">
+        <nombre textAuxiliar="Cualquier combinación de las partes anteriores">Cabeza, múltiple</nombre>
+        <parte id="1">Cabeza, múltiple, cualquier combinación de las partes anteriores</parte>
+        <parte id="2">Cabeza no identificada en otra parte.</parte>
+        <parte id="3" textAuxiliar="incluye columna cervical y médula espinal correspondiente">Cuello.</parte>
+    </tipo>
+    <tipo id="8">
+        <nombre textAuxiliar="ARRIBA de la muñeca">Extremidades superiores.</nombre>
+        <parte id="1">Brazo</parte>
+        <parte id="2">Hombro</parte>
+        <parte id="3">Codo</parte>
+        <parte id="4">Antebrazo</parte>
+        <parte id="5" textAuxiliar="Cualquier combinación de las partes anteriores">Extremidades superiores</parte>
+        <parte id="6">Extremidades superiores, no identificada en otra parte</parte>
+    </tipo>
+    <tipo id="9">
+        <nombre textAuxiliar="ABAJO de la muñeca">Extremidades superiores.</nombre>
+        <parte id="1">Muñeca</parte>
+        <parte id="2" textAuxiliar="Excluyendo la muñeca y los dedos">Mano </parte>
+        <parte id="3">Mano, incluyendo dedos</parte>
+        <parte id="4">Dedo(s)</parte>
+        <parte id="5" textAuxiliar="Cualquier combinación de las partes anteriores">Extremidades superiores, múltiples .</parte>
+        <parte id="6">Extremidades superiores, no identificada en otra parte</parte>
+    </tipo>
+    <tipo id="10">
+        <nombre>Tronco.</nombre>
+        <parte id="1" textAuxiliar="Incluye órganos internos y sus hernias">Abdomen</parte>
+        <parte id="2" textAuxiliar="Incluye músculos de la espalda, columna, dorso lumbar, región lumbar y médula espinal">Espalda</parte>
+        <parte id="3" textAuxiliar="Incluye costillas, esternón y órganos internos del tórax">Tórax</parte>
+        <parte id="4" textAuxiliar="Incluye pelvis, órganos pélvicos y nalgas,  escroto, coxis, pubis, sacro, ilíaco y órganos genitales">Caderas</parte>
+        <parte id="5" textAuxiliar="Incluye axila,  región escapular,  omoplato y clavícula">Hombros</parte>
+        <parte id="6" textAuxiliar="Cualquier combinación de las partes anteriores">Tronco, múltiples</parte>
+        <parte id="7" >Tronco, no identificada en otra parte</parte>
+    </tipo>
+    <tipo id="11">
+        <nombre textAuxiliar="ARRIBA del tobillo">Extremidades inferiores.</nombre>
+        <parte id="1">Muslo</parte>
+        <parte id="2" textAuxiliar="Incluye región poplítea, corva">Rodilla</parte>
+        <parte id="3" textAuxiliar="Entre la rodilla y el tobillo">Pierna </parte>
+        <parte id="4" textAuxiliar="Cualquier combinación de las partes anteriores">Extremidades inferiores múltiples</parte>
+        <parte id="5">Extremidades inferiores, no identificadas en otra parte.</parte>
+    </tipo>
+    <tipo id="12">
+        <nombre textAuxiliar="ABAJO del tobillo">Extremidades inferiores.</nombre>
+        <parte id="1">Tobillo</parte>
+        <parte id="2" textAuxiliar="Excluyendo tobillo y dedos">Pié</parte>
+        <parte id="3">Dedo(s) o  artejos</parte>
+        <parte id="4" textAuxiliar="Cualquier combinación de las partes anteriores">Extremidades inferiores,  múltiples</parte>
+        <parte id="5">Extremidades inferiores no identificadas en otra parte</parte>
+    </tipo>
+    <tipo id="13">
+        <nombre textAuxiliar="Se aplica cuando la totalidad de un sistema orgánico ha sido afectado, sin lesión específica en ninguna otra parte, como en el caso de intoxicación,  acción corrosiva que afecte órganos internos,  lesión de centros nerviosos, etc.  No se aplica cuando el daño en el sistema es producido por una lesión externa, que afecta una parte externa, tal como una lesión en la espalda que incluye daño a los nervios de la medula espinal">Sistemas orgánicos.</nombre>
+        <parte id="1" textAuxiliar="Corazón, sangre, arterias, venas,  etc.">Sistema circulatorio</parte>
+        <parte id="2">Sistema digestivo.</parte>
+        <parte id="3" textAuxiliar="Riñones, vejiga, intestinos, etc.">Sistema excretorio</parte>
+        <parte id="4" textAuxiliar="Huesos, articulaciones, tendones, músculos, etc.">Sistema músculo-esquelético</parte>
+        <parte id="5">Sistema nervioso</parte>
+        <parte id="6" textAuxiliar="Pulmones, etc.">Sistema respiratorio</parte>
+        <parte id="7">Varios sistemas orgánicos.</parte>
+        <parte id="8">Otros sistemas orgánicos.</parte>
+    </tipo>
+    <tipo id="14">
+        <nombre>Partes del cuerpo,  no identificadas en otra parte.</nombre>
+        <parte id="1">Partes del cuerpo,  no identificadas en otra parte.</parte>
+    </tipo>
+    <tipo id="15">
+        <nombre textAuxiliar="Insuficiente información para identificar la parte afectada">Sin clasificar.</nombre>
+        <parte id="1">Sin clasificar</parte>
+    </tipo>
+</partesCuerpo>

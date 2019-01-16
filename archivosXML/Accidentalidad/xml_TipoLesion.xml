@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<lesiones>
+    <tipo id="1">Amputación o enucleación.</tipo>
+    <tipo id="2">Asfixia, estrangulación, ahogamiento.</tipo>
+    <tipo id="3">Quemadura (calórica) incluye eritema.</tipo>
+    <tipo id="4">Quemadura  (química) incluye eritema.</tipo>
+    <tipo id="5">Inflamación de vías respiratorias  (por agentes químicos).</tipo>
+    <tipo id="6">Concusión cerebral.</tipo>
+    <tipo id="7">Enfermedad infecciosa o contagiosa -Ántrax, brucelosis, tuberculosis, etc..</tipo>
+    <tipo id="8">Contusión, machacón, magulladura, conservándose la superficie de la piel intacta; traumatismo, atrición, hematoma, edema y equimosis traumáticos.</tipo>
+    <tipo id="9">Vesículas  (ampollas).</tipo>
+    <tipo id="10">Cortada, laceración, pinchazo, herida abierta, avulsión, sección, desprendimiento y fractura de las uñas.</tipo>
+    <tipo id="11">Dermatitis-erupción, inflamación de la piel o tejido subcutáneo, incluyendo pústulas, etc.</tipo>
+    <tipo id="12">Luxación, esguince.</tipo>
+    <tipo id="13">Choque eléctrico, electrocución, quemadura eléctrica.</tipo>
+    <tipo id="14">Fractura, fisura ósea.</tipo>
+    <tipo id="15">Congelación, lesión cutánea producida por el frío y otros efectos de la exposición a bajas temperaturas.</tipo>
+    <tipo id="16">Pérdida de la audición o su deterioro (como lesión separada no como secuela de otra lesión).</tipo>
+    <tipo id="17">Insolación, calambres calóricos, agotamiento o postración por calor y otros efectos del calor ambiental.  No incluye quemaduras solares u otros efectos de radiaciones.</tipo>
+    <tipo id="18">Hernias, ruptura.  Incluye tanto las hernias inguinales como no inguinales.</tipo>
+    <tipo id="19">Inflamación o irritación de las articulaciones, tendones o músculos. Incluye bursitis, sinovitis, tenosinovitis, etc.  No incluye distensiones o desgarros de músculos y tendones o sus consecuencias.</tipo>
+    <tipo id="20">Envenenamiento (sistémico).</tipo>
+    <tipo id="21">Neumoconiosis - incluye la de los mineros del carbón, asbestosis, silicosis, etc.</tipo>
+    <tipo id="22">Efectos de las radiaciones, quemaduras solares y toda forma de lesión de los tejidos, huesos o fluidos del cuerpo, producidos por exposición a radiaciones.</tipo>
+    <tipo id="23">Raspaduras, abrasiones (heridas superficiales), conjuntivitis por cuerpo extraño no alojado, excoriación, erosión, fricción.</tipo>
+    <tipo id="24">Lesiones en ojos tales como rayones de córnea, heridas en cristalino.</tipo>
+    <tipo id="25">Distensiones, desgarros (incluye lumbalgias por esfuerzo).</tipo>
+    <tipo id="26">Lesiones múltiples.</tipo>
+    <tipo id="27">Enfermedad ocupacional no identificada en otra parte.  Hiperqueratosis, neuropatía.</tipo>
+    <tipo id="28">Otras lesiones no identificadas en otra parte.</tipo>
+    <tipo id="29">Sin clasificar, no determinada.</tipo>
+</lesiones>
