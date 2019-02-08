@@ -16,7 +16,7 @@ class ActividadesValoracione extends Model
     }
     
     public function peligro(){
-        return $this->belongsTo('App\Peligro');
+        return $this->belongsToMany('App\Peligro');
     }
     
     public function calendarioActividades(){

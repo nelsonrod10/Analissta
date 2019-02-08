@@ -420,7 +420,7 @@ class PeligroController extends Controller
         $peligro->save();
         
         $newMedida = new MedidasIntervencionController();
-        $newMedida->crearMedidaIntervencionValoracion($data['nombre'], $data['tipo'], $medida,$data['flag'],session('idPeligro'));
+        $newMedida->crearMedidaIntervencionValoracion($data['nombre'], $data['tipo'], $medida,$data['flag'],$peligro);
         return redirect()->route('configurar-medida-intervencion',['idActividad'=>$idActividad,'conteo'=>1]);
     }
     

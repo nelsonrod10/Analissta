@@ -16,7 +16,7 @@ class CapacitacionesValoracione extends Model
     }
     
     public function peligro(){
-        return $this->belongsTo('App\Peligro','peligro_id');
+        return $this->belongsToMany('App\Peligro');
     }
     
     public function calendarioCapacitaciones(){

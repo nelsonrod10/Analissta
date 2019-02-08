@@ -17,43 +17,47 @@ use App\InspeccionesDisponible;
 
 class MedidasIntervencionController extends Controller
 {
-    public function crearMedidaIntervencionValoracion($nombre,$tipoMedida,$medida,$flag,$idPeligro) {
+    public function crearMedidaIntervencionValoracion($nombre,$tipoMedida,$medida,$flag,Peligro $peligro) {
         
         $arrCreate_inspecciones_actividades = [
             'sistema_id'  => session('sistema')->id, 
-            'peligro_id'  => $idPeligro, 
+            'peligro_id'  => $peligro->id, 
             'medida'      => $medida, 
             'nombre'      => $nombre,
         ];
         
         $arrCreate_capacitaciones = [
             'sistema_id'  => session('sistema')->id, 
-            'peligro_id'  => $idPeligro, 
+            'peligro_id'  => $peligro->id, 
             'medida'      => $medida, 
             'nombre'      => $nombre,
         ];
         
         switch ($tipoMedida) {
             case "Actividad":
-                ActividadesValoracione::create($arrCreate_inspecciones_actividades);
+                $actividad = ActividadesValoracione::create($arrCreate_inspecciones_actividades);
+                $actividad->peligro()->attach($peligro->id);
             break;
             case "Capacitacion":
-                CapacitacionesValoracione::create($arrCreate_capacitaciones);
+                $capacitacion = CapacitacionesValoracione::create($arrCreate_capacitaciones);
+                $capacitacion->peligro()->attach($peligro->id);
             break;
             case "Inspeccion":
-                InspeccionesValoracione::create($arrCreate_inspecciones_actividades);
+                $inspeccion = InspeccionesValoracione::create($arrCreate_inspecciones_actividades);
+                $inspeccion->peligro()->attach($peligro->id);
             break;
             default:
             break;
         }
-        if($flag === "crear-en-disponibles"){
-            $this->crearMedidaIntervencionDisponible($nombre, $tipoMedida, $medida,$idPeligro);
+        
+        if($flag === "crear-en-disponibles"){    
+            $this->crearMedidaIntervencionDisponible($nombre, $tipoMedida, $medida,$peligro);
         }
         
     }
     
-    private function crearMedidaIntervencionDisponible($nombre,$tipoMedida,$medida,$idPeligro) {
-        $peligro = Peligro::find($idPeligro);
+    private function crearMedidaIntervencionDisponible($nombre,$tipoMedida,$medida,Peligro $peligro) {
+        //$peligro = Peligro::find($idPeligro);
         $arrCreate = [
             'sistema_id'        => session('sistema')->id, 
             'clasificacion_peligro_id' => $peligro->clasificacion, 
