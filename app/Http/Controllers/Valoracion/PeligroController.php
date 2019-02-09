@@ -407,6 +407,7 @@ class PeligroController extends Controller
         $data = request()->validate([
             'flag'      => 'string',
             'medida'    => 'string',
+            'idDisponible'=>'string',
             'tipo'      => 'string',
             'nombre'    => 'string|required'
         ],[
@@ -420,7 +421,12 @@ class PeligroController extends Controller
         $peligro->save();
         
         $newMedida = new MedidasIntervencionController();
-        $newMedida->crearMedidaIntervencionValoracion($data['nombre'], $data['tipo'], $medida,$data['flag'],$peligro);
+        if($data['flag'] == "crear-en-disponibles"){
+            $newMedida->crearMedidaIntervencionValoracion($data['nombre'], $data['tipo'], $medida,$peligro);
+        }
+        if($data['flag'] == "copiar-de-disponibles"){
+            $newMedida->copiarMedidaDeDisponibles($data['idDisponible'], $data['tipo'], $peligro);
+        }
         return redirect()->route('configurar-medida-intervencion',['idActividad'=>$idActividad,'conteo'=>1]);
     }
     

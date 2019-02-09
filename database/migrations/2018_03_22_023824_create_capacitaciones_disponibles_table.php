@@ -17,6 +17,7 @@ class CreateCapacitacionesDisponiblesTable extends Migration
             $table->increments('id');
             $table->integer('sistema_id')->unsigned();
             $table->integer('clasificacion_peligro_id')->unsigned();
+            $table->string("capacitaciones_valoracione_id")->defatul("0");
             $table->enum('medida',['N/A','eliminar','sustituir','ingenieria','epp_herramientas','administrativos'])->defaul('N/A');
             $table->string('nombre')->defaul('N/A');
             $table->foreign('sistema_id')->references('id')->on('sistemas')->onDelete('cascade');

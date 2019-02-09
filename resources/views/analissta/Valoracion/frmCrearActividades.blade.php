@@ -2,10 +2,11 @@
     use App\ActividadesValoracione;
     use App\ActividadesDisponible;
     
-    $actividadesValoracion = ActividadesValoracione::where('sistema_id',$sistema->id)
+    $actividadesValoracion = $peligro->actividadesValoracion->where('medida',$medidaAconfigurar);
+    /*$actividadesValoracion = ActividadesValoracione::where('sistema_id',$sistema->id)
             ->where('peligro_id',session('idPeligro'))
             ->where('medida',$medidaAconfigurar)
-            ->get();
+            ->get();*/
     $actividadesDisponibles = ActividadesDisponible::where('sistema_id',$sistema->id)
             ->where('clasificacion_peligro_id',$peligro->clasificacion)
             ->where('medida',$medidaAconfigurar)
@@ -71,6 +72,7 @@
                                     {{ csrf_field() }}  
                                     <input type="hidden" name="flag" value="copiar-de-disponibles">
                                     <input type="hidden" name="medida" value="{{$medidaAconfigurar}}">
+                                    <input type="hidden" name="idDisponible" value="{{$actividadDisponible->id}}">
                                     <input type="hidden" name="tipo" value="Actividad"/>
                                     <input type="hidden" name="nombre" value="{{$actividadDisponible->nombre}}"/>
                                     <input type="submit" class="button tiny" value="Agregar esta Actividad"/>

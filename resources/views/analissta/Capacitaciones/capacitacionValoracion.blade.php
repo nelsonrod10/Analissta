@@ -74,11 +74,8 @@ $xml_GTC45 = simplexml_load_file(base_path("archivosXML/Peligros_GTC45/xml_Pelig
             <div class='columns small-12'>
                 <b>Peligros Asociados: </b>
                 <small><i>(Para ver detalles haga click en el peligro)</i></small>
-                <?php
-                    $peligrosAsociados = Peligro::where('id',$capacitacion->peligro_id)->get();
-                ?>
                 <ul>
-                    @foreach($peligrosAsociados as $peligro)
+                    @foreach($capacitacion->peligro as $peligro)
                     @php
                         $clasificacion = $xml_GTC45->xpath("//peligros/clasificacion[id=$peligro->clasificacion]");
                         $categoria = $xml_GTC45->xpath("//peligros/clasificacion[id=$peligro->clasificacion]/listDescripciones/descripcion[id=$peligro->categoria]");

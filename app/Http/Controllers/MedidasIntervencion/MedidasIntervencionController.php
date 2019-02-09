@@ -17,7 +17,7 @@ use App\InspeccionesDisponible;
 
 class MedidasIntervencionController extends Controller
 {
-    public function crearMedidaIntervencionValoracion($nombre,$tipoMedida,$medida,$flag,Peligro $peligro) {
+    public function crearMedidaIntervencionValoracion($nombre,$tipoMedida,$medida,Peligro $peligro) {
         
         $arrCreate_inspecciones_actividades = [
             'sistema_id'  => session('sistema')->id, 
@@ -35,32 +35,31 @@ class MedidasIntervencionController extends Controller
         
         switch ($tipoMedida) {
             case "Actividad":
-                $actividad = ActividadesValoracione::create($arrCreate_inspecciones_actividades);
-                $actividad->peligro()->attach($peligro->id);
+                $accionCreada = ActividadesValoracione::create($arrCreate_inspecciones_actividades);
+                $accionCreada->peligro()->attach($peligro->id);
             break;
             case "Capacitacion":
-                $capacitacion = CapacitacionesValoracione::create($arrCreate_capacitaciones);
-                $capacitacion->peligro()->attach($peligro->id);
+                $accionCreada = CapacitacionesValoracione::create($arrCreate_capacitaciones);
+                $accionCreada->peligro()->attach($peligro->id);
             break;
             case "Inspeccion":
-                $inspeccion = InspeccionesValoracione::create($arrCreate_inspecciones_actividades);
-                $inspeccion->peligro()->attach($peligro->id);
+                $accionCreada = InspeccionesValoracione::create($arrCreate_inspecciones_actividades);
+                $accionCreada->peligro()->attach($peligro->id);
             break;
             default:
             break;
         }
-        
-        if($flag === "crear-en-disponibles"){    
-            $this->crearMedidaIntervencionDisponible($nombre, $tipoMedida, $medida,$peligro);
-        }
-        
+            
+        $this->crearMedidaIntervencionDisponible($nombre, $tipoMedida, $medida,$peligro,$accionCreada->id);
     }
     
-    private function crearMedidaIntervencionDisponible($nombre,$tipoMedida,$medida,Peligro $peligro) {
+    private function crearMedidaIntervencionDisponible($nombre,$tipoMedida,$medida,Peligro $peligro,$idAccionCreada) {
         //$peligro = Peligro::find($idPeligro);
+        $strAccionCreada = strtolower($tipoMedida)."es_valoracione_id";
         $arrCreate = [
             'sistema_id'        => session('sistema')->id, 
             'clasificacion_peligro_id' => $peligro->clasificacion, 
+            $strAccionCreada           => $idAccionCreada, 
             'medida'                   => $medida, 
             'nombre'                   => $nombre,
         ];
@@ -80,20 +79,99 @@ class MedidasIntervencionController extends Controller
         }
     }
     
-    public function eliminarMedidaIntervencionValoracion($id, $tipoMedida){
+    public function copiarMedidaDeDisponibles($idDisponible, $tipoMedida, Peligro $peligro){
         switch ($tipoMedida) {
             case "Actividad":
-                ActividadesValoracione::find($id)->delete();
+                $disponible = ActividadesDisponible::find($idDisponible);
+                if($disponible->actividades_valoracione_id == "0" || $disponible->actividades_valoracione_id == ""){
+                    $accionCreada = ActividadesValoracione::create([
+                        'sistema_id'  => session('sistema')->id, 
+                        'peligro_id'  => $peligro->id, 
+                        'medida'      => $disponible->medida, 
+                        'nombre'      => $disponible->nombre,
+                    ]);
+                    $disponible->actividades_valoracione_id = $accionCreada->id;
+                    $disponible->save();
+                }else{
+                    $accionCreada = ActividadesValoracione::find($disponible->actividades_valoracione_id);
+                }
             break;
             case "Capacitacion":
-                CapacitacionesValoracione::find($id)->delete();
+                $disponible = CapacitacionesDisponible::find($idDisponible);
+                if($disponible->capacitaciones_valoracione_id == "0" || $disponible->capacitaciones_valoracione_id == ""){
+                    $accionCreada = CapacitacionesValoracione::create([
+                        'sistema_id'  => session('sistema')->id, 
+                        'peligro_id'  => $peligro->id, 
+                        'medida'      => $disponible->medida, 
+                        'nombre'      => $disponible->nombre,
+                    ]);
+                    $disponible->capacitaciones_valoracione_id = $accionCreada->id;
+                    $disponible->save();
+                }else{
+                    $accionCreada = CapacitacionesValoracione::find($disponible->capacitaciones_valoracione_id);
+                }
             break;
             case "Inspeccion":
-                InspeccionesValoracione::find($id)->delete();
+                $disponible = InspeccionesDisponible::find($idDisponible);
+                if($disponible->inspecciones_valoracione_id == "0" || $disponible->inspecciones_valoracione_id == ""){
+                    $accionCreada = InspeccionesValoracione::create([
+                        'sistema_id'  => session('sistema')->id, 
+                        'peligro_id'  => $peligro->id, 
+                        'medida'      => $disponible->medida, 
+                        'nombre'      => $disponible->nombre,
+                    ]);
+                    $disponible->inspecciones_valoracione_id = $accionCreada->id;
+                    $disponible->save();
+                }else{
+                    $accionCreada = InspeccionesValoracione::find($disponible->inspecciones_valoracione_id);
+                }
             break;
             default:
             break;
         }
+        $accionCreada->peligro()->attach($peligro->id);
+    }
+    
+    public function eliminarMedidaIntervencionValoracion($id, $tipoMedida){
+        switch ($tipoMedida) {
+            case "Actividad":
+                $medida = ActividadesValoracione::find($id);
+                $peligro = Peligro::find($medida->peligro_id);
+                $medida->peligro()->detach($peligro->id);
+                //$peligro->actividadesValoracion()->detach($medida->id);
+                if($medida->peligro->count() == 0){
+                    $disponible=ActividadesDisponible::where("actividades_valoracione_id",$medida->id)->first();
+                    $disponible->actividades_valoracione_id="";
+                    $disponible->save();
+                }
+            break;
+            case "Capacitacion":
+                $medida = CapacitacionesValoracione::find($id);
+                $peligro = Peligro::find($medida->peligro_id);
+                $peligro->capacitacionesValoracion()->detach($medida->id);
+                if($medida->peligro->count() == 0){
+                    $disponible=ActividadesDisponible::where("actividades_valoracione_id",$medida->id)->first();
+                    $disponible->actividades_valoracione_id="";
+                    $disponible->save();
+                }
+            break;
+            case "Inspeccion":
+                $medida = InspeccionesValoracione::find($id)->delete();
+                $peligro = Peligro::find($medida->peligro_id);
+                $peligro->inspeccionesValoracion()->detach($medida->id);
+                if($medida->peligro->count() == 0){
+                    $disponible=ActividadesDisponible::where("actividades_valoracione_id",$medida->id)->first();
+                    $disponible->actividades_valoracione_id="";
+                    $disponible->save();
+                }
+            break;
+            default:
+            break;
+        }
+        
+        
+        $medida->delete();
+        return;
     }
     
     public static function unsetSessionVariables(){

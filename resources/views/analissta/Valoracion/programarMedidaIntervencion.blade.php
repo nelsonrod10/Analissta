@@ -82,26 +82,18 @@
         @if($flagMedidas == '')
             @include('analissta.Valoracion.frmCrearActividades')
             @php
-                $conteoActividades = ActividadesValoracione::where('peligro_id',session('idPeligro'))
-                        ->where('medida',$medidaAconfigurar)
-                        ->get();
-                $conteoAvanzar = count($conteoActividades);
+                $conteoActividades = $peligro->actividadesValoracion()->where('medida',$medidaAconfigurar)->count();
+                $conteoAvanzar = $conteoActividades;
                 $mensajeContinuar = "Para continuar debe crear por lo menos una Actividad";
             @endphp
         @endif
         @if($flagMedidas == 'Todas')
             @php
-                $conteoActividades = ActividadesValoracione::where('peligro_id',session('idPeligro'))
-                        ->where('medida',$medidaAconfigurar)
-                        ->get();
-                $conteoCapacitaciones = CapacitacionesValoracione::where('peligro_id',session('idPeligro'))
-                        ->where('medida',$medidaAconfigurar)
-                        ->get();
-                $conteoInspecciones = InspeccionesValoracione::where('peligro_id',session('idPeligro'))
-                        ->where('medida',$medidaAconfigurar)
-                        ->get();
+                $conteoActividades = $peligro->actividadesValoracion->where('medida',$medidaAconfigurar)->count();
+                $conteoCapacitaciones = $peligro->capacitacionesValoracion->where('medida',$medidaAconfigurar)->count();
+                $conteoInspecciones = $peligro->inspeccionesValoracion->where('medida',$medidaAconfigurar)->count();
                         
-                $conteoAvanzar = count($conteoActividades) + count($conteoCapacitaciones) + count($conteoInspecciones);
+                $conteoAvanzar = $conteoActividades + $conteoCapacitaciones + $conteoInspecciones;
                 $mensajeContinuar = "Para continuar debe crear por lo menos una Actividad, Capacitación o Inspección";
             @endphp
             <div class="row">

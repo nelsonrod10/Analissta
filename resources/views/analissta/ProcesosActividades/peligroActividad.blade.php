@@ -436,7 +436,7 @@
             <div class="columns small-12 medium-6">
                 
                 <?php
-                    $Actividades =ActividadesValoracione::where('peligro_id',$peligro->id)->get();
+                    $Actividades =$peligro->actividadesValoracion;
                     if(count($Actividades)>0):
                 ?>
                 <div class="columns small-12 text-center"><b>Actividades</b></div>
@@ -474,7 +474,7 @@
                 /*if($actividad->attributes()["idRevaloracion"]):
                     <!--<span style="background: #558000;font-size: 11px;color: white;">Revaloracion</span>-->
                 //endif*/
-                    $Capacitaciones=CapacitacionesValoracione::where('peligro_id',$peligro->id)->get();
+                    $Capacitaciones=$peligro->capacitacionesValoracion;
                     if(count($Capacitaciones)>0):
                 ?>
                 <div class="columns small-12 text-center"><b>Capacitaciones</b></div>
@@ -495,7 +495,7 @@
             
             <div class="columns small-12 medium-6 end">
                 <?php
-                    $Inspecciones=InspeccionesValoracione::where('peligro_id',$peligro->id)->get();
+                    $Inspecciones=$peligro->inspeccionesValoracion;
                     if(count($Inspecciones)>0):
                 ?>
                 <div class="columns small-12 text-center"><b>Inspecciones</b></div>

@@ -2,10 +2,11 @@
     use App\InspeccionesValoracione;
     use App\InspeccionesDisponible;
     
-    $inspeccionesValoracion = InspeccionesValoracione::where('sistema_id',$sistema->id)
+    $inspeccionesValoracion = $peligro->inspeccionesValoracion->where('medida',$medidaAconfigurar);
+    /*$inspeccionesValoracion = InspeccionesValoracione::where('sistema_id',$sistema->id)
             ->where('peligro_id',session('idPeligro'))
             ->where('medida',$medidaAconfigurar)
-            ->get();
+            ->get();*/
     
     $inspeccionesDisponibles = InspeccionesDisponible::where('sistema_id',$sistema->id)
             ->where('clasificacion_peligro_id',$peligro->clasificacion)

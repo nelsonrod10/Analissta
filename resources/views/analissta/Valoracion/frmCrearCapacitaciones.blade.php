@@ -2,10 +2,11 @@
     use App\CapacitacionesValoracione;
     use App\CapacitacionesDisponible;
     
-    $capacitacionesValoracion = CapacitacionesValoracione::where('sistema_id',$sistema->id)
+    $capacitacionesValoracion = $peligro->capacitacionesValoracion->where('medida',$medidaAconfigurar);
+    /*$capacitacionesValoracion = CapacitacionesValoracione::where('sistema_id',$sistema->id)
             ->where('peligro_id',session('idPeligro'))
             ->where('medida',$medidaAconfigurar)
-            ->get();
+            ->get();*/
     $capacitacionesDisponibles = CapacitacionesDisponible::where('sistema_id',$sistema->id)
             ->where('clasificacion_peligro_id',$peligro->clasificacion)
             ->where('medida',$medidaAconfigurar)

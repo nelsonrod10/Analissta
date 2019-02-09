@@ -94,6 +94,7 @@
                                     ->get();
                             
                             foreach($categorias as $dataCateg):
+                                $peligro = Peligro::find($dataCateg->id);
                                 $categoria = $xml_GTC45->xpath("//peligros/clasificacion[id=$clasif]/listDescripciones/descripcion[id=$dataCateg->categoria]");
                                 $subCategoria=[];
                                 if((int)$dataCateg->subCategoria !== 0){
@@ -179,7 +180,8 @@
                                             endif;
                                         ?>
                                         <?php
-                                            $numActividades = ActividadesValoracione::where('peligro_id',$dataCateg->id)->get();
+                                            //$numActividades = ActividadesValoracione::where('peligro_id',$dataCateg->id)->get();
+                                            $numActividades = $peligro->actividadesValoracion;
                                             if(count($numActividades)> 0):
                                         ?>
                                             <a class="button tiny " href="{{route('actividades')}}"><span>{{count($numActividades)}}</span>  - Actividades</a>
@@ -187,7 +189,8 @@
                                             endif;
                                         ?>
                                         <?php
-                                            $numCapacitaciones = CapacitacionesValoracione::where('peligro_id',$dataCateg->id)->get();
+                                            //$numCapacitaciones = CapacitacionesValoracione::where('peligro_id',$dataCateg->id)->get();
+                                            $numCapacitaciones = $peligro->capacitacionesValoracion;
                                             if(count($numCapacitaciones)> 0):
                                         ?>
                                             <a class="button tiny success-2" href="{{route('capacitaciones')}}"><span>{{count($numCapacitaciones) }}</span> - Capacitaciones </a></span> 
@@ -195,7 +198,8 @@
                                             endif;
                                         ?>
                                         <?php
-                                            $numInspecciones = InspeccionesValoracione::where('peligro_id',$dataCateg->id)->get();
+                                            //$numInspecciones = InspeccionesValoracione::where('peligro_id',$dataCateg->id)->get();
+                                            $numInspecciones = $peligro->inspeccionesValoracion;
                                             if(count($numInspecciones)> 0):
                                         ?>
                                             <a class="button tiny success-2" href="{{route('inspecciones')}}"><span>{{ count($numInspecciones) }}</span> - Inspecciones </a>
