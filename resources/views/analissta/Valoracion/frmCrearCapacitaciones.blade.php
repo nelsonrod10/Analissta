@@ -68,13 +68,14 @@
                     <div class="row">
                         <div class="columns small-7 listado-Activ-Creadas text-center">{{ $capacitacionDisponible->nombre }}</div>
                         <div class="columns small-5 text-left">
-                            @if(isset($capacitacionProgramada[0]->nombre))
+                            @if($peligro->capacitacionesValoracion->where('id',$capacitacionDisponible->capacitaciones_valoracione_id)->count() > 0)
                             <label style="color:#009900"><i class="fi-check"></i> Seleccionada</label>
                             @else
                                 <form name="frm-eliminar-capacitacion" method="post" action="{{ route('crear-medida-intervencion',['idActividad'=>$actividad->id]) }}">
                                     {{ csrf_field() }}  
                                     <input type="hidden" name="flag" value="copiar-de-disponibles">
                                     <input type="hidden" name="medida" value="{{$medidaAconfigurar}}">
+                                    <input type="hidden" name="idDisponible" value="{{$capacitacionDisponible->id}}">
                                     <input type="hidden" name="tipo" value="Capacitacion"/>
                                     <input type="hidden" name="nombre" value="{{$capacitacionDisponible->nombre}}"/>
                                     <input type="submit" class="button tiny" value="Agregar esta Capacitación"/>

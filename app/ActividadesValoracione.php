@@ -1,7 +1,6 @@
 <?php
 
 namespace App;
-
 use Illuminate\Database\Eloquent\Model;
 
 class ActividadesValoracione extends Model
@@ -16,7 +15,7 @@ class ActividadesValoracione extends Model
     }
     
     public function peligro(){
-        return $this->belongsToMany('App\Peligro');
+        return $this->belongsToMany('App\Peligro','actividades_valoracione_peligro','actividad_id','peligro_id');
     }
     
     public function calendarioActividades(){

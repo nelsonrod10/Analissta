@@ -36,20 +36,18 @@ class MedidasIntervencionController extends Controller
         switch ($tipoMedida) {
             case "Actividad":
                 $accionCreada = ActividadesValoracione::create($arrCreate_inspecciones_actividades);
-                $accionCreada->peligro()->attach($peligro->id);
+                //$accionCreada->peligro()->attach($peligro->id);
             break;
             case "Capacitacion":
                 $accionCreada = CapacitacionesValoracione::create($arrCreate_capacitaciones);
-                $accionCreada->peligro()->attach($peligro->id);
+                //$accionCreada->peligro()->attach($peligro->id);
             break;
             case "Inspeccion":
                 $accionCreada = InspeccionesValoracione::create($arrCreate_inspecciones_actividades);
-                $accionCreada->peligro()->attach($peligro->id);
-            break;
-            default:
+                //$accionCreada->peligro()->attach($peligro->id);
             break;
         }
-            
+        $accionCreada->peligro()->attach($peligro->id);    
         $this->crearMedidaIntervencionDisponible($nombre, $tipoMedida, $medida,$peligro,$accionCreada->id);
     }
     
@@ -83,7 +81,7 @@ class MedidasIntervencionController extends Controller
         switch ($tipoMedida) {
             case "Actividad":
                 $disponible = ActividadesDisponible::find($idDisponible);
-                if($disponible->actividades_valoracione_id == "0" || $disponible->actividades_valoracione_id == ""){
+                if(!ActividadesValoracione::find($disponible->actividades_valoracione_id)){    
                     $accionCreada = ActividadesValoracione::create([
                         'sistema_id'  => session('sistema')->id, 
                         'peligro_id'  => $peligro->id, 
@@ -98,7 +96,7 @@ class MedidasIntervencionController extends Controller
             break;
             case "Capacitacion":
                 $disponible = CapacitacionesDisponible::find($idDisponible);
-                if($disponible->capacitaciones_valoracione_id == "0" || $disponible->capacitaciones_valoracione_id == ""){
+                if(!CapacitacionesValoracione::find($disponible->capacitaciones_valoracione_id)){
                     $accionCreada = CapacitacionesValoracione::create([
                         'sistema_id'  => session('sistema')->id, 
                         'peligro_id'  => $peligro->id, 
@@ -113,7 +111,7 @@ class MedidasIntervencionController extends Controller
             break;
             case "Inspeccion":
                 $disponible = InspeccionesDisponible::find($idDisponible);
-                if($disponible->inspecciones_valoracione_id == "0" || $disponible->inspecciones_valoracione_id == ""){
+                if(!InspeccionesValoracione::find($disponible->inspecciones_valoracione_id)){
                     $accionCreada = InspeccionesValoracione::create([
                         'sistema_id'  => session('sistema')->id, 
                         'peligro_id'  => $peligro->id, 
@@ -132,45 +130,44 @@ class MedidasIntervencionController extends Controller
         $accionCreada->peligro()->attach($peligro->id);
     }
     
-    public function eliminarMedidaIntervencionValoracion($id, $tipoMedida){
+    public function eliminarMedidaIntervencionValoracion($id, $tipoMedida,$idPeligro){
         switch ($tipoMedida) {
             case "Actividad":
                 $medida = ActividadesValoracione::find($id);
-                $peligro = Peligro::find($medida->peligro_id);
-                $medida->peligro()->detach($peligro->id);
-                //$peligro->actividadesValoracion()->detach($medida->id);
+                $peligro = Peligro::find($idPeligro);
+                $peligro->actividadesValoracion()->detach($medida->id);
                 if($medida->peligro->count() == 0){
                     $disponible=ActividadesDisponible::where("actividades_valoracione_id",$medida->id)->first();
                     $disponible->actividades_valoracione_id="";
                     $disponible->save();
+                    $medida->delete();
                 }
             break;
             case "Capacitacion":
                 $medida = CapacitacionesValoracione::find($id);
-                $peligro = Peligro::find($medida->peligro_id);
+                $peligro = Peligro::find($idPeligro);
                 $peligro->capacitacionesValoracion()->detach($medida->id);
                 if($medida->peligro->count() == 0){
-                    $disponible=ActividadesDisponible::where("actividades_valoracione_id",$medida->id)->first();
-                    $disponible->actividades_valoracione_id="";
+                    $disponible=CapacitacionesDisponible::where("capacitaciones_valoracione_id",$medida->id)->first();
+                    $disponible->capacitaciones_valoracione_id="";
                     $disponible->save();
+                    $medida->delete();
                 }
             break;
             case "Inspeccion":
-                $medida = InspeccionesValoracione::find($id)->delete();
-                $peligro = Peligro::find($medida->peligro_id);
+                $medida = InspeccionesValoracione::find($id);
+                $peligro = Peligro::find($idPeligro);
                 $peligro->inspeccionesValoracion()->detach($medida->id);
                 if($medida->peligro->count() == 0){
-                    $disponible=ActividadesDisponible::where("actividades_valoracione_id",$medida->id)->first();
-                    $disponible->actividades_valoracione_id="";
+                    $disponible=InspeccionesDisponible::where("inspecciones_valoracione_id",$medida->id)->first();
+                    $disponible->inspecciones_valoracione_id="";
                     $disponible->save();
+                    $medida->delete();
                 }
             break;
             default:
             break;
         }
-        
-        
-        $medida->delete();
         return;
     }
     
@@ -187,22 +184,16 @@ class MedidasIntervencionController extends Controller
     }
     
     public function calendarioActividades(){
-        
-        
         return view('analissta.Actividades.calendario');
     }
     
     public function calendarioCapacitaciones(){
-        
-        
         return view('analissta.Capacitaciones.calendario');
     }
     
     public function calendarioInspecciones(){
-        
-        
         return view('analissta.Inspecciones.calendario');
     }
-    
+
     
 }

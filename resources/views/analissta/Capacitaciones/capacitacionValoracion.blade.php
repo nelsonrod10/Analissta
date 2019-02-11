@@ -46,6 +46,25 @@ $xml_GTC45 = simplexml_load_file(base_path("archivosXML/Peligros_GTC45/xml_Pelig
         <div class="columns small-12 text-center">
             <div style="background:#0c4d78; color:white"><h5>{{$capacitacion->nombre}}</h5></div>
         </div>
+        <div class='columns small-12'>
+            <b>Peligros Asociados: </b>
+            <small><i>(Para ver detalles haga click en el peligro)</i></small>
+            <ul>
+                @foreach($capacitacion->peligro as $peligro)
+                @php
+                    $clasificacion = $xml_GTC45->xpath("//peligros/clasificacion[id=$peligro->clasificacion]");
+                    $categoria = $xml_GTC45->xpath("//peligros/clasificacion[id=$peligro->clasificacion]/listDescripciones/descripcion[id=$peligro->categoria]");
+                @endphp
+                <li>
+                    <small>
+                        <a href="{{route('detalles-peligro',['idActividad'=>$peligro->actividad->id,'idPeligro'=>$peligro->id])}}">
+                            <b>{{$clasificacion[0]->nombre}} - {{$categoria[0]->nombre}}, Capacitacion</b>: {{$peligro->actividad->nombre}}, <b>Proceso:</b> {{$peligro->actividad->proceso->nombre}}
+                        </a>
+                    </small>
+                </li>
+                @endforeach
+            </ul>
+        </div>
         @if($capacitacion->estado === '')
             <div class="columns small-12 text-center" >
                 <div ><i><b>No existe ninguna programación</b></i></div>
@@ -71,25 +90,6 @@ $xml_GTC45 = simplexml_load_file(base_path("archivosXML/Peligros_GTC45/xml_Pelig
         @else
             <!--Quiere decir que la capacitacion esta programada-->
         <div class="row">
-            <div class='columns small-12'>
-                <b>Peligros Asociados: </b>
-                <small><i>(Para ver detalles haga click en el peligro)</i></small>
-                <ul>
-                    @foreach($capacitacion->peligro as $peligro)
-                    @php
-                        $clasificacion = $xml_GTC45->xpath("//peligros/clasificacion[id=$peligro->clasificacion]");
-                        $categoria = $xml_GTC45->xpath("//peligros/clasificacion[id=$peligro->clasificacion]/listDescripciones/descripcion[id=$peligro->categoria]");
-                    @endphp
-                    <li>
-                        <small>
-                            <a href="{{route('detalles-peligro',['idActividad'=>$peligro->actividad->id,'idPeligro'=>$peligro->id])}}">
-                                <b>{{$clasificacion[0]->nombre}} - {{$categoria[0]->nombre}}, Capacitacion</b>: {{$peligro->actividad->nombre}}, <b>Proceso:</b> {{$peligro->actividad->proceso->nombre}}
-                            </a>
-                        </small>
-                    </li>
-                    @endforeach
-                </ul>
-            </div>
             <div class='columns small-12 text-center'>
                 <br/>
                 <b>Porcentaje Total de Ejecución</b>

@@ -17,7 +17,7 @@ class InspeccionesValoracione extends Model
     }
     
     public function peligro(){
-        return $this->belongsToMany('App\Peligro');
+        return $this->belongsToMany('App\Peligro','inspecciones_valoracione_peligro','inspeccion_id','peligro_id');
     }
     
     public function calendarioInspecciones(){

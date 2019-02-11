@@ -41,7 +41,9 @@ use App\ActividadesCalendario;
         <a class="button small warning" href="{{route('indicadores-actividades')}}">Indicadores Actividades</a>
         <a class="button small alert" href="{{route('actividades')}}">Calendario Actividades</a>
     @endsection
-    
+    @if(auth()->user()->email == 'gaspar.diego@gmail.com')
+        @include('analissta.Actividades.updateDuplicidadActividades')   
+    @endif
 <div class="columns small-12 text-center" style="background:grey; color:white"><b>CALENDARIO ANUAL DE ACTIVIDADES</b></div>
 <div class="columns small-6 text-center" style="background:#f29c13; color:white">PROGRAMADAS</div>
 <div class="columns small-6 text-center" style="background:#3adb76; color:white">EJECUTADAS</div>

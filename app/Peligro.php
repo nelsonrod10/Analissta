@@ -37,15 +37,15 @@ class Peligro extends Model
     }
     
     public function actividadesValoracion(){
-        return $this->belongsToMany('App\ActividadesValoracione');
+        return $this->belongsToMany('App\ActividadesValoracione','actividades_valoracione_peligro','peligro_id','actividad_id');
     }
     
     public function capacitacionesValoracion(){
-        return $this->belongsToMany('App\CapacitacionesValoracione');
+        return $this->belongsToMany('App\CapacitacionesValoracione','capacitaciones_valoracione_peligro','peligro_id','capacitacion_id');
     }
     
     public function inspeccionesValoracion(){
-        return $this->belongsToMany('App\InspeccionesValoracione');
+        return $this->belongsToMany('App\InspeccionesValoracione','inspecciones_valoracione_peligro','peligro_id','inspeccion_id');
     }
     
     

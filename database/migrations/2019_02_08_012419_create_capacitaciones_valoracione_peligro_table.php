@@ -14,8 +14,11 @@ class CreateCapacitacionesvaloracionePeligroTable extends Migration
     public function up()
     {
         Schema::create('capacitaciones_valoracione_peligro', function (Blueprint $table) {
-            $table->integer('capacitaciones_valoracione_id')->unsigned();
+            $table->increments('id');
+            $table->integer('capacitacion_id')->unsigned();
             $table->integer('peligro_id')->unsigned();
+            $table->foreign('peligro_id')->references('id')->on('peligros')->onDelete('cascade');
+            $table->foreign('capacitacion_id')->references('id')->on('capacitaciones_valoraciones')->onDelete('cascade');
         });
     }
 

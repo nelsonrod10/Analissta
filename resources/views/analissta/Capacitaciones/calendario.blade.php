@@ -42,7 +42,9 @@ use App\CapacitacionesCalendario;
         <a class="button small warning" href="{{route('indicadores-capacitaciones')}}">Indicadores Capacitaciones</a>
         <a class="button small alert" href="{{route('capacitaciones')}}">Calendario Capacitaciones</a>
     @endsection
-    
+    @if(auth()->user()->email == 'gaspar.diego@gmail.com')
+        @include('analissta.Capacitaciones.updateDuplicidadCapacitaciones')
+    @endif
     <div class="columns small-12 text-center" style="background:grey; color:white"><b>CALENDARIO ANUAL DE CAPACITACIONES</b></div>
     <div class="columns small-6 text-center" style="background:#f29c13; color:white">PROGRAMADAS</div>
     <div class="columns small-6 text-center" style="background:#3adb76; color:white">EJECUTADAS</div>

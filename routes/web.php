@@ -49,6 +49,7 @@ Route::middleware('auth')->group(function(){
     Route::resource('comunidad-analissta','Comunidad\ComunidadAnalisstaController');
     Route::resource('analissta-profesionales','Comunidad\ComunidadProfesionalesController');
     Route::resource('analissta-empresas','Comunidad\ComunidadEmpresasController');
+    Route::post('update-analissta','ActualizacionesController@realizarActualizacion')->name('update-analissta');
     /*Route::resource('gestion-super-admin','SuperAdmin\SuperAdminController');
     Route::resource('gestion-asesores','Asesores\AsesoresController');
     Route::resource('gestion-administradores','Clientes\Usuarios\Administradores\AdministradoresController');

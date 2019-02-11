@@ -65,7 +65,7 @@
                     <div class="row">
                         <div class="columns small-7 listado-Activ-Creadas text-center">{{ $actividadDisponible->nombre }}</div>
                         <div class="columns small-5 text-left">
-                            @if(isset($actividadProgramada[0]->nombre))
+                            @if($peligro->actividadesValoracion->where('id',$actividadDisponible->actividades_valoracione_id)->count() > 0)
                             <label style="color:#009900"><i class="fi-check"></i> Seleccionada</label>
                             @else
                                 <form name="frm-eliminar-actividad" method="post" action="{{ route('crear-medida-intervencion',['idActividad'=>$actividad->id]) }}">

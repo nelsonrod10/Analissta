@@ -403,7 +403,6 @@ class PeligroController extends Controller
     
     
     public function crearMedidaIntervencion($idActividad){
-        
         $data = request()->validate([
             'flag'      => 'string',
             'medida'    => 'string',
@@ -442,7 +441,7 @@ class PeligroController extends Controller
         );
         
         $newMedida = new MedidasIntervencionController();
-        $newMedida->eliminarMedidaIntervencionValoracion($data['id'], $data['tipo']);
+        $newMedida->eliminarMedidaIntervencionValoracion($data['id'], $data['tipo'],session('idPeligro'));
         return redirect()->route('configurar-medida-intervencion',['idActividad'=>$idActividad,'conteo'=>1]);
     }
     

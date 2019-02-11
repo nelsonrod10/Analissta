@@ -14,8 +14,11 @@ class CreateActividadesvaloracionePeligroTable extends Migration
     public function up()
     {
         Schema::create('actividades_valoracione_peligro', function (Blueprint $table) {
-            $table->integer('actividades_valoracione_id')->unsigned();
+            $table->increments('id');
+            $table->integer('actividad_id')->unsigned();
             $table->integer('peligro_id')->unsigned();
+            $table->foreign('peligro_id')->references('id')->on('peligros')->onDelete('cascade');
+            $table->foreign('actividad_id')->references('id')->on('actividades_valoraciones')->onDelete('cascade');
         });
     }
 

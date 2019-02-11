@@ -14,8 +14,11 @@ class CreateInspeccionesvaloracionePeligroTable extends Migration
     public function up()
     {
         Schema::create('inspecciones_valoracione_peligro', function (Blueprint $table) {
-            $table->integer('inspecciones_valoracione_id')->unsigned();
+            $table->increments('id');
+            $table->integer('inspeccion_id')->unsigned();
             $table->integer('peligro_id')->unsigned();
+            $table->foreign('peligro_id')->references('id')->on('peligros')->onDelete('cascade');
+            $table->foreign('inspeccion_id')->references('id')->on('inspecciones_valoraciones')->onDelete('cascade');
         });
     }
 
