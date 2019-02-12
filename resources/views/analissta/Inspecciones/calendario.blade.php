@@ -42,9 +42,6 @@ use App\InspeccionesCalendario;
         <a class="button small warning" href="{{route('indicadores-inspecciones')}}">Indicadores Inspecciones</a>
         <a class="button small alert" href="{{route('inspecciones')}}">Calendario Inspecciones</a>
     @endsection
-    @if(auth()->user()->email == 'gaspar.diego@gmail.com')
-        @include('analissta.Inspecciones.updateDuplicidadInspecciones')
-    @endif
 <div class="columns small-12 text-center" style="background:grey; color:white"><b>CALENDARIO ANUAL DE INSPECCIONES</b></div>
 <div class="columns small-6 text-center" style="background:#f29c13; color:white">PROGRAMADAS</div>
 <div class="columns small-6 text-center" style="background:#3adb76; color:white">EJECUTADAS</div>
