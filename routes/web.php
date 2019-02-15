@@ -71,11 +71,7 @@ Route::middleware('auth')->group(function(){
             return view('analissta.inicioAsesor')->with(['datosEmpresa'=>$empresaAsesor,'empresasCliente'=>$empresasCliente]);
         }
 
-        $usuarioUser = $user->usuario; 
-        foreach ($usuarioUser as $value) {
-            $idUsuario = $value->id;
-        }
-        $empresaCliente = App\Usuario::find($idUsuario)->empresaCliente;
+        $empresaCliente = App\Usuario::find($user->usuario()->first()->id)->empresaCliente;
         //return view('analissta.inicioCliente')->with('datosEmpresa',$empresaCliente);
         return redirect()->route('ver-empresa-cliente',['id'=>$empresaCliente->id]);
     })->name('inicio');

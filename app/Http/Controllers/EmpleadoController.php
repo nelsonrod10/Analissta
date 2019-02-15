@@ -189,13 +189,12 @@ class EmpleadoController extends Controller
     
     public function eliminarEmpleado($id){
         $empleado = Empleado::find($id);
-        $empleado->delete();
-        $usuario = Usuario::where('empleados_id',$id)->get();
-        if(isset($usuario[0]->id)){
-            $user = User::find($usuario[0]->user_id);
+        if($empleado->usuarios->count() > 0){
+            $user = User::find($empleado->usuarios()->first()->user_id);
+            $empleado->usuarios()->first()->delete();
             $user->delete();
-            $usuario->delete();
         }
+        $empleado->delete();
         return redirect()->route('mostrar-empleados');
     }
     
