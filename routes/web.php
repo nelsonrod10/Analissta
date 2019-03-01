@@ -153,7 +153,8 @@ Route::middleware('auth')->group(function(){
         
         Route::get('/perfil-socio-demografico/{id}','EmpleadoController@cargarFrmSocioDemografico')->name('perfil-socio-demografico');    
         Route::post('/perfil-socio-demografico/{id}','EmpleadoController@guardarPerfilSocioDemografico');    
-        Route::post('/cambiar-centro-trabajo/{empleado}','EmpleadoController@cambiarCentroTrabajo')->name('cambiar-centro-trabajo');    
+        Route::post('/cambiar-centro-trabajo/{empleado}','EmpleadoController@cambiarCentroTrabajo')->name('cambiar-centro-trabajo');
+        Route::post('/actualizar-fecha-ingreso/{empleado}','EmpleadoController@actualizarFechaIngreso')->name('actualizar-fecha-ingreso');
         
     });
     

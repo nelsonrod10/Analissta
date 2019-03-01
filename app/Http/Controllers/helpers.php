@@ -109,6 +109,14 @@ class helpers extends Controller
         return $edad->format("%Y");
     }
     
+    public static function calcularDiferenciaEnAnios($fecha){
+        date_default_timezone_set('America/Bogota');
+        $fechaActual = new DateTime("NOW");
+        $fechaComparar = new DateTime($fecha);
+        $diferencia = $fechaActual->diff($fechaComparar);
+        return $diferencia->format("%Y");
+    }
+    
     public static function calcularRangoEdad($edad){
         switch ((int)$edad) {
             case ($edad == 0 && $edad < 18):

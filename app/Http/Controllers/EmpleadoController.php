@@ -6,6 +6,7 @@ use App\Usuario;
 use App\User;
 use App\EmpresaCliente;
 use Illuminate\Http\Request;
+use App\Http\Controllers\helpers;
 
 class EmpleadoController extends Controller
 {
@@ -75,6 +76,7 @@ class EmpleadoController extends Controller
             'id'            => 'string|required'.$strUniqueId,
             'nacimiento'    => 'date|required',
             'genero'        => 'string|required',
+            'ingreso'       => 'date|required',
             'centroTrabajo' => 'string|required',
             'cargo'         => 'string|required',
             'salario'       => 'string|required',
@@ -91,7 +93,7 @@ class EmpleadoController extends Controller
             'salario.required'      => 'Debe indicar el salario mensual del empleado',
             'email.required'        => 'Debe ingresar un email',
             'telefono.required'     => 'Debe ingresar un número de teléfono',
-            
+            'ingreso.required'      => 'Debe indicar la fecha de ingreso',
             'id.unique'             => 'Ya existe un empleado con este numero de identificación',
             'email.unique'          => 'Ya existe un empleado con este email',
         ]);
@@ -101,7 +103,7 @@ class EmpleadoController extends Controller
     
     public function crearNuevoEmpleado(){
         $data = $this->validateDataEmpleado("Create");
-        Empleado::create([
+        $empleado = Empleado::create([
             'empresaCliente_id'     => session('idEmpresaCliente'),
             'centrosTrabajos_id'    => $data['centroTrabajo'],
             'nombre'                => $data['nombres'],
@@ -113,7 +115,11 @@ class EmpleadoController extends Controller
             'salarioMes'            => $data['salario'],
             'email'                 => $data['email'],
             'telefono'              => $data['telefono'],
+            'fecha_ingreso'         => $data['ingreso'],
+            'antiguedadEmpresa'     => $this->antiguedadEmpresa($data['ingreso']),
+            'antiguedadCargo'       => $this->antiguedadEmpresa($data['ingreso']),
         ]);
+        
         return $data['pagina'];
     }
     
@@ -125,11 +131,37 @@ class EmpleadoController extends Controller
         $empleado->centrosTrabajos_id    =  (int)$data["centroTrabajo"];
         $empleado->cargo                 =  $data["cargo"];
         $empleado->salarioMes            =  $data["salario"];
-        //$empleado->email                 =  $data["email"];
         $empleado->telefono              =  $data["telefono"];
+        $empleado->fecha_ingreso         =  $data["ingreso"];
+        $empleado->antiguedadEmpresa     =  $this->antiguedadEmpresa($data['ingreso']);
+        $empleado->antiguedadCargo       =  $this->antiguedadEmpresa($data['ingreso']);
         $empleado->save();
         
         return $data['pagina'];
+    }
+    
+    
+    private function antiguedadEmpresa($fecha){
+        $antiguedad = helpers::calcularDiferenciaEnAnios($fecha);
+        switch ($antiguedad) {
+            case ((int)$antiguedad >= 1 && (int)$antiguedad < 5):
+                $valor = "De 1 a 5";
+                break;
+            case ((int)$antiguedad >= 5 && (int)$antiguedad < 10):
+                $valor = "De 5 a 10";
+                break;
+            case ((int)$antiguedad >= 10 && (int)$antiguedad < 15):
+                $valor = "De 10 a 15";
+                break;
+            case ((int)$antiguedad >=15):
+                $valor = "Mas de 15";
+                break;
+            default:
+                $valor = "Menos de 1";
+                break;
+        }
+        
+        return $valor;
     }
     
     public function cargarFrmSocioDemografico($id){
@@ -144,7 +176,7 @@ class EmpleadoController extends Controller
             'escolaridad'              => 'string|required',
             'tipoVivienda'             => 'string|required',
             'tiempoLibre'              => 'string|required',
-            'antiguedadEmpresa'        => 'string|required',
+            //'antiguedadEmpresa'        => 'string|required',
             'antiguedadCargo'          => 'string|required',
             'tipoContrato'             => 'string|required',
             'diagnosticoEnfermedad'    => 'string|required',
@@ -158,7 +190,7 @@ class EmpleadoController extends Controller
             'escolaridad.required'           => 'Indique nivel de escolaridad',
             'tipoVivienda.required'   => 'Indique el tipo de vivienda',
             'tiempoLibre.required'       => 'Indique a que dedica el tiempo libre',
-            'antiguedadEmpresa.required'=> 'Indique antiguedad en la empresa',
+            //'antiguedadEmpresa.required'=> 'Indique antiguedad en la empresa',
             'antiguedadCargo.required'        => 'Indique antiguedad en el cargo',
             'tipoContrato.required'      => 'Indique que tipo de contrato tiene el empleado',
             'diagnosticoEnfermedad.required'        => 'Indique si el empleado ha tenido alguna enfermedad',
@@ -174,7 +206,7 @@ class EmpleadoController extends Controller
         $empleado->escolaridad              =  $data["escolaridad"];
         $empleado->tipoVivienda             =  $data["tipoVivienda"];
         $empleado->tiempoLibre              =  $data["tiempoLibre"];
-        $empleado->antiguedadEmpresa        =  $data["antiguedadEmpresa"];
+        //$empleado->antiguedadEmpresa        =  $data["antiguedadEmpresa"];
         $empleado->antiguedadCargo          =  $data["antiguedadCargo"];
         $empleado->tipoContrato             =  $data["tipoContrato"];
         $empleado->diagnosticoEnfermedad    =  $data["diagnosticoEnfermedad"];
@@ -208,6 +240,24 @@ class EmpleadoController extends Controller
         
         $empleado->update([
             'centrosTrabajos_id'  => $data['centro']
+            ]
+        );
+                
+        return redirect()->back();        
+    }
+    
+    public function actualizarFechaIngreso(Empleado $empleado){
+        $data = request()->validate([
+            'ingreso' => 'date|required',
+        ],[
+            'ingreso.required'  => 'Indique la fecha de ingreso',
+            'ingreso.date'      => 'Verifique los datos enviados',
+        ]);
+        
+        $empleado->update([
+            'fecha_ingreso'         => $data['ingreso'],
+            'antiguedadEmpresa'     => $this->antiguedadEmpresa($data['ingreso']),
+            'antiguedadCargo'       => $this->antiguedadEmpresa($data['ingreso']),
             ]
         );
                 

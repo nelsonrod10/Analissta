@@ -76,6 +76,7 @@
                             @if($empresa->empleados->count() > 0)
                                 @foreach($empresa->empleados as $empleado)
                                     @include('analissta.Empleados.modal-frmUpdateCentroTrabajo')
+                                    @include('analissta.Empleados.modal-frmAsignarFechaIngreso')
                                     <?php 
                                         $centroTrabajoEmpleado = App\CentrosTrabajo::find($empleado->centrosTrabajos_id);
                                         $edadEmpleado = helpers::calcularEdad($empleado->fechaNacimiento);
@@ -125,9 +126,16 @@
                                                         <div class="columns small-12">
                                                             <b>Rango Edad: </b>{{ $rangoEdad }} edad
                                                         </div>
+                                                        <div class="columns small-12">
+                                                            <b>Ingreso a la Empresa: </b>{{ $empleado->fecha_ingreso }}
+                                                            <?php if($empleado->fecha_ingreso === "" || $empleado->fecha_ingreso === null): ?>
+                                                                <a class="label alert" style="font-size:10px; border-radius: 5px" data-open="modal-asignar-fecha-ingreso-{{$empleado->id}}">Asignar Fecha</a>
+                                                            <?php endif; ?>
+                                                        </div>
                                                     </div>
 
                                                     <div class="columns small-12 medium-6 text-left">
+                                                        
                                                         <div class="columns small-12">
                                                             <b>Centro de Trabajo: </b>{{ $centroTrabajoEmpleado->nombre }}
                                                         </div>
