@@ -7,6 +7,7 @@ use App\User;
 use App\EmpresaCliente;
 use Illuminate\Http\Request;
 use App\Http\Controllers\helpers;
+use App\Http\Controllers\Empleados\EvaluacionesMedicasController;
 
 class EmpleadoController extends Controller
 {
@@ -119,6 +120,7 @@ class EmpleadoController extends Controller
             'antiguedadEmpresa'     => $this->antiguedadEmpresa($data['ingreso']),
             'antiguedadCargo'       => $this->antiguedadEmpresa($data['ingreso']),
         ]);
+        $this->crearEvaluacionMedica($empleado,$data['ingreso']);
         
         return $data['pagina'];
     }
@@ -136,6 +138,8 @@ class EmpleadoController extends Controller
         $empleado->antiguedadEmpresa     =  $this->antiguedadEmpresa($data['ingreso']);
         $empleado->antiguedadCargo       =  $this->antiguedadEmpresa($data['ingreso']);
         $empleado->save();
+        
+        $this->crearEvaluacionMedica($empleado,$data['ingreso']);
         
         return $data['pagina'];
     }
@@ -162,6 +166,26 @@ class EmpleadoController extends Controller
         }
         
         return $valor;
+    }
+    
+    private function crearEvaluacionMedica(Empleado $empleado, $fecha){
+        $anio = helpers::getCurrentYear();
+        if((string)$empleado->antiguedadEmpresa === "Menos de 1"){
+            $anio = (int)helpers::getAnioFecha($fecha)+1;
+        }
+        $controladorEvaluaciones = new EvaluacionesMedicasController();
+
+        $controladorEvaluaciones->store(new Request([
+            'empresa'   => (string)$empleado->empresa->id,
+            'empleado'  => (string)$empleado->id,
+            'anio'      => (string)$anio,
+            'mes'       => helpers::getMesFecha($fecha),
+            'dia'       => helpers::getDiaFecha($fecha),
+        ]));
+        
+        
+        
+        return;
     }
     
     public function cargarFrmSocioDemografico($id){
@@ -260,7 +284,9 @@ class EmpleadoController extends Controller
             'antiguedadCargo'       => $this->antiguedadEmpresa($data['ingreso']),
             ]
         );
-                
+        
+        $this->crearEvaluacionMedica($empleado,$data['ingreso']);
+        
         return redirect()->back();        
     }
     

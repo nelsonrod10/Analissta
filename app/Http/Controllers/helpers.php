@@ -117,6 +117,24 @@ class helpers extends Controller
         return $diferencia->format("%Y");
     }
     
+    public static function getAnioFecha($fecha){
+        date_default_timezone_set('America/Bogota');
+        $objFecha = new DateTime($fecha);
+        return $objFecha->format("Y");
+    }
+    
+    public static function getMesFecha($fecha){
+        date_default_timezone_set('America/Bogota');
+        $objFecha = new DateTime($fecha);
+        return $objFecha->format("m");
+    }
+    
+    public static function getDiaFecha($fecha){
+        date_default_timezone_set('America/Bogota');
+        $objFecha = new DateTime($fecha);
+        return $objFecha->format("d");
+    }
+    
     public static function calcularRangoEdad($edad){
         switch ((int)$edad) {
             case ($edad == 0 && $edad < 18):

@@ -9,8 +9,9 @@
     <div class="row columns text-center">
         <br/>
         <div class="row columns text-center">
-            <h5>Asignar Fecha de ingreso para </h5>
-            <h5>{{ucwords($empleado->nombre)}} {{ucwords($empleado->apellidos)}}?</h5>
+            <h5>Asignar Fecha de ingreso para 
+                {{ucwords($empleado->nombre)}} {{ucwords($empleado->apellidos)}}
+            </h5>
         </div>
         <br/>
         <form action="{{route('actualizar-fecha-ingreso',$empleado)}}" enctype="multipart/form-data" method="post">

@@ -17,6 +17,7 @@
             
             <div class="expanded button-group">
                 <a class="button" href="{{ route('ver-empresa-cliente',['id'=>$empresa->id])}}">Datos Empresa</a>
+                <a class="button" href="{{ route('evaluaciones-medicas.index')}}">Evaluaciones Médicas Ocupacionales</a>
                 @if($empresa->tipoValoracion === 'Matriz General')
                 <a class="button" href="{{ route('procesos-actividades',['sistema'=>$empresa->sistemaGestion[0]])}}">Procesos y Actividades</a>
                 @elseif($empresa->tipoValoracion === 'Matriz por Centro')
@@ -283,6 +284,7 @@
                         <div class="columns small-12 text-center" id="div-btnBdEmpleados">
                             <a  class="button alert small" href="{{ route('ver-empresa-cliente',['id'=>$empresa->id])}}"><i class="fi-arrow-left" ></i> Voler a Datos Empresa</a>
                             <a  class="button success-2 small" href="{{ route('agregar-nuevo-empleado',['origen'=>'mostrar-empleados'])}}"><i class="fi-plus" ></i> Agregar Empleado</a>
+                            <a class="button small" href="{{ route('evaluaciones-medicas.index')}}">Evaluaciones Médicas Ocupacionales</a>
                             <div>
                                 <a  class="button " href="{{ route('cargue-masivo-empleados.index')}}" title><i class="fi-upload" style="font-size: 24px" ></i> Subir Archivo Base Datos</a>
                             </div>
