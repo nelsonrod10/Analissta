@@ -157,6 +157,8 @@ Route::middleware('auth')->group(function(){
         Route::post('/actualizar-fecha-ingreso/{empleado}','EmpleadoController@actualizarFechaIngreso')->name('actualizar-fecha-ingreso');
         
         Route::resource('/evaluaciones-medicas','Empleados\EvaluacionesMedicasController');    
+        Route::resource('/programar-evaluacion-medica','Empleados\ProgramarEvaluacionMedicaController');    
+        Route::resource('/realizar-evaluacion-medica','Empleados\RealizarEvaluacionMedicaController');    
     });
     
     /*RUTAS PARA GESTIONAR PROCESOS Y ACTIVIDADES DEL SISTEMA*/

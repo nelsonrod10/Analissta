@@ -92,6 +92,14 @@ class helpers extends Controller
         return $anioActual;
     }
     
+    public static function getCurrentMonth(){
+        date_default_timezone_set('America/Bogota');
+        $objFechaActual = new DateTime("NOW");;
+        (string)$mesActual = $objFechaActual->format("n");
+        
+        return $mesActual;
+    }
+    
     public static function getLastYear(){
         date_default_timezone_set('America/Bogota');
         $objFechaActual = new DateTime("NOW");;

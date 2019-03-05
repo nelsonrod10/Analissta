@@ -31,9 +31,9 @@
                     </div>
                     <div class="row text-center">
                         <div class="columns small-12 medium-9 medium-centered">
-                            <div class="columns small-2 medium-4"><b>Empleado</b></div>
-                            <div class="columns small-2 medium-4"><b>Cargo</b></div>
-                            <div class="columns small-2 medium-4"></div>
+                            <div class="columns small-12 medium-4"><b>Empleado</b></div>
+                            <div class="columns small-12 medium-4"><b>Cargo</b></div>
+                            <div class="columns small-12 medium-4"></div>
                         </div>
                         
                     </div>
@@ -41,9 +41,9 @@
                         @include('analissta.Empleados.modal-frmAsignarFechaIngreso',['empleado'=>$empleadoSinFecha])
                         <div class="row">
                             <div class="columns small-12 medium-9 medium-centered">
-                                <div class="columns small-2 medium-4">{{$empleadoSinFecha->nombre}} {{$empleadoSinFecha->apellidos}}</div>
-                                <div class="columns small-2 medium-4 text-center">{{$empleadoSinFecha->cargo}}</div>
-                                <div class="columns small-2 medium-4">
+                                <div class="columns small-12 medium-4">{{$empleadoSinFecha->nombre}} {{$empleadoSinFecha->apellidos}}</div>
+                                <div class="columns small-12 medium-4 text-center">{{$empleadoSinFecha->cargo}}</div>
+                                <div class="columns small-12 medium-4">
                                     <a class="button small alert" style="font-size:10px; border-radius: 5px" data-open="modal-asignar-fecha-ingreso-{{$empleadoSinFecha->id}}">Asignar Fecha Ingreso</a>
                                 </div>
                             </div>
@@ -58,33 +58,40 @@
                 </div>
                 <div class="row text-center">
                     <div class="columns small-12 medium-9 medium-centered">
-                        <div class="columns small-2 medium-3"><b>Empleado</b></div>
-                        <div class="columns small-2 medium-2"><b>Cargo</b></div>
-                        <div class="columns small-2 medium-2"><b>Fecha Sugerida y/o Programada</b></div>
-                        <div class="columns small-2 medium-2"><b>Fecha Realizada</b></div>
-                        <div class="columns small-2 medium-3"></div>
+                        <div class="columns small-12 medium-3"><b>Empleado</b></div>
+                        <div class="columns small-12 medium-2"><b>Cargo</b></div>
+                        <div class="columns small-12 medium-2"><b>Fecha Sugerida y/o Programada</b></div>
+                        <div class="columns small-12 medium-2"><b>Fecha Realizada</b></div>
+                        <div class="columns small-12 medium-3"></div>
                     </div>
                 </div>
                 @foreach($empresa->evaluacionesMedicasAnioActual as $evaluacion)
                     <div class="row">
                         <div class="columns small-12 medium-9 medium-centered">
-                            <div class="columns small-2 medium-3">{{$evaluacion->empleado->nombre}} {{$evaluacion->empleado->apellidos}}</div>
-                            <div class="columns small-2 medium-2 text-center">{{$evaluacion->empleado->cargo}}</div>
-                            <div class="columns small-2 medium-2 text-center">{{$evaluacion->dia_sugerido}}/{{$evaluacion->mes_sugerido}}/{{$evaluacion->anio_sugerido}}</div>
-                            <div class="columns small-2 medium-2 text-center">{{$evaluacion->dia_realizado}}/{{$evaluacion->mes_realizado}}/{{$evaluacion->anio_realizado}}</div>
-                            <div class="columns small-2 medium-3 text-center">
+                            <div class="columns small-12 medium-3">{{$evaluacion->empleado->nombre}} {{$evaluacion->empleado->apellidos}}</div>
+                            <div class="columns small-12 medium-2 text-center">{{$evaluacion->empleado->cargo}}</div>
+                            <div class="columns small-12 medium-2 text-center">{{$evaluacion->dia_sugerido}}/{{$evaluacion->mes_sugerido}}/{{$evaluacion->anio_sugerido}}</div>
+                            <div class="columns small-12 medium-2 text-center">{{$evaluacion->dia_realizado}}/{{$evaluacion->mes_realizado}}/{{$evaluacion->anio_realizado}}</div>
+                            <div class="columns small-12 medium-3 text-center">
                                 <div class="expanded button-group tiny">
-                                    <a class="button">Programar</a>
-                                    <a class="button success-2">Realizada</a>
-                                    <a class="button alert">Eliminar</a>
+                                    @if($evaluacion->estado === "Realizada")
+                                        <div style="background: #009900; color:white">Evaluación Realizada</div>
+                                    @else
+                                    <a class="button" data-open="modal-programar-medica-ocupacional-{{$evaluacion->id}}">Programar</a>
+                                    <a class="button success-2" data-open="modal-realizada-medica-ocupacional-{{$evaluacion->id}}">Realizada</a>
+                                    <a class="button alert" data-open="modal-eliminar-medica-ocupacional-{{$evaluacion->id}}">Eliminar</a>
+                                    @endif    
                                 </div>
                             </div>
                         </div>
                     </div>
+                    @include('analissta.Empleados.EvaluacionesMedicas.modal-programar')
+                    @include('analissta.Empleados.EvaluacionesMedicas.modal-realizada')
+                    @include('analissta.Empleados.EvaluacionesMedicas.modal-eliminar')
                 @endforeach
             </fieldset>
-        </div>  
+        </div>
     </div>
-</div>    
-  
+</div>
+
 @endsection
