@@ -7,8 +7,8 @@ use App\Http\Controllers\helpers;
 date_default_timezone_set('America/Bogota');
 $objFechaActual = helpers::getDateNow();
 (string)$fechaActual = $objFechaActual->format("Y-m-d");
-$objFechaMaxNacimiento = $objFechaActual->sub(new DateInterval("P18Y"));
-
+$objFechaMinNacimiento = helpers::getDateNow()->sub(new DateInterval("P99Y"));
+$objFechaMaxNacimiento = helpers::getDateNow()->sub(new DateInterval("P18Y"));
 
 ?>
 <br/>
@@ -62,7 +62,7 @@ $objFechaMaxNacimiento = $objFechaActual->sub(new DateInterval("P18Y"));
                         <label for="nacimiento" class="text-right middle"><b>Fecha de Nacimiento:</b></label>
                     </div>    
                     <div class="columns small-12 medium-8 end">
-                        <input required="true" type="date" id="nacimiento" name="nacimiento" min="1930-01-01" max="{{ $objFechaMaxNacimiento->format("Y-m-d") }}"  placeholder="# Fecha de Nacimiento" value="{{ isset($empleado)?$empleado->fechaNacimiento:"" }}"  <?php echo isset($empleado)?"readonly='true'":""?>/>
+                        <input required="true" type="date" id="nacimiento" name="nacimiento" min="{{ $objFechaMinNacimiento->format("Y-m-d") }}" max="{{ $objFechaMaxNacimiento->format("Y-m-d") }}"  placeholder="# Fecha de Nacimiento" value="{{ isset($empleado)?$empleado->fechaNacimiento:"" }}"  <?php echo isset($empleado)?"readonly='true'":""?>/>
                     </div>
                 </div>
                 <div class="row">
@@ -75,6 +75,14 @@ $objFechaMaxNacimiento = $objFechaActual->sub(new DateInterval("P18Y"));
                             <option value="Hombre" <?php echo (isset($empleado) && $empleado->genero === "Hombre")?"selected='true'":""?>>Hombre</option>
                             <option value="Mujer" <?php echo (isset($empleado) && $empleado->genero === "Mujer")?"selected='true'":"" ?>>Mujer</option>
                         </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="columns small-12 medium-4">
+                        <label for="ingreso" class="text-right middle"><b>Fecha de Ingreso a la empresa:</b></label>
+                    </div>    
+                    <div class="columns small-12 medium-8 end">
+                        <input required="true" type="date" id="ingreso" name="ingreso" min="{{$empresa->fechaFundacion}}" max="{{$fechaActual}}"  placeholder="# Fecha de Ingreso" value="{{ isset($empleado)?$empleado->fecha_ingreso:"" }}"/>
                     </div>
                 </div>
             </div>

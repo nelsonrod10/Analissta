@@ -28,6 +28,7 @@ class CreateEmpleadosTable extends Migration
             $table->integer('salarioMes')->unsigned();
             $table->string('email')->unique();
             $table->bigInteger('telefono')->unsigned();
+            $table->date("fecha_ingreso");
             $table->enum('estadoCivil',['na', 'Soltero', 'Casado','Union Libre','Separado']);
             $table->enum('personasAcargo',['Ninguna', '1-3 Personas', '4-6 Personas','Mas de 7 Personas']);
             $table->enum('escolaridad',['Primaria', 'Secundaria', 'Tecnico/Tecnologo','Universitario','Especialista/Maestro']);

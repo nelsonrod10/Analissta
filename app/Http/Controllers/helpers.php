@@ -92,6 +92,14 @@ class helpers extends Controller
         return $anioActual;
     }
     
+    public static function getCurrentMonth(){
+        date_default_timezone_set('America/Bogota');
+        $objFechaActual = new DateTime("NOW");;
+        (string)$mesActual = $objFechaActual->format("n");
+        
+        return $mesActual;
+    }
+    
     public static function getLastYear(){
         date_default_timezone_set('America/Bogota');
         $objFechaActual = new DateTime("NOW");;
@@ -107,6 +115,32 @@ class helpers extends Controller
         $fechaNacimiento = new DateTime($fecha);
         $edad = $fechaActual->diff($fechaNacimiento);
         return $edad->format("%Y");
+    }
+    
+    public static function calcularDiferenciaEnAnios($fecha){
+        date_default_timezone_set('America/Bogota');
+        $fechaActual = new DateTime("NOW");
+        $fechaComparar = new DateTime($fecha);
+        $diferencia = $fechaActual->diff($fechaComparar);
+        return $diferencia->format("%Y");
+    }
+    
+    public static function getAnioFecha($fecha){
+        date_default_timezone_set('America/Bogota');
+        $objFecha = new DateTime($fecha);
+        return $objFecha->format("Y");
+    }
+    
+    public static function getMesFecha($fecha){
+        date_default_timezone_set('America/Bogota');
+        $objFecha = new DateTime($fecha);
+        return $objFecha->format("m");
+    }
+    
+    public static function getDiaFecha($fecha){
+        date_default_timezone_set('America/Bogota');
+        $objFecha = new DateTime($fecha);
+        return $objFecha->format("d");
     }
     
     public static function calcularRangoEdad($edad){

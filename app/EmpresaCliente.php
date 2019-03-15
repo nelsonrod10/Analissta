@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use App\Http\Controllers\helpers;
 
 class EmpresaCliente extends Model
 {
@@ -32,5 +33,12 @@ class EmpresaCliente extends Model
         return $this->hasMany('App\Empleado','empresaCliente_id');
     }
     
+    public function empleadosSinFechaDeIngreso(){
+        return $this->hasMany('App\Empleado','empresaCliente_id')->where("fecha_ingreso",null);
+    }
+    
+    public function evaluacionesMedicasAnioActual(){
+        return $this->hasMany('App\Empleados\EvaluacionesMedica','empresaCliente_id')->where('anio_sugerido',helpers::getCurrentYear())->orderBy('mes_sugerido');
+    }
     
 }

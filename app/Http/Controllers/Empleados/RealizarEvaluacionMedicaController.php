@@ -1,14 +1,14 @@
 <?php
 
-namespace App\Http\Controllers\Comunidad;
+namespace App\Http\Controllers\Empleados;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\Comunidad\ComunidadProfesionale;
-use App\Comunidad\ComunidadEmpresa;
-use App\Comunidad\ComunidadInvitado;
+use App\Empleados\EvaluacionesMedica;
+use App\Http\Controllers\helpers;
+use App\Http\Controllers\Empleados\EvaluacionesMedicasController;
 
-class ComunidadAnalisstaController extends Controller
+class RealizarEvaluacionMedicaController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -17,11 +17,7 @@ class ComunidadAnalisstaController extends Controller
      */
     public function index()
     {
-        $profesionales = ComunidadProfesionale::all();
-        $empresas_comunidad = ComunidadEmpresa::all();
-        $invitados = ComunidadInvitado::all();
-        
-        return view('analissta.Comunidad.index')->with(compact('profesionales','empresas_comunidad','invitados'));
+        //
     }
 
     /**
@@ -76,7 +72,30 @@ class ComunidadAnalisstaController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $data = $request->validate(['fecha'  =>  'string|required']);
+        
+        $evaluacion = EvaluacionesMedica::find($id);
+        
+        $evaluacion->update([
+           'anio_realizado' =>  (string)helpers::getAnioFecha($data['fecha']), 
+           'mes_realizado'  =>  (string)helpers::getMesFecha($data['fecha']),
+           'dia_realizado'  =>  (string)helpers::getDiaFecha($data['fecha']),
+           'estado'         =>  "Realizada"  
+        ]);
+        
+        $nuevoAnio = helpers::getAnioFecha($data['fecha'])+1;
+        $nuevaEvaluacion = new EvaluacionesMedicasController();
+        $nuevaEvaluacion->store(
+            new Request([
+                'empresa'  =>  (string)$evaluacion->empresaCliente_id,
+                'empleado' =>  (string)$evaluacion->empleado_id,
+                'anio'     =>  (string)$nuevoAnio,
+                'mes'      =>  helpers::getMesFecha($data['fecha']),
+                'dia'      =>  helpers::getDiaFecha($data['fecha']), 
+            ])
+        );
+        
+        return back();
     }
 
     /**

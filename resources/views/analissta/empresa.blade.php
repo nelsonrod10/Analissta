@@ -57,10 +57,12 @@
                 <div class="columns small-12 medium-8">{{ $empresa->direccion}}</div>
                 <div class="columns small-12 medium-4"><b>Ciudad</b></div>
                 <div class="columns small-12 medium-8">{{ $empresa->ciudad }}</div>
-                <div class="columns small-12 medium-4"><b>Tipo Valoración </b></div>
-                <div class="columns small-12 medium-8">{{ $empresa->tipoValoracion }}</div>
+                <div class="columns small-12 medium-4"><b>Fecha Fundación: </b></div>
+                <div class="columns small-12 medium-8">{{ $empresa->fechaFundacion }}</div>
             </div>
             <div class="columns small-12 medium-4">
+                <div class="columns small-12 medium-4"><b>Tipo Valoración </b></div>
+                <div class="columns small-12 medium-8">{{ $empresa->tipoValoracion }}</div>
                 <div class="columns small-12 medium-5"><b>Código CIIU</b></div>
                 <div class="columns small-12 medium-7">{{ $empresa->ciiu }}</div>
                 <div class="columns small-12 medium-5"><b>Actividad Económica</b></div>

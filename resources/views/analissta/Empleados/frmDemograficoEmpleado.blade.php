@@ -103,7 +103,7 @@
                             <label for="antigEmpresa" class="text-right middle"><b>Antiguedad en la empresa:</b></label>
                         </div>    
                         <div class="columns small-12 medium-8 end">
-                            <select name="antiguedadEmpresa" required>
+                            <select name="antiguedadEmpresa" disabled="">
                                 <option value="">Seleccione...</option>
                                 <option value="Menos de 1" <?php echo $empleado->antiguedadEmpresa=="Menos de 1"?"selected":"" ?>>Menos de 1 año</option>
                                 <option value="De 1 a 5" <?php echo $empleado->antiguedadEmpresa=="De 1 a 5"?"selected":"" ?>>De 1 a 5 años</option>
@@ -125,10 +125,12 @@
                             <select name="antiguedadCargo" required>
                                 <option value="">Seleccione...</option>
                                 <option value="Menos de 1" <?php echo $empleado->antiguedadCargo=="Menos de 1"?"selected":"" ?>>Menos de 1 año</option>
+                                <?php if($empleado->antiguedadEmpresa !== "Menos de 1"): ?>
                                 <option value="De 1 a 5" <?php echo $empleado->antiguedadCargo=="De 1 a 5"?"selected":"" ?>>De 1 a 5 años</option>
                                 <option value="De 5 a 10" <?php echo $empleado->antiguedadCargo=="De 5 a 10"?"selected":"" ?>>De 5 a 10 años</option>
                                 <option value="De 10 a 15" <?php echo $empleado->antiguedadCargo=="De 10 a 15"?"selected":"" ?>>De 10 a 15 años</option>
                                 <option value="Mas de 15" <?php echo $empleado->antiguedadCargo=="Mas de 15"?"selected":"" ?>>Mas de 15 años</option>
+                                <?php endif; ?>
                             </select>
                         </div>
                     </div>

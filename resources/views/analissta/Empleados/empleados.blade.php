@@ -17,6 +17,7 @@
             
             <div class="expanded button-group">
                 <a class="button" href="{{ route('ver-empresa-cliente',['id'=>$empresa->id])}}">Datos Empresa</a>
+                <a class="button" href="{{ route('evaluaciones-medicas.index')}}">Evaluaciones Médicas Ocupacionales</a>
                 @if($empresa->tipoValoracion === 'Matriz General')
                 <a class="button" href="{{ route('procesos-actividades',['sistema'=>$empresa->sistemaGestion[0]])}}">Procesos y Actividades</a>
                 @elseif($empresa->tipoValoracion === 'Matriz por Centro')
@@ -76,6 +77,7 @@
                             @if($empresa->empleados->count() > 0)
                                 @foreach($empresa->empleados as $empleado)
                                     @include('analissta.Empleados.modal-frmUpdateCentroTrabajo')
+                                    @include('analissta.Empleados.modal-frmAsignarFechaIngreso')
                                     <?php 
                                         $centroTrabajoEmpleado = App\CentrosTrabajo::find($empleado->centrosTrabajos_id);
                                         $edadEmpleado = helpers::calcularEdad($empleado->fechaNacimiento);
@@ -125,9 +127,16 @@
                                                         <div class="columns small-12">
                                                             <b>Rango Edad: </b>{{ $rangoEdad }} edad
                                                         </div>
+                                                        <div class="columns small-12">
+                                                            <b>Ingreso a la Empresa: </b>{{ $empleado->fecha_ingreso }}
+                                                            <?php if($empleado->fecha_ingreso === "" || $empleado->fecha_ingreso === null): ?>
+                                                                <a class="label alert" style="font-size:10px; border-radius: 5px" data-open="modal-asignar-fecha-ingreso-{{$empleado->id}}">Asignar Fecha</a>
+                                                            <?php endif; ?>
+                                                        </div>
                                                     </div>
 
                                                     <div class="columns small-12 medium-6 text-left">
+                                                        
                                                         <div class="columns small-12">
                                                             <b>Centro de Trabajo: </b>{{ $centroTrabajoEmpleado->nombre }}
                                                         </div>
@@ -275,6 +284,7 @@
                         <div class="columns small-12 text-center" id="div-btnBdEmpleados">
                             <a  class="button alert small" href="{{ route('ver-empresa-cliente',['id'=>$empresa->id])}}"><i class="fi-arrow-left" ></i> Voler a Datos Empresa</a>
                             <a  class="button success-2 small" href="{{ route('agregar-nuevo-empleado',['origen'=>'mostrar-empleados'])}}"><i class="fi-plus" ></i> Agregar Empleado</a>
+                            <a class="button small" href="{{ route('evaluaciones-medicas.index')}}">Evaluaciones Médicas Ocupacionales</a>
                             <div>
                                 <a  class="button " href="{{ route('cargue-masivo-empleados.index')}}" title><i class="fi-upload" style="font-size: 24px" ></i> Subir Archivo Base Datos</a>
                             </div>
