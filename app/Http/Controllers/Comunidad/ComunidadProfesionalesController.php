@@ -139,6 +139,6 @@ class ComunidadProfesionalesController extends Controller
             ComunidadProfesionale::find($id)->delete();
         }
         
-        return redirect()->route("home");
+        return redirect()->back();
     }
 }

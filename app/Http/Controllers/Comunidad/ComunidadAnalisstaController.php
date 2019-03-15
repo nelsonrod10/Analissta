@@ -18,10 +18,10 @@ class ComunidadAnalisstaController extends Controller
     public function index()
     {
         $profesionales = ComunidadProfesionale::all();
-        $empresas = ComunidadEmpresa::all();
+        $empresas_comunidad = ComunidadEmpresa::all();
         $invitados = ComunidadInvitado::all();
         
-        return view('analissta.Comunidad.index')->with(compact('profesionales','empresas','invitados'));
+        return view('analissta.Comunidad.index')->with(compact('profesionales','empresas_comunidad','invitados'));
     }
 
     /**

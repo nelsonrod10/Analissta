@@ -24,41 +24,41 @@
         </div>
         
         <div class="columns small-12">
-            @foreach($empresas as $empresa)
+            @foreach($empresas_comunidad as $empresa_comunidad)
             <div class="row" style="border:2px solid lightgray; margin-bottom: 20px">
-                <div class="columns small-12"><h4><b>{{ucfirst(strtolower($empresa->nombre))}}</b></h4></div>
+                <div class="columns small-12"><h4><b>{{ucfirst(strtolower($empresa_comunidad->nombre))}}</b></h4></div>
                 <div class="columns small-12 medium-6">
                     <p>
-                        <b>NIT: </b>{{$empresa->identificacion}}
+                        <b>NIT: </b>{{$empresa_comunidad->identificacion}}
                     </p>
                     <p>
-                        <b>CIUDAD: </b>{{$empresa->ciudad}}
+                        <b>CIUDAD: </b>{{$empresa_comunidad->ciudad}}
                     </p>
                     <p>
-                        <b>WEB: </b>{{$empresa->web}}
+                        <b>WEB: </b>{{$empresa_comunidad->web}}
                     </p>
                     
                 </div>
                 <div class="columns small-12 medium-6">
                     <p>
-                        <b>EMAIL: </b>{{$empresa->email}}
+                        <b>EMAIL: </b>{{$empresa_comunidad->email}}
                     </p>
                     <p>
-                        <b>TELEFONO: </b>{{$empresa->telefono}}
+                        <b>TELEFONO: </b>{{$empresa_comunidad->telefono}}
                     </p>
                     <p>
-                        <b>LICENCIA: </b><?php echo ($empresa->licencia == null )?"No Reporta": $empresa->licencia?>
+                        <b>LICENCIA: </b><?php echo ($empresa_comunidad->licencia == null )?"No Reporta": $empresa_comunidad->licencia?>
                     </p>
                 </div>
                 <div class="columns small-12 medium-10 end">
                     <label><b>PERFIL</b></label>
-                    <textarea readonly=""><?php echo ($empresa->perfil == null )?"No Reporta": $empresa->perfil?></textarea>
+                    <textarea readonly=""><?php echo ($empresa_comunidad->perfil == null )?"No Reporta": $empresa_comunidad->perfil?></textarea>
                 </div>
                 <div class="columns small-12">
                     <h5><b>Especialidades</b></h5>
                 </div>
                 <div class="columns small-12">
-                    @foreach($empresa->Especialidades as $especialidades)
+                    @foreach($empresa_comunidad->Especialidades as $especialidades)
                         <?php
                             $nombreCategoria = $xml_especialidades->xpath("//comunidad/categoria[@id=$especialidades->categoria]");
                             $arrEspecialidades = explode(",",$especialidades->especialidades);

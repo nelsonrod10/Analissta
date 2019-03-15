@@ -15,8 +15,8 @@ class ComunidadEmpresasController extends Controller
      */
     public function index()
     {
-        $empresas = ComunidadEmpresa::all();
-        return view('analissta.Comunidad.Empresas.index')->with(compact('empresas'));
+        $empresas_comunidad = ComunidadEmpresa::all();
+        return view('analissta.Comunidad.Empresas.index')->with(compact('empresas_comunidad'));
     }
 
     /**
@@ -144,6 +144,6 @@ class ComunidadEmpresasController extends Controller
             ComunidadEmpresa::find($id)->delete();
         }
         
-        return redirect()->route("home");
+        return redirect()->back();
     }
 }

@@ -23,7 +23,7 @@
         </div>
         <div class="columns small-12">
             <h4><b>Total Profesionales Incritos: </b>{{$profesionales->count()}}</h4>
-            <h4><b>Total Empresas Incritas: </b>{{$empresas->count()}}</h4>
+            <h4><b>Total Empresas Incritas: </b>{{$empresas_comunidad->count()}}</h4>
             <h4><b>Total Invitados: </b>{{$invitados->count()}}</h4>
         </div>
         <div class="columns small-12">
@@ -35,8 +35,12 @@
                 <div class="columns small-12 medium-1">{{$profesional->ciudad}}</div>
                 <div class="columns small-12 medium-2">{{$profesional->email}}</div>
                 <div class="columns small-12 medium-1"><?php echo ($profesional->telefono == null )?"No tiene": $profesional->telefono?></div>
-                <div class="columns small-12 medium-2"><!--<a class="button small primary">Ver Detalles</a>--></div>
+                <div class="columns small-12 medium-2">
+                    <a class="button small primary">Ver Detalles</a> 
+                    <a class="button small alert" data-open="eliminar-profesional-{{$profesional->id}}">Eliminar</a>
+                </div>
             </div>
+                @include('analissta.Comunidad.Profesionales.modal-delete')
             @endforeach
             <br/>
             <div class="row">
@@ -50,15 +54,20 @@
         
         <div class="columns small-12">
             <h4 class="text-center" style="color:white;background: lightslategray">Empresas</h4>
-            @foreach($empresas as $empresa)
+            @foreach($empresas_comunidad as $empresa_comunidad)
+            
             <div class="row" style="margin-bottom:10px; border-bottom:1px solid lightgray">
-                <div class="columns small-12 medium-3">{{$empresa->nombre}}</div>
-                <div class="columns small-12 medium-3">{{$empresa->identificacion}}</div>
-                <div class="columns small-12 medium-1">{{$empresa->ciudad}}</div>
-                <div class="columns small-12 medium-2">{{$empresa->email}}</div>
-                <div class="columns small-12 medium-1"><?php echo ($empresa->telefono == null )?"No tiene": $empresa->telefono?></div>
-                <div class="columns small-12 medium-2"><!--<a class="button small primary">Ver Detalles</a>--></div>
-            </div>
+                <div class="columns small-12 medium-3">{{$empresa_comunidad->nombre}}</div>
+                <div class="columns small-12 medium-3">{{$empresa_comunidad->identificacion}}</div>
+                <div class="columns small-12 medium-1">{{$empresa_comunidad->ciudad}}</div>
+                <div class="columns small-12 medium-2">{{$empresa_comunidad->email}}</div>
+                <div class="columns small-12 medium-1"><?php echo ($empresa_comunidad->telefono == null )?"No tiene": $empresa_comunidad->telefono ?></div>
+                <div class="columns small-12 medium-2">
+                    <a class="button small primary">Ver Detalles</a> 
+                    <a class="button small alert" data-open="eliminar-empresa-{{$empresa_comunidad->id}}">Eliminar</a>
+                </div>
+            </div>    
+                @include('analissta.Comunidad.Empresas.modal-delete')    
             @endforeach
             <br/>
             <div class="row">
