@@ -15,10 +15,10 @@
             <li class="nav-item"><a class="nav-link link" href="{{url('comunidad')}}">COMUNIDAD</a></li>
             <li class="nav-item"><a class="nav-link link" href="#form1-2c">CONTACTO</a></li>
             <li class="nav-item nav-btn"><a class="nav-link btn btn-primary btn-lg btn" href="{{ route('login')}}">INGRESAR</a></li>
-            
+
         </ul>
-        
-    @endsection    
+
+    @endsection
     <section class="mbr-section mbr-section-hero mbr-section-full header8 mbr-parallax-background mbr-after-navbar" id="header8-29" data-rv-view="2" style="background-image: url(assets/images/fondopaginicio2-1280x720.png);">
         <div class="mbr-overlay" style="opacity: 0.3; background-color: rgb(45, 45, 45);">
         </div>
@@ -32,9 +32,9 @@
                                 </div>
                             </div>
                         </div>
-                </div> 
-            </div> 
-        <div class="mbr-arrow mbr-arrow-floating" aria-hidden="true"><a href="#header1-2a"><i class="mbri-down"></i></a></div>            
+                </div>
+            </div>
+        <div class="mbr-arrow mbr-arrow-floating" aria-hidden="true"><a href="#header1-2a"><i class="mbri-down"></i></a></div>
     </section>
     <section class="mbr-section content5" id="content7-2d" data-rv-view="36" style="background-image: url(assets/images/comunidad-2.jpg); padding-top: 80px; padding-bottom: 60px;">
 
@@ -43,7 +43,6 @@
             <div class="container">
                 <div class="row heading">
                     <div class="col-md-10 text-xs-center col-md-offset-1">
-
                         <h1 class="mbr-section-title display-3 heading-title">Comunidad de profesionales SST</h1>
                         <p class="mbr-section-subtitle text-1 heading-text">Eres un profesional independiente, tienes o trabajas para una empresa de asesoría o consultoría.... y prestas servicios relacionados con Sistemas de Gestión <br>¿Necesitas una opción para conocer y contactar más clientes?, Nuestra comunidad te esta esperando</p>
                         <div class='text-center'>
@@ -120,7 +119,7 @@
                             <div class="col-md-4 icons-item" style="display: none;">
                               <div class="card-img" style="border-color: rgb(255, 255, 255); border-width: 2px;"><a href="https://mobirise.com" class="mbri-timer mbr-iconfont mbr-iconfont-features4" style="color: rgb(255, 255, 255); font-size: 40px;"></a></div>
                               <p class="round-text text-1 text-center">Publish your website to a local drive, FTP or host on Amazon S3, Github.</p>
-                            </div>  
+                            </div>
                           </div>
                           </div>
                       </div>
@@ -337,8 +336,8 @@
             </div>
             <hr/>
         </div>
-    </section>    
-    
+    </section>
+
     <section class="mbr-section mbr-section-hero mbr-section-full pricing-table3" id="pricing-table3-17" data-rv-view="14" style="background-color: rgb(233, 235, 239); padding-top: 20px; padding-bottom: 20px;" >
         <div class="mbr-section mbr-section-nopadding mbr-price-table">
             <div class="main-row" style="max-width: 1500px;">
@@ -359,9 +358,9 @@
                               </div>
                               <div>
                                   <b id="error-empleados" style="color:#ff3333"></b>
-                              </div>  
+                              </div>
                             <br/>
-                          </div>  
+                          </div>
 
                           <span class="bottom_line"></span>
                           <div class="card-text info-precios hidden">
@@ -396,7 +395,7 @@
             </div>
         </div>
     </section>
-    
+
     <section class="mbr-section content5" id="content7-2d" data-rv-view="36" style="background-image: url(assets/images/mbr-2-1620x1080.jpg); padding-top: 80px; padding-bottom: 60px;">
 
         <div class="mbr-overlay" style="opacity: 0.3; background-color: rgb(45, 45, 45);"></div>
@@ -413,7 +412,7 @@
             </div>
 
     </section>
-    
+
     <section class="mbr-section mbr-section-hero form1" id="form1-2c" data-rv-view="26" style="background-color: rgb(138, 205, 188); padding-top: 40px; padding-bottom: 40px;">
         <div class="container">
             <div class="row heading">
@@ -431,7 +430,7 @@
                 <div class="row">
                     <div class="col-xs-12 col-md-8 col-md-offset-2">
                         <h5 class="form-title mbr-section-subtitle text-1">Ingrese los siguientes datos, y haga parte de nuestra oferta de lanzamiento<br>primer meses completamente GRATIS</h5>
-                    </div>                    
+                    </div>
                 </div>
 
                 <div class="row" data-form-type="formoid">
@@ -469,8 +468,8 @@
     <form method="POST" action="{{url('/calcular-precios/:empleados')}}" accept-charset="UTF-8" id="form-calcular-precios">
         {{ csrf_field() }}
     </form>
-    
-@endsection    
+
+@endsection
 @section('scripts')
 <script>
     $(document).ready(function(){
@@ -507,7 +506,7 @@
       });
 
       var form = $('#form-calcular-precios');
-      var url = form.attr('action').replace(':empleados',empleados); 
+      var url = form.attr('action').replace(':empleados',empleados);
       var data = form.serialize();
       $.post(url,data,function(result){
           $("#div-calculos-precios").removeAttr("hidden");
